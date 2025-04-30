@@ -179,7 +179,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 5bed001a20792644ca32ebc36fda164d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 4c1635bb955696b4ca077cf8bd3c1247, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -254,7 +254,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: d630cd5946eb82e41a52abc628a57f33, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 8a927e8b61b8bf143a635d2e90c5247a, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -284,6 +284,7 @@ GameObject:
   - component: {fileID: 507754851}
   - component: {fileID: 507754850}
   - component: {fileID: 507754849}
+  - component: {fileID: 507754852}
   m_Layer: 5
   m_Name: EqSelectBtn
   m_TagString: Untagged
@@ -353,7 +354,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 507754850}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 507754852}
+        m_TargetAssemblyTypeName: SceneChanger, Assembly-CSharp
+        m_MethodName: Eq_Main
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &507754850
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -374,7 +387,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 13691849, guid: f4a13ec46e009de439c4069000bed02a, type: 3}
+  m_Sprite: {fileID: -1975422896, guid: 2ce2847f73d53db4e97f6bbe649e31f1, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -392,6 +405,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 507754847}
   m_CullTransparentMesh: 1
+--- !u!114 &507754852
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 507754847}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ff691d255994f542af7dd968b33e8a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &772455031
 GameObject:
   m_ObjectHideFlags: 0
@@ -494,7 +519,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 1967923714, guid: f4a13ec46e009de439c4069000bed02a, type: 3}
+  m_Sprite: {fileID: 1426637974, guid: 2ce2847f73d53db4e97f6bbe649e31f1, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -614,7 +639,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 1601103522, guid: f4a13ec46e009de439c4069000bed02a, type: 3}
+  m_Sprite: {fileID: 1456172154, guid: 2ce2847f73d53db4e97f6bbe649e31f1, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -802,7 +827,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -1183220699, guid: f4a13ec46e009de439c4069000bed02a, type: 3}
+  m_Sprite: {fileID: -480719436, guid: 2ce2847f73d53db4e97f6bbe649e31f1, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -987,7 +1012,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 1916415539, guid: f4a13ec46e009de439c4069000bed02a, type: 3}
+  m_Sprite: {fileID: 1515629621, guid: 2ce2847f73d53db4e97f6bbe649e31f1, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1107,7 +1132,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 270421542, guid: f4a13ec46e009de439c4069000bed02a, type: 3}
+  m_Sprite: {fileID: 857038032, guid: 2ce2847f73d53db4e97f6bbe649e31f1, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

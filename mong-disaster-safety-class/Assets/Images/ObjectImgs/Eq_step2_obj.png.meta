@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -121,7 +121,175 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Eq_step2_obj_0
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 1056
+        width: 1137
+        height: 732
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 985e7dff02b52ae4bb933b6d099623f0
+      internalID: 2127097330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Eq_step2_obj_1
+      rect:
+        serializedVersion: 2
+        x: 1473
+        y: 1159
+        width: 919
+        height: 481
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 861a4df8429eb2943a781d69ad731500
+      internalID: 619351305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Eq_step2_obj_2
+      rect:
+        serializedVersion: 2
+        x: 2635
+        y: 1165
+        width: 918
+        height: 478
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5707aca13813d4c418003345eacc9a55
+      internalID: -1053821599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Eq_step2_obj_3
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 57
+        width: 330
+        height: 908
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e21d9c170e4016149bf30d390987a92f
+      internalID: 1764829899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Eq_step2_obj_4
+      rect:
+        serializedVersion: 2
+        x: 838
+        y: 214
+        width: 330
+        height: 596
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d792e9abfdd4f4f4f8f765271f6ed369
+      internalID: 313438396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Eq_step2_obj_5
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 532
+        width: 855
+        height: 432
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0230bb749e896024b8953f154cc6c3f1
+      internalID: -269516190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Eq_step2_obj_6
+      rect:
+        serializedVersion: 2
+        x: 2705
+        y: 90
+        width: 806
+        height: 867
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7713b1b5ff828284f8bbb9685ae4b430
+      internalID: 128032330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Eq_step2_obj_7
+      rect:
+        serializedVersion: 2
+        x: 1501
+        y: 83
+        width: 854
+        height: 432
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c57fb10928ca8c46b2bb09bc05463c6
+      internalID: -403545814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -132,7 +300,15 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Eq_step2_obj_0: 2127097330
+      Eq_step2_obj_1: 619351305
+      Eq_step2_obj_2: -1053821599
+      Eq_step2_obj_3: 1764829899
+      Eq_step2_obj_4: 313438396
+      Eq_step2_obj_5: -269516190
+      Eq_step2_obj_6: 128032330
+      Eq_step2_obj_7: -403545814
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

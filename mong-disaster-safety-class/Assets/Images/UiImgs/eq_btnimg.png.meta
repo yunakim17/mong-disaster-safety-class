@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -121,7 +121,91 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: eq_btnimg_0
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 311
+        width: 371
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c31b73e3e74b07c4789a65cec24c592f
+      internalID: 985194053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eq_btnimg_1
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 323
+        width: 371
+        height: 221
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 756ae71f3bc9b5242b6c44646263eb5f
+      internalID: -154771100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eq_btnimg_2
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 40
+        width: 371
+        height: 221
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37245fd96b027314880abf270211ebae
+      internalID: -185571967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eq_btnimg_3
+      rect:
+        serializedVersion: 2
+        x: 451
+        y: 34
+        width: 370
+        height: 221
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c90cf8ba3f15734abf142e7e8077928
+      internalID: -1188177115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -132,7 +216,11 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      eq_btnimg_0: 985194053
+      eq_btnimg_1: -154771100
+      eq_btnimg_2: -185571967
+      eq_btnimg_3: -1188177115
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
