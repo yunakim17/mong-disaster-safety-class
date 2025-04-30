@@ -1,0 +1,12 @@
+[
+  {
+    "sequence": 2,
+    "speaker": "몽대장",
+    "question": "그렇다면 어떻게 해야 할까?",
+    "option1": "그대로 놔둔다.",
+    "option2": "창문과 유리 부분에 필름을 붙인다.",
+    "correct_option": 2,
+    "feedback": "그대로 놔두면 유리가 깨져 대피 시 발을 다칠 수 있어! 다시 선택해 볼까?",
+    "voice_path": ""
+  }
+]

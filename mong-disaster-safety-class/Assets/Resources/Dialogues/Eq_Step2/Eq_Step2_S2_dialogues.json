@@ -1,0 +1,14 @@
+[
+  {
+    "sequence": 1,
+    "speaker": "몽대장",
+    "dialogue_text": "지진이 일어났을 시 건물이 흔들리면서 유리가 깨질 수 있어.",
+    "voice_path": ""
+  },
+  {
+    "sequence": 2,
+    "speaker": "몽대장",
+    "dialogue_text": "",  
+    "voice_path": ""
+  }
+]

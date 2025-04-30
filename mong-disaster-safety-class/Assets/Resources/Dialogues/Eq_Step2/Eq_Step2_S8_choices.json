@@ -1,0 +1,12 @@
+[
+    {
+        "sequence": 12,
+        "speaker": "몽대장",
+        "question": "그렇다면 어떻게 해야 할까?",
+        "option1": "잽싸게 피한다.",
+        "option2": "넘어지지 않게 고정해 둔다.",
+        "correct_option": 2,
+        "feedback": "물론 피할 수는 있겠으나 다칠 위험이 너무 커! 다시 선택해 볼까?",
+        "voice_path": ""
+    }
+]

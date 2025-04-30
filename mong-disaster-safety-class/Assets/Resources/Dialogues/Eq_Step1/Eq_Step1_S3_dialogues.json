@@ -1,0 +1,38 @@
+[
+  {
+    "sequence": 6,
+    "speaker": "몽대장",
+    "dialogue_text": "얼마나 세게 흔들리는지 ‘진도’라는 숫자로 구분할 수 있어! 진도별로 어떤 일이 일어나는지 눌러볼까?",
+    "voice_path": ""
+  },
+  {
+    "sequence": 7,
+    "speaker": "몽대장",
+    "dialogue_text": "진도 1~2는 약하게 흔들리는 정도로, 거의 못 느끼기도 해",
+    "voice_path": ""
+  },
+  {
+    "sequence": 8,
+    "speaker": "몽대장",
+    "dialogue_text": "진도 3~4는 창문이나 물건, 멈춰있는 자동차가 흔들릴 수 있어",
+    "voice_path": ""
+  },
+  {
+    "sequence": 9,
+    "speaker": "몽대장",
+    "dialogue_text": "진도 5~6은 그릇이나 창문이 깨지고, 가구도 넘어질 수 있어",
+    "voice_path": ""
+  },
+  {
+    "sequence": 10,
+    "speaker": "몽대장",
+    "dialogue_text": "진도 7 이상은 건물이 무너질 수도 있어",
+    "voice_path": ""
+  },
+  {
+    "sequence": 11,
+    "speaker": "몽대장",
+    "dialogue_text": "진도가 클수록 흔들림이 심해지고 더 위험해질 수 있어!",
+    "voice_path": ""
+  }
+]
