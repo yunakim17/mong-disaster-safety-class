@@ -1,0 +1,20 @@
+[
+    {
+        "sequence": 16,
+        "speaker": "몽대장",
+        "dialogue_text": "맞아! 지정된 옥외대피소 외에 주변에 넓은 공원, 학교 운동장 등으로 대피해도 괜찮아!",
+        "voice_path": ""
+    },
+    {
+        "sequence": 17,
+        "speaker": "몽대장",
+        "dialogue_text": "지금까지 나와 함께 지진을 대비할 수 있는 방법에 대해 알아봤는데 어때? 잘 알았다고?",
+        "voice_path": ""
+    },
+    {
+        "sequence": 18,
+        "speaker": "몽대장",
+        "dialogue_text": "다행이야! 그렇다면 이제 실천해 볼 차례야! 우리 집은 지진을 대비할 준비가 잘 되어 있는지 확인해 보자!",
+        "voice_path": ""
+    }
+]

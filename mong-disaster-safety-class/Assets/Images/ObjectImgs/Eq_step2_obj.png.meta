@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: fc0b31d012356134bbb2cb9c2b355c79
+guid: 02fd0a2c1a0e7b6448454c04f0b1f94e
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -94,6 +94,19 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
     buildTarget: Android
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -108,175 +121,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: Eq_step2_obj_0
-      rect:
-        serializedVersion: 2
-        x: 86
-        y: 1056
-        width: 1137
-        height: 732
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 74d7f3af1c731e845ae4cd80673adc8f
-      internalID: -1110158147
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Eq_step2_obj_1
-      rect:
-        serializedVersion: 2
-        x: 1473
-        y: 1159
-        width: 919
-        height: 481
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b7a68216684262645b3e791217522f56
-      internalID: -1254801183
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Eq_step2_obj_2
-      rect:
-        serializedVersion: 2
-        x: 2635
-        y: 1165
-        width: 918
-        height: 478
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bc8d7f06c31153c4e872e5952fb70c67
-      internalID: 1629698551
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Eq_step2_obj_3
-      rect:
-        serializedVersion: 2
-        x: 148
-        y: 57
-        width: 330
-        height: 908
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e6d02b43238286b4081f3d42855674c1
-      internalID: -1418739300
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Eq_step2_obj_4
-      rect:
-        serializedVersion: 2
-        x: 838
-        y: 214
-        width: 330
-        height: 596
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 876a4f3251ff3f64887c23f97ccf3367
-      internalID: 967421290
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Eq_step2_obj_5
-      rect:
-        serializedVersion: 2
-        x: 1500
-        y: 532
-        width: 855
-        height: 432
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f7d0ae6fc6632d74bae54c707aad3e38
-      internalID: 1305804671
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Eq_step2_obj_6
-      rect:
-        serializedVersion: 2
-        x: 2705
-        y: 90
-        width: 806
-        height: 867
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1fd969a2ebb9f2646bed67a5f3b262a6
-      internalID: -2008587678
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Eq_step2_obj_7
-      rect:
-        serializedVersion: 2
-        x: 1501
-        y: 83
-        width: 854
-        height: 432
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 702a72e7ef442e9479732f4613a88d6b
-      internalID: -926041777
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
+    sprites: []
     outline: []
     physicsShape: []
     bones: []
@@ -287,15 +132,7 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      Eq_step2_obj_0: -1110158147
-      Eq_step2_obj_1: -1254801183
-      Eq_step2_obj_2: 1629698551
-      Eq_step2_obj_3: -1418739300
-      Eq_step2_obj_4: 967421290
-      Eq_step2_obj_5: 1305804671
-      Eq_step2_obj_6: -2008587678
-      Eq_step2_obj_7: -926041777
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -1,0 +1,38 @@
+[
+  {
+    "sequence": 0,
+    "speaker": "주인공",
+    "dialogue_text": "으악! 땅이 흔들려! 이게 무슨 일이지?",
+    "voice_path": ""
+  },
+  {
+    "sequence": 1,
+    "speaker": "안내방송",
+    "dialogue_text": "지진이 발생했습니다! 학생들은 당황하지 말고 흔들림이 멈출 때까지…",
+    "voice_path": ""
+  },
+  {
+    "sequence": 2,
+    "speaker": "주인공",
+    "dialogue_text": "",
+    "voice_path": ""
+  },
+  {
+    "sequence": 3,
+    "speaker": "주인공",
+    "dialogue_text": "얘들아! 다들 흔들림이 멈출 때까지 책상 밑으로 들어가!",
+    "voice_path": ""
+  },
+  {
+    "sequence": 4,
+    "speaker": "npc",
+    "dialogue_text": "이제 흔들림이 멈췄어! 얼른 운동장으로 대피하자!",
+    "voice_path": ""
+  },
+  {
+    "sequence": 5,
+    "speaker": "npc",
+    "dialogue_text": "그래, 여기 있으면 위험할지도 몰라. 얼른 내려가자!",
+    "voice_path": ""
+  }
+]
