@@ -9,6 +9,12 @@ EditorBuildSettings:
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
+    path: Assets/Scenes/Main.unity
+    guid: f810caeb6918dfe488c11bdb45c89e9a
+  - enabled: 1
+    path: Assets/Scenes/EqScenes/Eq_Main.unity
+    guid: 3e3acefee3ff95c4184f9c7b18f908a1
+  - enabled: 1
     path: Assets/Scenes/EqScenes/Eq_Step1/Eq_Step1_S1.unity
     guid: 21d75068971c29942a1f73e8503daca7
   - enabled: 1
