@@ -1,0 +1,12 @@
+[
+    {
+        "sequence": 15,
+        "speaker": "몽대장",
+        "question": "어느 장소가 좋을까?",
+        "option1": "다른 높은 건물 안.",
+        "option2": "지정된 대피소.",
+        "correct_option": 2,
+        "feedback": "높은 건물 안도 마찬가지로 안전하지 않아! 다시 선택해 볼까?",
+        "voice_path": ""
+    }
+]

@@ -1,0 +1,20 @@
+[
+  {
+    "sequence": 0,
+    "speaker": "몽대장",
+    "dialogue_text": "안녕! 나는 몽대장! 나와 함께 지진에 대해 알아보자~",
+    "voice_path": ""
+  },
+  {
+    "sequence": 1,
+    "speaker": "몽대장",
+    "dialogue_text": "지진은 땅이 움직이면서 흔들리는 재난을 말해!",
+    "voice_path": ""
+  },
+  {
+    "sequence": 2,
+    "speaker": "몽대장",
+    "dialogue_text": "지진이 어떻게 일어나는지 알아볼까?",
+    "voice_path": ""
+  }
+]

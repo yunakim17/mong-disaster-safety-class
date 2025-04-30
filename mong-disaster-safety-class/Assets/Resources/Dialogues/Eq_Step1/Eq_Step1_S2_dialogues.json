@@ -1,0 +1,20 @@
+[
+  {
+    "sequence": 3,
+    "speaker": "몽대장",
+    "dialogue_text": "이렇게 지구 내부에 큰 힘이 가해지면 그 충격으로 인해 땅이 흔들리면서 지진이 일어나!",
+    "voice_path": ""
+  },
+  {
+    "sequence": 4,
+    "speaker": "몽대장",
+    "dialogue_text": "지진은 우리가 느끼지 못할 정도로 약하게 일어날 수도 있고, 큰 피해를 입을 정도로 세게 일어날 수도 있어!",
+    "voice_path": ""
+  },
+  {
+    "sequence": 5,
+    "speaker": "몽대장",
+    "dialogue_text": "지진이 클수록 땅도 더 많이 흔들려~",
+    "voice_path": ""
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "sequence": 5,
+    "speaker": "몽대장",
+    "question": "대피할 공간으로 어디가 좋을까?",
+    "option1": "책상이나 탁자 밑.",
+    "option2": "건물 밖.",
+    "correct_option": 1,
+    "feedback": "지진으로 건물이 흔들릴 때 급하게 나가면 위험해! 다시 선택해 볼까?",
+    "voice_path": ""
+  }
+]

@@ -1,0 +1,14 @@
+[
+    {
+        "sequence": 14,
+        "speaker": "몽대장",
+        "dialogue_text": "지진이 일어났을 시 건물 안도 결코 안전하지 않아. 그래서 대피할 수 있는 곳을 미리 알아봐 둬야 해.",
+        "voice_path": ""
+    },
+  {
+    "sequence": 15,
+    "speaker": "몽대장",
+    "dialogue_text": "",  
+    "voice_path": ""
+  }
+]
