@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -121,7 +121,154 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: main_ui_img_0
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 683
+        width: 508
+        height: 303
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08cdcdf3bc842ae4e823c0d5d93bd29d
+      internalID: 857038032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: main_ui_img_1
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 673
+        width: 507
+        height: 303
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c81e5f934540c146bd45953aaedbcc7
+      internalID: -1975422896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: main_ui_img_2
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 322
+        width: 757
+        height: 344
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a5714a2e1b3dd44996bce50a0949424
+      internalID: -2065976733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: main_ui_img_3
+      rect:
+        serializedVersion: 2
+        x: 947
+        y: 396
+        width: 163
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7dd12d7da23ffcc40aa51e21c308a89e
+      internalID: 1515629621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: main_ui_img_4
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 60
+        width: 369
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e7bd2707bcbf0347aa81a44d0f7d779
+      internalID: -480719436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: main_ui_img_5
+      rect:
+        serializedVersion: 2
+        x: 451
+        y: 61
+        width: 370
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a873fc183c9be034ca195898b72e4d1b
+      internalID: 1426637974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: main_ui_img_6
+      rect:
+        serializedVersion: 2
+        x: 870
+        y: 48
+        width: 369
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e527a0ff945f51742adcc6c871098d1f
+      internalID: 1456172154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -132,7 +279,14 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      main_ui_img_0: 857038032
+      main_ui_img_1: -1975422896
+      main_ui_img_2: -2065976733
+      main_ui_img_3: 1515629621
+      main_ui_img_4: -480719436
+      main_ui_img_5: 1426637974
+      main_ui_img_6: 1456172154
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
