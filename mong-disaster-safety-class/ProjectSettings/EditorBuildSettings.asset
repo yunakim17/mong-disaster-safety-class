@@ -8,4 +8,55 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/Main.unity
+    guid: f810caeb6918dfe488c11bdb45c89e9a
+  - enabled: 1
+    path: Assets/Scenes/EqScenes/Eq_Main.unity
+    guid: 3e3acefee3ff95c4184f9c7b18f908a1
+  - enabled: 1
+    path: Assets/Scenes/EqScenes/Eq_Step1/Eq_Step1_S1.unity
+    guid: 21d75068971c29942a1f73e8503daca7
+  - enabled: 1
+    path: Assets/Scenes/EqScenes/Eq_Step1/Eq_Step1_S2.unity
+    guid: c0befdd660084f24abb8b7ad8b09e398
+  - enabled: 1
+    path: Assets/Scenes/EqScenes/Eq_Step1/Eq_Step1_S3.unity
+    guid: 27090a297dbecf54da94a9864e72341f
+  - enabled: 1
+    path: Assets/Scenes/EqScenes/Eq_Step1/Eq_Step1_S4.unity
+    guid: f43f6960a17c5f94cb98ae95fdc51530
+  - enabled: 1
+    path: Assets/Scenes/EqScenes/Eq_Step2/Eq_Step2_S1.unity
+    guid: b40919b000b3b374fbe6f6f79bf1f15c
+  - enabled: 1
+    path: Assets/Scenes/EqScenes/Eq_Step2/Eq_Step2_S2.unity
+    guid: 1301530bf39f4fe43881cae433b53ff8
+  - enabled: 1
+    path: Assets/Scenes/EqScenes/Eq_Step2/Eq_Step2_S3.unity
+    guid: 3844c09392d7c304cbba402630a8a186
+  - enabled: 1
+    path: Assets/Scenes/EqScenes/Eq_Step2/Eq_Step2_S4.unity
+    guid: 7fc4ac15124aa8c40bbd3c1d18e9865c
+  - enabled: 1
+    path: Assets/Scenes/EqScenes/Eq_Step2/Eq_Step2_S5.unity
+    guid: c7bc05d132ac85140b3ceb807ac36cce
+  - enabled: 1
+    path: Assets/Scenes/EqScenes/Eq_Step2/Eq_Step2_S6.unity
+    guid: f3dc03e51ed161c4abb9886746dd22c9
+  - enabled: 1
+    path: Assets/Scenes/EqScenes/Eq_Step2/Eq_Step2_S7.unity
+    guid: bc8bc4a359795414aa5d40a41e8c1093
+  - enabled: 1
+    path: Assets/Scenes/EqScenes/Eq_Step2/Eq_Step2_S8.unity
+    guid: e65e979dafce71b45b011f140cc7ca79
+  - enabled: 1
+    path: Assets/Scenes/EqScenes/Eq_Step2/Eq_Step2_S9.unity
+    guid: e20e03f2b33c0e9409df948d91b581fb
+  - enabled: 1
+    path: Assets/Scenes/EqScenes/Eq_Step2/Eq_Step2_S10.unity
+    guid: bef30a6914f7c7d4e943d67ea0c5f219
+  - enabled: 1
+    path: Assets/Scenes/EqScenes/Eq_Step2/Eq_Step2_S11.unity
+    guid: a008f18daefb0c24fb4e2f016202c265
   m_configObjects: {}
