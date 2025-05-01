@@ -130,6 +130,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 339200249360116642, guid: 08296c46cdca93b4e9a115f0b981112c, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 2559029281881080226, guid: 08296c46cdca93b4e9a115f0b981112c, type: 3}
       propertyPath: m_Name
       value: Step2_Group
