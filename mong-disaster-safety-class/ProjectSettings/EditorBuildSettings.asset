@@ -59,4 +59,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/EqScenes/Eq_Step2/Eq_Step2_S11.unity
     guid: a008f18daefb0c24fb4e2f016202c265
+  - enabled: 1
+    path: Assets/Scenes/EqScenes/Eq_Step3_Quiz/Eq_Step3_Quiz01.unity
+    guid: 559cccf7e2bbe784396257c1e19c1f4d
+  - enabled: 1
+    path: Assets/Scenes/EqScenes/Eq_Step3_Quiz/Eq_Step3_Quiz02.unity
+    guid: a4769fda0580b834e860340b68c434c7
+  - enabled: 1
+    path: Assets/Scenes/EqScenes/Eq_Step3_Quiz/Eq_Step3_Quiz03.unity
+    guid: 6b24fd29b3c524548a459ead8151d149
   m_configObjects: {}
