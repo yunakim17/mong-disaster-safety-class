@@ -580,6 +580,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Step1_Group
       objectReference: {fileID: 0}
+    - target: {fileID: 7406657110718308501, guid: ef02e2e4463bb4543b4309d62d31342c, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 7613281063439768495, guid: ef02e2e4463bb4543b4309d62d31342c, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -647,6 +651,14 @@ PrefabInstance:
     - target: {fileID: 8004681941794650575, guid: ef02e2e4463bb4543b4309d62d31342c, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 8418021574541606082, guid: ef02e2e4463bb4543b4309d62d31342c, type: 3}
+      propertyPath: m_fontSize
+      value: 54
+      objectReference: {fileID: 0}
+    - target: {fileID: 8418021574541606082, guid: ef02e2e4463bb4543b4309d62d31342c, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 54
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
