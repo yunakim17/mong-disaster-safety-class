@@ -44,4 +44,10 @@ public class SchoolType : MonoBehaviour
             schoolButton.image.color = defaultColor;
         }
     }
+
+    // 선택된 버튼 값 getter
+    public string GetSelectedSchoolType()
+    {
+        return selectedSchoolType;
+    }
 }

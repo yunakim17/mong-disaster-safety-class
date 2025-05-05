@@ -671,8 +671,12 @@ MonoBehaviour:
   kindergartenButton: {fileID: 238580632}
   checkButton: {fileID: 445813260}
   startButton: {fileID: 1754444325}
+  activeColor: {r: 0.5568628, g: 0.827451, b: 0.80784315, a: 1}
+  inactiveColor: {r: 0.7058824, g: 0.7058824, b: 0.7058824, a: 1}
   schoolWarning: {fileID: 1053268803}
   nicknameWarning: {fileID: 952970434}
+  nicknameWarningText: {fileID: 952970436}
+  schoolTypeSelector: {fileID: 971762831}
 --- !u!4 &262139944
 Transform:
   m_ObjectHideFlags: 0
@@ -1221,7 +1225,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 445813261}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 262139943}
+        m_TargetAssemblyTypeName: Login, Assembly-CSharp
+        m_MethodName: OnClickCheckButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &445813261
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2639,7 +2655,6 @@ RectTransform:
   - {fileID: 1702493071}
   - {fileID: 390140751}
   - {fileID: 1925283067}
-  - {fileID: 952970435}
   m_Father: {fileID: 1691432341}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -2677,11 +2692,11 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 947223375}
+  m_Father: {fileID: 1925283067}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: -174, y: -329}
+  m_AnchoredPosition: {x: 47, y: -148.12}
   m_SizeDelta: {x: 359.8269, y: 50}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &952970436
@@ -4942,6 +4957,7 @@ RectTransform:
   m_Children:
   - {fileID: 1650456644}
   - {fileID: 1384367987}
+  - {fileID: 952970435}
   m_Father: {fileID: 947223375}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
