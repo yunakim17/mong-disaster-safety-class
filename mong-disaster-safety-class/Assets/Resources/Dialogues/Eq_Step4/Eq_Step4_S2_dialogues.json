@@ -1,0 +1,14 @@
+[
+  {
+     "sequence": 4,
+     "speaker": "주인공",
+     "dialogue_text": "가스가 새고 있어! 불꽃이 튀면 큰일 나니까 어서 전기를 끄고 가스 밸브를 잠그자!",
+     "voice_path": ""
+   },
+   {
+     "sequence": 5,
+     "speaker": "몽대장",
+     "dialogue_text": "지진으로 인한 흔들림이 멈추면 불이 나거나 가스가 새는 걸 막기 위해 전기와 가스를 차단해야 해.",
+     "voice_path": ""
+   }
+]

@@ -1,0 +1,20 @@
+[
+  {
+    "sequence": 1,
+    "speaker": "주인공",
+    "dialogue_text": "어? 뭐지?",
+    "voice_path": ""
+  },
+  {
+    "sequence": 2,
+    "speaker": "주인공",
+    "dialogue_text": "으악! 지진이야! 어떡하지? 부모님도 없는데!",
+    "voice_path": ""
+  },
+  {
+    "sequence": 3,
+    "speaker": "몽대장",
+    "dialogue_text": "",
+    "voice_path": ""
+  }
+]

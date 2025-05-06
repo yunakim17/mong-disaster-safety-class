@@ -1,0 +1,14 @@
+[
+ {
+    "sequence": 6,
+    "speaker": "주인공",
+    "dialogue_text": "좋아! 이제 밖으로 나가자. 건물 안에 있으면 위험해.",
+    "voice_path": ""
+  },
+  {
+    "sequence": 7,
+    "speaker": "몽대장",
+    "dialogue_text": "",
+    "voice_path": ""
+  }
+]
