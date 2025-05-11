@@ -51,7 +51,7 @@ MonoBehaviour:
   dialogueText: {fileID: 8418021574541606082}
   audioSource: {fileID: 2295885040766925348}
   typingSpeed: 0.05
-  nextButton: {fileID: 0}
+  nextButton: {fileID: 7342054664919758976}
   btn1_2: {fileID: 0}
   btn3_4: {fileID: 0}
   btn5_6: {fileID: 0}
@@ -328,7 +328,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 100, y: 100}
+  m_AnchoredPosition: {x: 100, y: 20}
   m_SizeDelta: {x: 1500, y: 250}
   m_Pivot: {x: 0, y: 0}
 --- !u!222 &1189367896462807061
@@ -386,8 +386,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 54
+  m_fontSizeBase: 54
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
