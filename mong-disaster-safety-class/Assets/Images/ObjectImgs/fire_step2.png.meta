@@ -1,0 +1,442 @@
+fileFormatVersion: 2
+guid: d4bcdcc9fb4bf8940913d4dfa27a402a
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: fire_step2_0
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 3692
+        width: 897
+        height: 897
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33c319c3a8b5894489c7a570527c8baf
+      internalID: -1173890872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire_step2_1
+      rect:
+        serializedVersion: 2
+        x: 1128
+        y: 4362
+        width: 731
+        height: 285
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6ca25c90c0dad94daa00db3eb205d78
+      internalID: 967250716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire_step2_2
+      rect:
+        serializedVersion: 2
+        x: 1052
+        y: 3552
+        width: 823
+        height: 741
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a86e117bc9afec24fbfb2b9905d2e1c3
+      internalID: 286433205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire_step2_3
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 2770
+        width: 823
+        height: 738
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06d0bef3111cb1840835ba9802794092
+      internalID: 629694393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire_step2_4
+      rect:
+        serializedVersion: 2
+        x: 997
+        y: 3136
+        width: 177
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 234d9ce4f9329994fa1d95cc4af78cf2
+      internalID: -2037096318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire_step2_7
+      rect:
+        serializedVersion: 2
+        x: 1284
+        y: 2577
+        width: 214
+        height: 897
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45d0f8ae995d9d14d9bcb6c691c01538
+      internalID: -398143795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire_step2_8
+      rect:
+        serializedVersion: 2
+        x: 1627
+        y: 2577
+        width: 232
+        height: 897
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c25e64d0c8f9664fa6c7350f2fb0065
+      internalID: 1252955489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire_step2_9
+      rect:
+        serializedVersion: 2
+        x: 995
+        y: 2874
+        width: 176
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5eb7be7e67d5be64ca5096783a8b54d3
+      internalID: -1391131976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire_step2_11
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 2080
+        width: 514
+        height: 589
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f09b76a70c54ad441817ef16b8618a48
+      internalID: -1230219035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire_step2_12
+      rect:
+        serializedVersion: 2
+        x: 857
+        y: 1895
+        width: 996
+        height: 581
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b039a63a916c17449caf553bfd660fd
+      internalID: -207059441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire_step2_16
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 1074
+        width: 474
+        height: 648
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73edfb54c75e2d848ae75bb6b9cdb494
+      internalID: 792739228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire_step2_17
+      rect:
+        serializedVersion: 2
+        x: 914
+        y: 880
+        width: 935
+        height: 871
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44ad8bb1e60cc0c48b46cb31dba1e2a0
+      internalID: -896840865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire_step2_29
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 63
+        width: 1262
+        height: 724
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e764f854637986409ee92659ac4028a
+      internalID: -1993278072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      fire_step2_0: -1173890872
+      fire_step2_1: 967250716
+      fire_step2_10: -842877383
+      fire_step2_11: -1230219035
+      fire_step2_12: -207059441
+      fire_step2_13: -276923866
+      fire_step2_14: 755148655
+      fire_step2_15: 451890902
+      fire_step2_16: 792739228
+      fire_step2_17: -896840865
+      fire_step2_18: 2066294520
+      fire_step2_19: 1835293912
+      fire_step2_2: 286433205
+      fire_step2_20: 39860151
+      fire_step2_21: 982345624
+      fire_step2_22: 433900178
+      fire_step2_23: -1766187170
+      fire_step2_24: 838700028
+      fire_step2_25: -18881982
+      fire_step2_26: -215574614
+      fire_step2_27: 1088988909
+      fire_step2_28: -528219628
+      fire_step2_29: -1993278072
+      fire_step2_3: 629694393
+      fire_step2_30: -165722524
+      fire_step2_31: 1630162159
+      fire_step2_32: 1206416389
+      fire_step2_33: 1018109682
+      fire_step2_34: 1641338611
+      fire_step2_35: -1123327379
+      fire_step2_36: -1677244796
+      fire_step2_37: 1014602925
+      fire_step2_38: -1458914433
+      fire_step2_39: 1479866473
+      fire_step2_4: -2037096318
+      fire_step2_40: -496194784
+      fire_step2_41: 781390049
+      fire_step2_5: -1613842443
+      fire_step2_6: 2108498680
+      fire_step2_7: -398143795
+      fire_step2_8: 1252955489
+      fire_step2_9: -1391131976
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
