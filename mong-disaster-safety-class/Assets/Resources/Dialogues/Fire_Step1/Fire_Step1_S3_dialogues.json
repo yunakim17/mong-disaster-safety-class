@@ -1,0 +1,32 @@
+[ 
+ {
+    "sequence": 4,
+    "speaker": "몽대장",
+    "dialogue_text": "이번엔 화재가 일어날 수 있는 위험한 상황들을 찾아보자!",
+    "voice_path": ""
+  },
+  {
+    "sequence": 5,
+    "speaker": "몽대장",
+    "dialogue_text": "불은 작은 불씨도 큰 불로 번지기 쉬워. 불장난을 하면 큰 불이 될 수 있어!",
+    "voice_path": ""
+  },
+  {
+    "sequence": 6,
+    "speaker": "몽대장",
+    "dialogue_text": "가스레인지 불을 켜놓고 자리를 비우면 불이 커질 수 있어. 위험하니까 항상 지켜봐야 해!",
+    "voice_path": ""
+  },
+  {
+    "sequence": 7,
+    "speaker": "몽대장",
+    "dialogue_text": "너무 많은 전선을 꽂으면 전기가 과열돼서 불이 날 수 있어. 전선은 적당히 꽂아야 해!",
+    "voice_path": ""
+  },
+  {
+    "sequence": 8,
+    "speaker": "몽대장",
+    "dialogue_text": "이런 상황에서는 불이 나지 않게 꼭 조심해야 해!",
+    "voice_path": ""
+  }
+]

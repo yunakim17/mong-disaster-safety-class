@@ -1,0 +1,20 @@
+[
+  {
+    "sequence": 0,
+    "speaker": "몽대장",
+    "dialogue_text": "안녕! 나는 몽대장! 나와 함께 화재에 대해 알아보자~",
+    "voice_path": ""
+  },
+  {
+    "sequence": 1,
+    "speaker": "몽대장",
+    "dialogue_text": "화재는 불을 잘못 사용해서 우리에게 피해를 입히는 재난을 말해!",
+    "voice_path": ""
+  },
+  {
+    "sequence": 2,
+    "speaker": "몽대장",
+    "dialogue_text": "불은 적절히 사용하면 우리에게 많은 도움을 주지만, 잘못 사용하면…",
+    "voice_path": ""
+  }
+]
