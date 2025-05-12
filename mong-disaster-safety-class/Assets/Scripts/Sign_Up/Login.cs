@@ -32,10 +32,15 @@ public class Login : MonoBehaviour
 
     // Warning Text
     public GameObject schoolWarning;
+    public TMP_Text schoolWarningText;
     public GameObject nicknameWarning;
     public TMP_Text nicknameWarningText;
 
     public SchoolType schoolTypeSelector;
+
+    private bool isNicknameValid = false;
+    private bool isNicknameAvailable = false;
+    private bool isSchoolValid = false;
 
     void Start()
     {
@@ -78,16 +83,6 @@ public class Login : MonoBehaviour
     {
         string nickname = nicknameInput.text.Trim();
 
-        if (string.IsNullOrEmpty(nickname))
-        {
-            nicknameWarning.SetActive(true);
-            nicknameWarningText.text = "닉네임을 입력해주세요!";
-            nicknameWarningText.color = Color.red;
-            startButton.interactable = false;
-            startButton.image.color = inactiveColor;
-            yield break;
-        }
-
         string url = "http://localhost:8000/user/check-nickname?nickname=" + UnityWebRequest.EscapeURL(nickname);
         UnityWebRequest request = UnityWebRequest.Get(url);
         yield return request.SendWebRequest();
@@ -102,16 +97,18 @@ public class Login : MonoBehaviour
             {
                 nicknameWarningText.text = "이미 사용 중인 닉네임입니다.";
                 nicknameWarningText.color = Color.red;
-                startButton.interactable = false;
-                startButton.image.color = inactiveColor;
+
+                isNicknameAvailable = false;
             }
             else
             {
                 nicknameWarningText.text = "사용 가능한 닉네임입니다!";
                 nicknameWarningText.color = Color.blue;
-                startButton.interactable = true;
-                startButton.image.color = activeColor;
+
+                isNicknameAvailable = true;
             }
+
+            UpdateStartButtonState();
         }
     }
 
@@ -179,6 +176,74 @@ public class Login : MonoBehaviour
         return name + type;
     }
 
+    // 닉네임 입력 값 검사
+    public void OnNicknameChanged()
+    {
+        isNicknameValid = true;
+
+        if (string.IsNullOrWhiteSpace(nicknameInput.text))
+        {
+            nicknameWarning.SetActive(true);
+            nicknameWarningText.text = "닉네임을 입력해주세요!";
+            nicknameWarningText.color = Color.red;
+            isNicknameValid = false;
+        }
+        else if (nicknameInput.text.Length > 10)
+        {
+            nicknameWarning.SetActive(true);
+            nicknameWarningText.text = "닉네임은 10글자까지 입력할 수 있어요!";
+            nicknameWarningText.color = Color.red;
+            isNicknameValid = false;
+        }
+        else
+        {
+            nicknameWarning.SetActive(false);
+        }
+
+        UpdateStartButtonState();
+    }
+
+    // 학교 이름 입력 값 검사
+    public void OnSchoolChanged()
+    {
+        isSchoolValid = true;
+
+        if (string.IsNullOrWhiteSpace(schoolInput.text))
+        {
+            schoolWarning.SetActive(true);
+            schoolWarningText.text = "학교 이름을 입력해주세요!";
+            schoolWarningText.color = Color.red;
+            isSchoolValid = false;
+        }
+        else if (schoolInput.text.Length > 20)
+        {
+            schoolWarning.SetActive(true);
+            schoolWarningText.text = "학교 이름은 20글자까지 입력할 수 있어요!";
+            schoolWarningText.color = Color.red;
+            isSchoolValid = false;
+        }
+        else
+        {
+            schoolWarning.SetActive(false);
+        }
+
+        UpdateStartButtonState();
+    }
+
+    // 시작 버튼 활성화
+    void UpdateStartButtonState()
+    {
+        if (isNicknameValid && isNicknameAvailable && isSchoolValid)
+        {
+            startButton.interactable = true;
+            startButton.image.color = activeColor;
+        }
+        else
+        {
+            startButton.interactable = false;
+            startButton.image.color = inactiveColor;
+        }
+    }
 
     [Serializable]
     public class RegisterData
