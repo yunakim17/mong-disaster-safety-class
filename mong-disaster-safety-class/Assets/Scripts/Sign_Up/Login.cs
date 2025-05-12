@@ -39,25 +39,9 @@ public class Login : MonoBehaviour
 
     void Start()
     {
-        // 테스트용: 저장된 uuid 삭제
-        PlayerPrefs.DeleteKey("uuid");
-
         // 시작 버튼 비활성화
         startButton.interactable = false;
         startButton.image.color = inactiveColor;
-
-        // UUID가 이미 있으면 자동 로그인 → 바로 메인으로 이동
-        if (PlayerPrefs.HasKey("uuid"))
-        {
-            Debug.Log("로그인 성공");
-            this.GetComponent<SceneChanger>().Main();
-            return;
-        }
-
-        // 없으면 새 UUID 생성
-        string uuid = Guid.NewGuid().ToString();
-        PlayerPrefs.SetString("uuid", uuid);
-        PlayerPrefs.Save();
     }
 
     // 중복 확인 버튼
@@ -104,7 +88,7 @@ public class Login : MonoBehaviour
             yield break;
         }
 
-        string url = "http://localhost:8000/check-nickname?nickname=" + UnityWebRequest.EscapeURL(nickname);
+        string url = "http://localhost:8000/user/check-nickname?nickname=" + UnityWebRequest.EscapeURL(nickname);
         UnityWebRequest request = UnityWebRequest.Get(url);
         yield return request.SendWebRequest();
 
@@ -134,7 +118,7 @@ public class Login : MonoBehaviour
     // 유저 등록(/register)
     IEnumerator RegisterUser()
     {
-        string uuid = PlayerPrefs.GetString("uuid");
+        string uuid = Guid.NewGuid().ToString();
         string schoolName = NormalizeSchoolName();
 
         // 서버에 보낼 데이터
@@ -147,7 +131,7 @@ public class Login : MonoBehaviour
         };
 
         string json = JsonUtility.ToJson(data);
-        string url = "http://localhost:8000/register"; // 추후 빌드 시 url 주소 바꿔주기
+        string url = "http://localhost:8000/user/register"; // 추후 빌드 시 url 주소 바꿔주기
         UnityWebRequest request = new UnityWebRequest(url, "POST");
         
         byte[] bodyRaw = System.Text.Encoding.UTF8.GetBytes(json);
@@ -160,22 +144,17 @@ public class Login : MonoBehaviour
         // 회원가입 성공 -> 메인 씬으로 전환
         if (request.result == UnityWebRequest.Result.Success)
         {
+            // uuid 저장
+            PlayerPrefs.SetString("uuid", uuid);
+            PlayerPrefs.Save();
+
             Debug.Log("회원가입 성공");
             this.GetComponent<SceneChanger>().Main();
         }
         // 회원가입 실패
         else
         {
-            // 닉네임 중복
-            if (request.responseCode == 409)
-            {
-                //nicknameWarning.SetActive(true);
-                Debug.LogWarning("이미 존재하는 닉네임입니다.");
-            }
-            else
-            {
-                Debug.LogError("회원가입 실패: " + request.downloadHandler.text);
-            }
+            Debug.LogError("회원가입 실패: " + request.downloadHandler.text);
         }    
     }
 
