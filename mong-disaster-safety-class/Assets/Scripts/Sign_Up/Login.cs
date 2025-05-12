@@ -215,10 +215,10 @@ public class Login : MonoBehaviour
             schoolWarningText.color = Color.red;
             isSchoolValid = false;
         }
-        else if (schoolInput.text.Length > 20)
+        else if (schoolInput.text.Length > 10)
         {
             schoolWarning.SetActive(true);
-            schoolWarningText.text = "학교 이름은 20글자까지 입력할 수 있어요!";
+            schoolWarningText.text = "학교 이름은 10글자까지 입력할 수 있어요!";
             schoolWarningText.color = Color.red;
             isSchoolValid = false;
         }
