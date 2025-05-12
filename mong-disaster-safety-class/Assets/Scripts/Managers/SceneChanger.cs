@@ -5,6 +5,11 @@ using UnityEngine.SceneManagement;
 
 public class SceneChanger : MonoBehaviour
 {
+    public void Sign_Up()
+    {
+        SceneManager.LoadScene("Sign_Up");
+    }
+
     public void Main()
     {
         SceneManager.LoadScene("Main");
