@@ -54,4 +54,9 @@ public class SceneChanger : MonoBehaviour
     {
         SceneManager.LoadScene("Eq_Step3_Quiz03");
     }
+
+    public void MyBadge()
+    {
+        SceneManager.LoadScene("MyBadge");
+    }
 }

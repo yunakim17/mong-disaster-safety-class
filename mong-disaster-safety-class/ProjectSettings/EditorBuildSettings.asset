@@ -101,4 +101,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Sign_Up.unity
     guid: de2034c5e3445d84e8d7ca58555e0c4d
+  - enabled: 1
+    path: Assets/Scenes/MyBadge.unity
+    guid: 3ca6060298d61e742a89664b0b67aa11
   m_configObjects: {}
