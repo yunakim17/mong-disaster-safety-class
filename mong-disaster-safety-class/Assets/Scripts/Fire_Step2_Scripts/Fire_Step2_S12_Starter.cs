@@ -19,10 +19,10 @@ public class Fire_Step2_S12_Starter : MonoBehaviour
         {
             int currentIdx = dialogueManager.GetCurrentLineIndex();
 
-            HowToUse_1?.SetActive(currentIdx == 0);
-            HowToUse_2?.SetActive(currentIdx == 1);
-            HowToUse_3?.SetActive(currentIdx == 2);
-            HowToUse_4?.SetActive(currentIdx == 3);
+            HowToUse_1?.SetActive(currentIdx == 1);
+            HowToUse_2?.SetActive(currentIdx == 2);
+            HowToUse_3?.SetActive(currentIdx == 3);
+            HowToUse_4?.SetActive(currentIdx == 4);
         }
     }
 }
