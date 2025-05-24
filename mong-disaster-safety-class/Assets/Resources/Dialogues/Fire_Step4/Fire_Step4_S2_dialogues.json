@@ -1,0 +1,38 @@
+[
+  {
+    "sequence": 1,
+    "speaker": "주인공",
+    "dialogue_text": "이상하다..우리집에 불이 난건 아닌데 대체 어디서 타는 냄새가 나는 거지?",
+    "voice_path": ""
+  },
+  {
+    "sequence": 2,
+    "speaker": "안내방송",
+    "dialogue_text": "안내방송 드리겠습니다. 지금 우리 아파트 9층에 화재가 발생했습니다.",
+    "voice_path": ""
+  },
+  {
+    "sequence": 3,
+    "speaker": "안내방송",
+    "dialogue_text": "화재가 발생한 세대는 현관문을 닫고 대피하시고 창문으로 연기가 들어오는 세대는 안전한 장소로 신속히 대피하여 주시기 바랍니다.",
+    "voice_path": ""
+  },
+  {
+    "sequence": 4,
+    "speaker": "안내방송",
+    "dialogue_text": "대피 시에 엘리베이터는 절대 이용하지 않습니다. 연기가 들어오지 않는 세대는 창문을 닫고 세대 내에서 잠시 대기하며 안내 방송에 따라 주시기 바랍니다.",
+    "voice_path": ""
+  },
+  {
+    "sequence": 5,
+    "speaker": "주인공",
+    "dialogue_text": "어떡하지? 아파트 다른 층에서 불이 나서 우리 집 창문으로 연기가 들어오고 있어!",
+    "voice_path": ""
+  },
+  {
+    "sequence": 6,
+    "speaker": "몽대장",
+    "dialogue_text": "",
+    "voice_path": ""
+  }
+]

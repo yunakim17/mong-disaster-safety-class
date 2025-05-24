@@ -240,4 +240,9 @@ public class DialogueManager : MonoBehaviour
     {
         currentLineIndex = index;
     }
+
+    public int GetCurrentLineIndex()
+    {
+        return currentLineIndex;
+    }
 }

@@ -1,0 +1,38 @@
+[
+  {
+    "sequence": 0,
+    "speaker": "주인공",
+    "dialogue_text": "점심시간 30분 남았다! 오늘 메뉴 뭐야?",
+    "voice_path": ""
+  },
+  {
+    "sequence": 1,
+    "speaker": "친구",
+    "dialogue_text": "오늘 마라탕이래!",
+    "voice_path": ""
+  },
+  {
+    "sequence": 2,
+    "speaker": "안내방송",
+    "dialogue_text": "학생들에게 알립니다. 현재 1층 급식실에서 화재가 발생했습니다. 선생님의 안내에 따라 침착하게 운동장으로 대피하여 주시기 바랍니다.",
+    "voice_path": ""
+  },
+  {
+    "sequence": 3,
+    "speaker": "주인공",
+    "dialogue_text": "응? 이게 무슨 일이지? 학교에서 불이 났나봐!",
+    "voice_path": ""
+  },
+  {
+    "sequence": 4,
+    "speaker": "선생님",
+    "dialogue_text": "얘들아! 급식실에서 불이 났고 복도에 연기가 퍼지고 있어! 일단 침착하고 다들 반소매를 입어서 옷소매로는 연기로부터 입과 코를 보호할 수 없으니 수건 등의 천을 찾아서 어서 입과 코를 막아!",
+    "voice_path": ""
+  },
+  {
+    "sequence": 5,
+    "speaker": "몽대장",
+    "dialogue_text": "이 중에서 입과 코를 막을만한 천이 들어있는 사물함을 찾아야해! 사물함 문을 터치해서 안을 확인해봐!",
+    "voice_path": ""
+  }
+]
