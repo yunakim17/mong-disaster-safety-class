@@ -10,7 +10,7 @@ public class Fire_Step2_S12_Starter : MonoBehaviour
         dialogueManager.StartDialogue(
             "Dialogues/Fire_Step2/Fire_Step2_S12_dialogues",
             "",
-            "DIalogues/Fire_Step2/Fire_Step2_S13");
+            "Fire_Step2_S13");
     }
 
     void Update()
