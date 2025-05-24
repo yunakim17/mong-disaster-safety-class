@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Fire_Step4_S1_Starter : MonoBehaviour
+public class Fire_Step4_S3_Starter : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
