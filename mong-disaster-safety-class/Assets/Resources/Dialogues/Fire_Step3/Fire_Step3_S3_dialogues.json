@@ -1,0 +1,20 @@
+[
+  {
+    "sequence": 5,
+    "speaker": "선생님",
+    "dialogue_text": "얘들아! 모두 입과 코를 잘 막고 몸을 숙여! 그리고 두줄로 서서 운동장으로 나가자!",
+    "voice_path": ""
+  },
+  {
+    "sequence": 6,
+    "speaker": "주인공",
+    "dialogue_text": "연기가 매워서 빨리 나가고싶어..",
+    "voice_path": ""
+  },
+  {
+    "sequence": 7,
+    "speaker": "몽대장",
+    "dialogue_text": "",
+    "voice_path": ""
+  }
+]
