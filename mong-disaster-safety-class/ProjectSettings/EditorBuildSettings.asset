@@ -6,6 +6,15 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Start.unity
+    guid: d7904cdd8472bcd4c8fb8b94f192a971
+  - enabled: 1
+    path: Assets/Scenes/Sign_Up.unity
+    guid: de2034c5e3445d84e8d7ca58555e0c4d
+  - enabled: 1
+    path: Assets/Scenes/MyBadge.unity
+    guid: 3ca6060298d61e742a89664b0b67aa11
+  - enabled: 1
     path: Assets/Scenes/Main.unity
     guid: f810caeb6918dfe488c11bdb45c89e9a
   - enabled: 1
@@ -123,15 +132,6 @@ EditorBuildSettings:
     path: Assets/Scenes/FireScenes/Fire_Step1/Fire_Step1_S5.unity
     guid: 8d6045426b9b64443aa235d5205186e5
   - enabled: 1
-    path: Assets/Scenes/Start.unity
-    guid: d7904cdd8472bcd4c8fb8b94f192a971
-  - enabled: 1
-    path: Assets/Scenes/Sign_Up.unity
-    guid: de2034c5e3445d84e8d7ca58555e0c4d
-  - enabled: 1
-    path: Assets/Scenes/MyBadge.unity
-    guid: 3ca6060298d61e742a89664b0b67aa11
-  - enabled: 1
     path: Assets/Scenes/FireScenes/Fire_Step2/Fire_Step2_Badge.unity
     guid: 2dd2ef4817eda2c4e997365cfe68c475
   - enabled: 1
@@ -173,4 +173,55 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/FireScenes/Fire_Step2/Fire_Step2_S13.unity
     guid: e7d899bc5de1bee43915f876693ffd01
+  - enabled: 1
+    path: Assets/Scenes/FireScenes/Fire_Step3/Fire_Step3_Badge.unity
+    guid: fadb64efaab671d4795cce419309420f
+  - enabled: 1
+    path: Assets/Scenes/FireScenes/Fire_Step3/Fire_Step3_S1.unity
+    guid: c95318781ff8c6b4ebb52badc15119b2
+  - enabled: 1
+    path: Assets/Scenes/FireScenes/Fire_Step3/Fire_Step3_S2.unity
+    guid: 1a0bd94289e8c5c41a10c1721ee71721
+  - enabled: 1
+    path: Assets/Scenes/FireScenes/Fire_Step3/Fire_Step3_S3.unity
+    guid: 66fa30c957594494780857b17095e9a2
+  - enabled: 1
+    path: Assets/Scenes/FireScenes/Fire_Step3/Fire_Step3_S4.unity
+    guid: 454a1a16068d3ed4b8c1e1c5f4ce66d6
+  - enabled: 1
+    path: Assets/Scenes/FireScenes/Fire_Step3/Fire_Step3_S5.unity
+    guid: 451233f8edb7f14469ec117560e15232
+  - enabled: 1
+    path: Assets/Scenes/FireScenes/Fire_Step3/Fire_Step3_S6.unity
+    guid: b64b5615a38d4c545badf0978bef3269
+  - enabled: 1
+    path: Assets/Scenes/FireScenes/Fire_Step3/Fire_Step3_S7.unity
+    guid: 514583cff1b86e544a5f055fd624e235
+  - enabled: 1
+    path: Assets/Scenes/FireScenes/Fire_Step4/Fire_Step4_Badge.unity
+    guid: 2eec30fc246570b43932b31015577491
+  - enabled: 1
+    path: Assets/Scenes/FireScenes/Fire_Step4/Fire_Step4_S1.unity
+    guid: d08d2672ab303db4e831c11dbd1d3e77
+  - enabled: 1
+    path: Assets/Scenes/FireScenes/Fire_Step4/Fire_Step4_S2.unity
+    guid: 876a3571d8322634e95eef066c599b37
+  - enabled: 1
+    path: Assets/Scenes/FireScenes/Fire_Step4/Fire_Step4_S3.unity
+    guid: 64b9ce4796c292348897953f45966a92
+  - enabled: 1
+    path: Assets/Scenes/FireScenes/Fire_Step4/Fire_Step4_S4.unity
+    guid: f13964240ac017a4d87dd8f67488812b
+  - enabled: 1
+    path: Assets/Scenes/FireScenes/Fire_Step4/Fire_Step4_S5.unity
+    guid: d6ab82976130f734db513862b3eff39b
+  - enabled: 1
+    path: Assets/Scenes/FireScenes/Fire_Step4/Fire_Step4_S6.unity
+    guid: f1050b60ea3ac1e40a56be10d9491bf1
+  - enabled: 1
+    path: Assets/Scenes/FireScenes/Fire_Step4/Fire_Step4_S7.unity
+    guid: b20b16996c6feb84e9dc07475b0b83e3
+  - enabled: 1
+    path: Assets/Scenes/FireScenes/Fire_Step4/Fire_Step4_S8.unity
+    guid: f657bd23bd713364fb04bcc989be4519
   m_configObjects: {}
