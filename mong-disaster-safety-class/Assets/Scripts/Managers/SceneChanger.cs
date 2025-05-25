@@ -40,6 +40,21 @@ public class SceneChanger : MonoBehaviour
         SceneManager.LoadScene("Eq_Step4_S1");
     }
 
+    public void Eq_Step4_S2()
+    {
+        SceneManager.LoadScene("Eq_Step4_S2");
+    }
+
+    public void Eq_Step4_S3()
+    {
+        SceneManager.LoadScene("Eq_Step4_S3");
+    }
+
+    public void Eq_Step4_S4()
+    {
+        SceneManager.LoadScene("Eq_Step4_S4");
+    }
+
     public void Eq_Step3_Quiz01()
     {
         SceneManager.LoadScene("Eq_Step3_Quiz01");
@@ -58,5 +73,30 @@ public class SceneChanger : MonoBehaviour
     public void MyBadge()
     {
         SceneManager.LoadScene("MyBadge");
+    }
+
+    public void Fire_Main()
+    {
+        SceneManager.LoadScene("Fire_Main");
+    }
+
+    public void Fire_Step1_S1()
+    {
+        SceneManager.LoadScene("Fire_Step1_S1");
+    }
+
+    public void Fire_Step2_S1()
+    {
+        SceneManager.LoadScene("Fire_Step2_S1");
+    }
+
+    public void Fire_Step3_S1()
+    {
+        SceneManager.LoadScene("Fire_Step3_S1");
+    }
+
+    public void Fire_Step4_S1()
+    {
+        SceneManager.LoadScene("Fire_Step4_S1");
     }
 }

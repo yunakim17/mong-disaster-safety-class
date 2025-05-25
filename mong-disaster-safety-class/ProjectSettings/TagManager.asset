@@ -4,9 +4,6 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - falseObj
-  - towel
-  - faucet
   layers:
   - Default
   - TransparentFX
