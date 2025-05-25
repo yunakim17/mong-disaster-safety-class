@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement; 
 
 public class Scene4story : MonoBehaviour
 {
@@ -13,23 +14,21 @@ public class Scene4story : MonoBehaviour
     public GameObject puzzleSlots;
 
     public GameObject backgroundOverlay;
-    public GameObject puzzleCompleteText;
 
     private bool puzzleFinished = false;
 
     void Start()
     {
-        nextButton.SetActive(true); 
-        miniGame2.SetActive(false);
-        miniGame22.SetActive(false);
+        nextButton.SetActive(false);
+        miniGame2.SetActive(true);
+        miniGame22.SetActive(true);
 
         puzzleImageSplitter.SetActive(false);
         puzzleManager.SetActive(false);
         puzzlePiece.SetActive(false);
         puzzleSlots.SetActive(false);
 
-        backgroundOverlay.SetActive(false);
-        puzzleCompleteText.SetActive(false);
+        backgroundOverlay.SetActive(true);
 
         if (nextButton != null)
         {
@@ -45,22 +44,9 @@ public class Scene4story : MonoBehaviour
     {
         Debug.Log("Next ¹öÆ° Å¬¸¯µÊ");
 
-        if (!puzzleImageSplitter.activeSelf && !puzzleFinished)
+        if (puzzleFinished)
         {
-            nextButton.SetActive(false);
-            miniGame2.SetActive(true);
-            miniGame22.SetActive(true);
-            backgroundOverlay.SetActive(true);
-        }
-        else if (puzzleFinished)
-        {
-            nextButton.SetActive(false);
-            puzzleCompleteText.SetActive(true);
-            backgroundOverlay.SetActive(false);
-            puzzleImageSplitter.SetActive(false);
-            puzzleManager.SetActive(false);
-            puzzlePiece.SetActive(false);
-            puzzleSlots.SetActive(false);
+            SceneManager.LoadScene("Eq_Step4_S4-B");
         }
     }
 

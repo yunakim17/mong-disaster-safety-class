@@ -6,7 +6,7 @@ public class CameraShake : MonoBehaviour
     public static CameraShake Instance;
 
     [Header("Shake Settings")]
-    public float magnitude = 0.2f; // 카메라라서 너무 작게
+    public float magnitude = 0.2f; 
     public float interval = 0.03f;
 
     private Vector3 originalPosition;

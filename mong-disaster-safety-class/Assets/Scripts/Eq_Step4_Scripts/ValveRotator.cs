@@ -1,10 +1,10 @@
 using UnityEngine;
+using UnityEngine.SceneManagement; 
 
 public class ValveRotator : MonoBehaviour
 {
     public Transform target;
     public float rotationSpeed = 90f;
-    public SceneChanger sceneChanger;
 
     private bool rotatingLeft = false;
     private bool returningLeft = false;
@@ -32,7 +32,8 @@ public class ValveRotator : MonoBehaviour
             float step = rotationSpeed * Time.deltaTime;
             float newZ = Mathf.MoveTowardsAngle(GetZAngle(), 0f, step);
             target.localEulerAngles = new Vector3(0, 0, newZ);
-            if (Mathf.Approximately(newZ, 0f)) returningLeft = false;
+            if (Mathf.Approximately(newZ, 0f))
+                returningLeft = false;
         }
         else if (rotatingRight)
         {
@@ -48,10 +49,7 @@ public class ValveRotator : MonoBehaviour
                     valveCompleted = true;
                     Debug.Log("¹ëºê ¼º°ø ¡æ ´ÙÀ½ ¾ÀÀ¸·Î");
 
-                    if (sceneChanger != null)
-                    {
-                        sceneChanger.Eq_Step4_S3(); 
-                    }
+                    SceneManager.LoadScene("Eq_Step4_S2-3");
                 }
             }
         }
