@@ -1,0 +1,14 @@
+[
+  {
+     "sequence": 4,
+     "speaker": "주인공",
+     "dialogue_text": "흔들림이 멈췄어! 또 지진이 일어나기 전에 빨리 나가야겠어.",
+     "voice_path": ""
+   },
+  {
+     "sequence": 5,
+     "speaker": "주인공",
+     "dialogue_text": "가스가 새서 혹시 불이 나면 큰일이니까 어서 가스 밸브를 잠그자!",
+     "voice_path": ""
+   }
+]
