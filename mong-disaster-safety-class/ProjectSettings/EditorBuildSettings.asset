@@ -90,14 +90,29 @@ EditorBuildSettings:
     path: Assets/Scenes/EqScenes/Eq_Step4/Eq_Step4_S1.unity
     guid: a6f4383e8e0fd0247add453e6f7c13c8
   - enabled: 1
+    path: Assets/Scenes/EqScenes/Eq_Step4/Eq_Step4_S1-2.unity
+    guid: 3046c5b3634a04f4ab83c115601e0b9f
+  - enabled: 1
     path: Assets/Scenes/EqScenes/Eq_Step4/Eq_Step4_S2.unity
     guid: c918148354ba2644dafe2f52bba0b7c9
+  - enabled: 1
+    path: Assets/Scenes/EqScenes/Eq_Step4/Eq_Step4_S2-3.unity
+    guid: c867ee6bcb996f74c9de51780df70b02
   - enabled: 1
     path: Assets/Scenes/EqScenes/Eq_Step4/Eq_Step4_S3.unity
     guid: 611d872816afa3d4ea5e4f39e9c19b76
   - enabled: 1
+    path: Assets/Scenes/EqScenes/Eq_Step4/Eq_Step4_S3-4.unity
+    guid: 2ab41b79ac7ef324a84b48380de118aa
+  - enabled: 1
     path: Assets/Scenes/EqScenes/Eq_Step4/Eq_Step4_S4.unity
     guid: 584890ab7a114e8419b8689344a2a4fa
+  - enabled: 1
+    path: Assets/Scenes/EqScenes/Eq_Step4/Eq_Step4_S4-B.unity
+    guid: f33e4c3b338272c4d8e0250e1886a517
+  - enabled: 1
+    path: Assets/Scenes/EqScenes/Eq_Step4/Eq_Step4_Badge.unity
+    guid: fee72ec1f1a85284e82ab2a0ad43e89c
   - enabled: 1
     path: Assets/Scenes/FireScenes/Fire_Main.unity
     guid: 9b50ad739db99094cb205e7d6abbbe2d
