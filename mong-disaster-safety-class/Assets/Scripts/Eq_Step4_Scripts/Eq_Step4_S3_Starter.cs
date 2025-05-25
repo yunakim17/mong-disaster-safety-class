@@ -9,7 +9,7 @@ public class Eq_Step4_S3_Starter : MonoBehaviour
         dialogueManager.StartDialogue(
             "Dialogues/Eq_Step4/Eq_Step4_S3_dialogues",
             "Dialogues/Eq_Step4/Eq_Step4_S3_choices",
-            "Eq_Step4_S4"
+            "Eq_Step4_S3-4"
         );
     }
 }
