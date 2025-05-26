@@ -8,28 +8,22 @@ public class HiddenGameManager : MonoBehaviour
     public GameObject correctPanel;
     public GameObject clearPanel;
 
-
     public GameObject faucet;
     public GameObject towel;
     public GameObject water;
 
     public Sprite towelImg2;
     public Sprite faucetImg2;
-    
-
 
     public Vector3 towelPos;
     private bool foundTowel;
   
-
-
     void Start()
     {
         //SpriteRenderer srFaucet = faucet.GetComponent<SpriteRenderer>();
         //SpriteRenderer srTowel = towel.GetComponent<SpriteRenderer>();
 
         foundTowel = false;
-   
 
         falsePanel.SetActive(false);
         correctPanel.SetActive(false);
@@ -57,14 +51,12 @@ public class HiddenGameManager : MonoBehaviour
                     hit.collider.gameObject.transform.localScale = new Vector2(hit.collider.transform.localScale.x * 2,
                         hit.collider.transform.localScale.y * 2);
 
-                    //수건 찾았다 패널
+                    //수건 찾았다 패널 보이기
                     Invoke("ShowCorrectPanel", 1f);
                     foundTowel = true; //1. 수건 찾음
 
-                   
-                    
                 }
-                else if (tag == "falseObj")
+                else if (tag == "falseObj" && !foundTowel)
                 {
                     falsePanel.SetActive(true);
                     Invoke("HideFalsePanel", 2.5f);
@@ -86,15 +78,12 @@ public class HiddenGameManager : MonoBehaviour
 
 
                     //미니게임 성공 패널 보이기 
-                    Invoke("ShowClearPanel", 1f);
+                    Invoke("ShowClearPanel", 2f);
 
                     //타이머 바 멈추기
                     Fire4_TimeBar.Instance.isRunning = false;
                     
                     correctPanel.SetActive(false);
-
-
-
 
 
                 }

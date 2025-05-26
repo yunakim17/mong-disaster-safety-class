@@ -44,8 +44,6 @@ public class Fire4_TimeBar : MonoBehaviour
         isRunning = true;
     }
 
-
-
     void Update()
     {
         if (isRunning) { 
