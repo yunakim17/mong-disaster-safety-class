@@ -1,19 +1,18 @@
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.SceneManagement; 
+using UnityEngine.SceneManagement;
 
 public class Scene4story : MonoBehaviour
 {
     public GameObject nextButton;
     public GameObject miniGame2;
     public GameObject miniGame22;
-
     public GameObject puzzleImageSplitter;
     public GameObject puzzleManager;
     public GameObject puzzlePiece;
     public GameObject puzzleSlots;
-
     public GameObject backgroundOverlay;
+    public GameObject puzzleCompleteText;
 
     private bool puzzleFinished = false;
 
@@ -29,6 +28,9 @@ public class Scene4story : MonoBehaviour
         puzzleSlots.SetActive(false);
 
         backgroundOverlay.SetActive(true);
+
+        if (puzzleCompleteText != null)
+            puzzleCompleteText.SetActive(false);
 
         if (nextButton != null)
         {
@@ -65,11 +67,14 @@ public class Scene4story : MonoBehaviour
 
     public void OnPuzzleComplete()
     {
-        Debug.Log("퍼즐 완료 후 Next 버튼만 표시");
+        Debug.Log("퍼즐 완료 후 Next 버튼과 완료 텍스트 표시");
 
         puzzleFinished = true;
 
         if (nextButton != null)
             nextButton.SetActive(true);
+
+        if (puzzleCompleteText != null)
+            puzzleCompleteText.SetActive(true);
     }
 }
