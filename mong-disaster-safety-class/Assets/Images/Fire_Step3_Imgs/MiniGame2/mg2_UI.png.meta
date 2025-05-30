@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 7c3c0231679a81842b6cccc63dc8320b
+guid: d0717287fcf2861468c21c35ca953a0b
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -106,207 +106,173 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: iPhone
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Eq4_miniGame_0
+      name: mg2_UI_0
       rect:
         serializedVersion: 2
-        x: 26
-        y: 28
-        width: 341
-        height: 1088
+        x: 43
+        y: 807
+        width: 168
+        height: 168
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 00a3d698cd3b87c48865cb000d062ab1
-      internalID: 726303364
+      spriteID: ae7ca0f292309dc4a8556fe12bbde317
+      internalID: 1163591603
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Eq4_miniGame_1
+      name: mg2_UI_1
       rect:
         serializedVersion: 2
-        x: 486
-        y: 727
-        width: 325
-        height: 369
+        x: 294
+        y: 795
+        width: 168
+        height: 168
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7e52a06439f0f5149a23485914e41a45
-      internalID: 201455468
+      spriteID: 599ba6aa62153bf42b1578bd9cae51aa
+      internalID: 666894316
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Eq4_miniGame_2
+      name: mg2_UI_2
       rect:
         serializedVersion: 2
-        x: 921
-        y: 803
-        width: 442
-        height: 160
+        x: 612
+        y: 775
+        width: 102
+        height: 126
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7cee4fd06388f31409864a167ace0aa8
-      internalID: -1754568158
+      spriteID: b8983109ffd0b934a80791aacf3dd531
+      internalID: -795277298
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Eq4_miniGame_3
+      name: mg2_UI_3
       rect:
         serializedVersion: 2
-        x: 1428
-        y: 496
-        width: 867
-        height: 444
+        x: 15
+        y: 579
+        width: 168
+        height: 168
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 42e4ba45b39a81f44aa64404c6a9e06f
-      internalID: -2060878665
+      spriteID: dda605ca30e13e34f860e6fc8ba3007e
+      internalID: -7714079
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Eq4_miniGame_22
+      name: mg2_UI_4
       rect:
         serializedVersion: 2
-        x: 2406
-        y: 395
-        width: 1204
-        height: 552
+        x: 301
+        y: 579
+        width: 168
+        height: 168
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bc59064be293cb64281f498fd468f2fa
-      internalID: 2017956206
+      spriteID: 0be0696711578cb4fb211545730170c8
+      internalID: -1703707619
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Eq4_miniGame_30
+      name: mg2_UI_5
       rect:
         serializedVersion: 2
-        x: 399
-        y: 445
-        width: 490
-        height: 162
+        x: 579
+        y: 474
+        width: 168
+        height: 168
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5c510b2a6d15bb547bbe3cf9c123f0d2
-      internalID: -1243275600
+      spriteID: 88d762df1838b534a92953751563df9f
+      internalID: -1779276590
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Eq4_miniGame_31
+      name: mg2_UI_9
       rect:
         serializedVersion: 2
-        x: 941
-        y: 432
-        width: 488
-        height: 160
+        x: 406
+        y: 34
+        width: 333
+        height: 315
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 56b5e500be925284c9f8addfc7d4dc6f
-      internalID: 146671034
+      spriteID: cf3bf73449c15344292a5a0fb756e8b8
+      internalID: 744706201
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Eq4_miniGame_38
+      name: mg2_UI_13
       rect:
         serializedVersion: 2
-        x: 531
-        y: 75
-        width: 296
-        height: 293
+        x: 69
+        y: 38
+        width: 285
+        height: 438
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d04f05e4f3ce0e642ac57490defa38f4
-      internalID: -1694008735
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Eq4_miniGame_39
-      rect:
-        serializedVersion: 2
-        x: 1038
-        y: 84
-        width: 296
-        height: 293
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ce99366f59755944e80f7e9d9ff04d3b
-      internalID: -419976218
+      spriteID: a6227f4285c87af4cbd9238a05fcbc14
+      internalID: -1807240794
       vertices: []
       indices: 
       edges: []
@@ -322,46 +288,20 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Eq4_miniGame_0: 726303364
-      Eq4_miniGame_1: 201455468
-      Eq4_miniGame_10: -869569793
-      Eq4_miniGame_11: 1902112748
-      Eq4_miniGame_12: 1641526095
-      Eq4_miniGame_13: -1783676672
-      Eq4_miniGame_14: 1826472882
-      Eq4_miniGame_15: 639912676
-      Eq4_miniGame_16: -132345139
-      Eq4_miniGame_17: 1303666870
-      Eq4_miniGame_18: -1559652378
-      Eq4_miniGame_19: 1757670344
-      Eq4_miniGame_2: -1754568158
-      Eq4_miniGame_20: 476824241
-      Eq4_miniGame_21: 839893052
-      Eq4_miniGame_22: 2017956206
-      Eq4_miniGame_23: 243488829
-      Eq4_miniGame_24: 1056119603
-      Eq4_miniGame_25: 603461492
-      Eq4_miniGame_26: -123867480
-      Eq4_miniGame_27: -255886779
-      Eq4_miniGame_28: -552257633
-      Eq4_miniGame_29: -124459221
-      Eq4_miniGame_3: -2060878665
-      Eq4_miniGame_30: -1243275600
-      Eq4_miniGame_31: 146671034
-      Eq4_miniGame_32: -884746991
-      Eq4_miniGame_33: -1127027164
-      Eq4_miniGame_34: 1163724930
-      Eq4_miniGame_35: -334716020
-      Eq4_miniGame_36: 1677141475
-      Eq4_miniGame_37: 358640224
-      Eq4_miniGame_38: -1694008735
-      Eq4_miniGame_39: -419976218
-      Eq4_miniGame_4: 377913954
-      Eq4_miniGame_5: 2047047393
-      Eq4_miniGame_6: 1696910599
-      Eq4_miniGame_7: -907796917
-      Eq4_miniGame_8: -359704225
-      Eq4_miniGame_9: 1350264856
+      mg2_UI_0: 1163591603
+      mg2_UI_1: 666894316
+      mg2_UI_10: 682217434
+      mg2_UI_11: -432777762
+      mg2_UI_12: -1890548838
+      mg2_UI_13: -1807240794
+      mg2_UI_2: -795277298
+      mg2_UI_3: -7714079
+      mg2_UI_4: -1703707619
+      mg2_UI_5: -1779276590
+      mg2_UI_6: 1080415307
+      mg2_UI_7: 1310633180
+      mg2_UI_8: -1401109167
+      mg2_UI_9: 744706201
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
