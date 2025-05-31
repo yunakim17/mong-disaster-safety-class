@@ -6,6 +6,15 @@ using UnityEngine.Networking;
 using TMPro;
 using System;
 
+[Serializable]
+public class RegisterData
+{
+    public string user_id;
+    public string school_name;
+    public int age;
+    public string nickname;
+}
+
 public class Login : MonoBehaviour
 {
     // InputField
@@ -44,23 +53,23 @@ public class Login : MonoBehaviour
 
     void Start()
     {
-        // ½ÃÀÛ ¹öÆ° ºñÈ°¼ºÈ­
+        // ì‹œì‘ ë²„íŠ¼ ë¹„í™œì„±í™”
         startButton.interactable = false;
         startButton.image.color = inactiveColor;
     }
 
-    // Áßº¹ È®ÀÎ ¹öÆ°
+    // ì¤‘ë³µ í™•ì¸ ë²„íŠ¼
     public void OnClickCheckButton()
     {
         StartCoroutine(CheckNickname());
     }
 
-    // °ÔÀÓ ½ÃÀÛ ¹öÆ°
+    // ê²Œì„ ì‹œì‘ ë²„íŠ¼
     public void OnClickStartButton()
     {
         bool isValid = true;
 
-        // ÇĞ±³ ÀÔ·Â È®ÀÎ
+        // í•™êµ ì…ë ¥ í™•ì¸
         if (string.IsNullOrWhiteSpace(schoolInput.text))
         {
             schoolWarning.SetActive(true);
@@ -71,14 +80,14 @@ public class Login : MonoBehaviour
             schoolWarning.SetActive(false);
         }
 
-        // ¼­¹ö·Î È¸¿ø°¡ÀÔ ¿äÃ»
+        // ì„œë²„ë¡œ íšŒì›ê°€ì… ìš”ì²­
         if (isValid)
         {
             StartCoroutine(RegisterUser());
         }
     }
 
-    // ´Ğ³×ÀÓ Áßº¹ °Ë»ç(/check-nickname)
+    // ë‹‰ë„¤ì„ ì¤‘ë³µ ê²€ì‚¬(/check-nickname)
     IEnumerator CheckNickname()
     {
         string nickname = nicknameInput.text.Trim();
@@ -95,14 +104,14 @@ public class Login : MonoBehaviour
 
             if (exists)
             {
-                nicknameWarningText.text = "ÀÌ¹Ì »ç¿ë ÁßÀÎ ´Ğ³×ÀÓÀÔ´Ï´Ù.";
+                nicknameWarningText.text = "ì´ë¯¸ ì‚¬ìš© ì¤‘ì¸ ë‹‰ë„¤ì„ì…ë‹ˆë‹¤.";
                 nicknameWarningText.color = Color.red;
 
                 isNicknameAvailable = false;
             }
             else
             {
-                nicknameWarningText.text = "»ç¿ë °¡´ÉÇÑ ´Ğ³×ÀÓÀÔ´Ï´Ù!";
+                nicknameWarningText.text = "ì‚¬ìš© ê°€ëŠ¥í•œ ë‹‰ë„¤ì„ì…ë‹ˆë‹¤!";
                 nicknameWarningText.color = Color.blue;
 
                 isNicknameAvailable = true;
@@ -112,13 +121,13 @@ public class Login : MonoBehaviour
         }
     }
 
-    // À¯Àú µî·Ï(/register)
+    // ìœ ì € ë“±ë¡(/register)
     IEnumerator RegisterUser()
     {
         string uuid = Guid.NewGuid().ToString();
         string schoolName = NormalizeSchoolName();
 
-        // ¼­¹ö¿¡ º¸³¾ µ¥ÀÌÅÍ
+        // ì„œë²„ì— ë³´ë‚¼ ë°ì´í„°
         var data = new RegisterData
         {
             user_id = uuid,
@@ -128,7 +137,7 @@ public class Login : MonoBehaviour
         };
 
         string json = JsonUtility.ToJson(data);
-        string url = "http://localhost:8000/user/register"; // ÃßÈÄ ºôµå ½Ã url ÁÖ¼Ò ¹Ù²ãÁÖ±â
+        string url = "http://localhost:8000/user/register"; // ì¶”í›„ ë¹Œë“œ ì‹œ url ì£¼ì†Œ ë°”ê¿”ì£¼ê¸°
         UnityWebRequest request = new UnityWebRequest(url, "POST");
         
         byte[] bodyRaw = System.Text.Encoding.UTF8.GetBytes(json);
@@ -138,45 +147,49 @@ public class Login : MonoBehaviour
 
         yield return request.SendWebRequest();
 
-        // È¸¿ø°¡ÀÔ ¼º°ø -> ¸ŞÀÎ ¾ÀÀ¸·Î ÀüÈ¯
+        // íšŒì›ê°€ì… ì„±ê³µ -> ë©”ì¸ ì”¬ìœ¼ë¡œ ì „í™˜
         if (request.result == UnityWebRequest.Result.Success)
         {
-            // uuid ÀúÀå
+            // uuid ì €ì¥
             PlayerPrefs.SetString("uuid", uuid);
             PlayerPrefs.Save();
 
-            Debug.Log("È¸¿ø°¡ÀÔ ¼º°ø");
+            Debug.Log("íšŒì›ê°€ì… ì„±ê³µ");
+
+            // ì´ˆê¸° ë­í‚¹ ë“±ë¡
+            yield return StartCoroutine(RegisterRanking(uuid));
+
             this.GetComponent<SceneChanger>().Main();
         }
-        // È¸¿ø°¡ÀÔ ½ÇÆĞ
+        // íšŒì›ê°€ì… ì‹¤íŒ¨
         else
         {
-            Debug.LogError("È¸¿ø°¡ÀÔ ½ÇÆĞ: " + request.downloadHandler.text);
+            Debug.LogError("íšŒì›ê°€ì… ì‹¤íŒ¨: " + request.downloadHandler.text);
         }    
     }
 
-    // ÇĞ±³ ÀÌ¸§ ÇÊÅÍ¸µ
+    // í•™êµ ì´ë¦„ í•„í„°ë§
     string NormalizeSchoolName()
     {
         string name = schoolInput.text.Trim();
         string type = schoolTypeSelector.GetSelectedSchoolType();
 
-        if (type == "ÃÊµîÇĞ±³")
+        if (type == "ì´ˆë“±í•™êµ")
         {
-            name = name.Replace("ÃÊµîÇĞ±³", "");
-            return name + "ÃÊµîÇĞ±³";
+            name = name.Replace("ì´ˆë“±í•™êµ", "");
+            return name + "ì´ˆë“±í•™êµ";
         }
 
-        if (type == "À¯Ä¡¿ø")
+        if (type == "ìœ ì¹˜ì›")
         {
-            name = name.Replace("À¯Ä¡¿ø", "");
-            return name + "À¯Ä¡¿ø";
+            name = name.Replace("ìœ ì¹˜ì›", "");
+            return name + "ìœ ì¹˜ì›";
         }
 
         return name + type;
     }
 
-    // ´Ğ³×ÀÓ ÀÔ·Â °ª °Ë»ç
+    // ë‹‰ë„¤ì„ ì…ë ¥ ê°’ ê²€ì‚¬
     public void OnNicknameChanged()
     {
         isNicknameValid = true;
@@ -184,14 +197,14 @@ public class Login : MonoBehaviour
         if (string.IsNullOrWhiteSpace(nicknameInput.text))
         {
             nicknameWarning.SetActive(true);
-            nicknameWarningText.text = "´Ğ³×ÀÓÀ» ÀÔ·ÂÇØÁÖ¼¼¿ä!";
+            nicknameWarningText.text = "ë‹‰ë„¤ì„ì„ ì…ë ¥í•´ì£¼ì„¸ìš”!";
             nicknameWarningText.color = Color.red;
             isNicknameValid = false;
         }
         else if (nicknameInput.text.Length > 10)
         {
             nicknameWarning.SetActive(true);
-            nicknameWarningText.text = "´Ğ³×ÀÓÀº 10±ÛÀÚ±îÁö ÀÔ·ÂÇÒ ¼ö ÀÖ¾î¿ä!";
+            nicknameWarningText.text = "ë‹‰ë„¤ì„ì€ 10ê¸€ìê¹Œì§€ ì…ë ¥í•  ìˆ˜ ìˆì–´ìš”!";
             nicknameWarningText.color = Color.red;
             isNicknameValid = false;
         }
@@ -203,7 +216,7 @@ public class Login : MonoBehaviour
         UpdateStartButtonState();
     }
 
-    // ÇĞ±³ ÀÌ¸§ ÀÔ·Â °ª °Ë»ç
+    // í•™êµ ì´ë¦„ ì…ë ¥ ê°’ ê²€ì‚¬
     public void OnSchoolChanged()
     {
         isSchoolValid = true;
@@ -211,14 +224,14 @@ public class Login : MonoBehaviour
         if (string.IsNullOrWhiteSpace(schoolInput.text))
         {
             schoolWarning.SetActive(true);
-            schoolWarningText.text = "ÇĞ±³ ÀÌ¸§À» ÀÔ·ÂÇØÁÖ¼¼¿ä!";
+            schoolWarningText.text = "í•™êµ ì´ë¦„ì„ ì…ë ¥í•´ì£¼ì„¸ìš”!";
             schoolWarningText.color = Color.red;
             isSchoolValid = false;
         }
-        else if (schoolInput.text.Length > 10)
+        else if (schoolInput.text.Length > 20)
         {
             schoolWarning.SetActive(true);
-            schoolWarningText.text = "ÇĞ±³ ÀÌ¸§Àº 10±ÛÀÚ±îÁö ÀÔ·ÂÇÒ ¼ö ÀÖ¾î¿ä!";
+            schoolWarningText.text = "í•™êµ ì´ë¦„ì€ 20ê¸€ìê¹Œì§€ ì…ë ¥í•  ìˆ˜ ìˆì–´ìš”!";
             schoolWarningText.color = Color.red;
             isSchoolValid = false;
         }
@@ -230,7 +243,7 @@ public class Login : MonoBehaviour
         UpdateStartButtonState();
     }
 
-    // ½ÃÀÛ ¹öÆ° È°¼ºÈ­
+    // ì‹œì‘ ë²„íŠ¼ í™œì„±í™”
     void UpdateStartButtonState()
     {
         if (isNicknameValid && isNicknameAvailable && isSchoolValid)
@@ -245,12 +258,21 @@ public class Login : MonoBehaviour
         }
     }
 
-    [Serializable]
-    public class RegisterData
+    // ì´ˆê¸° ë­í‚¹ ë“±ë¡
+    IEnumerator RegisterRanking(string userId)
     {
-        public string user_id;
-        public string school_name;
-        public int age;
-        public string nickname;
+        string url = "http://localhost:8000/ranking/register/" +
+                        UnityWebRequest.EscapeURL(userId);
+        UnityWebRequest request = UnityWebRequest.PostWwwForm(url, "");
+        yield return request.SendWebRequest();
+
+        if (request.result == UnityWebRequest.Result.Success)
+        {
+            Debug.Log("ì´ˆê¸° ë­í‚¹ ë“±ë¡ ì„±ê³µ");
+        }
+        else
+        {
+            Debug.LogError("ì´ˆê¸° ë­í‚¹ ë“±ë¡ ì‹¤íŒ¨: " + request.downloadHandler.text);
+        }
     }
 }
