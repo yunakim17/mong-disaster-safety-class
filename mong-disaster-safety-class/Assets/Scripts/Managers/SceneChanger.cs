@@ -59,4 +59,34 @@ public class SceneChanger : MonoBehaviour
     {
         SceneManager.LoadScene("MyBadge");
     }
+
+    public void Fire_Main()
+    {
+        SceneManager.LoadScene("Fire_Main");
+    }
+
+    public void Fire_Step1_S1()
+    {
+        SceneManager.LoadScene("Fire_Step1_S1");
+    }
+
+    public void Fire_Step2_S1()
+    {
+        SceneManager.LoadScene("Fire_Step2_S1");
+    }
+
+    public void Fire_Step3_S1()
+    {
+        SceneManager.LoadScene("Fire_Step3_S1");
+    }
+
+    public void Fire_Step4_S1()
+    {
+        SceneManager.LoadScene("Fire_Step4_S1");
+    }
+
+    public void Ranking()
+    {
+        SceneManager.LoadScene("Ranking");
+    }
 }
