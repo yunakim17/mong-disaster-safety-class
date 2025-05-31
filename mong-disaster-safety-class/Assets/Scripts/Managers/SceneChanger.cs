@@ -70,6 +70,51 @@ public class SceneChanger : MonoBehaviour
         SceneManager.LoadScene("Eq_Step3_Quiz03");
     }
 
+    public void Eq_Step4_Quiz01()
+    {
+        SceneManager.LoadScene("Eq_Step4_Quiz01");
+    }
+
+    public void Eq_Step4_Quiz02()
+    {
+        SceneManager.LoadScene("Eq_Step4_Quiz02");
+    }
+
+    public void Eq_Step4_Quiz03()
+    {
+        SceneManager.LoadScene("Eq_Step4_Quiz03");
+    }
+
+    public void Fire_Step3_Quiz01()
+    {
+        SceneManager.LoadScene("Fire_Step3_Quiz01");
+    }
+
+    public void Fire_Step3_Quiz02()
+    {
+        SceneManager.LoadScene("Fire_Step3_Quiz02");
+    }
+
+    public void Fire_Step3_Quiz03()
+    {
+        SceneManager.LoadScene("Fire_Step3_Quiz03");
+    }
+
+    public void Fire_Step4_Quiz01()
+    {
+        SceneManager.LoadScene("Fire_Step4_Quiz01");
+    }
+
+    public void Fire_Step4_Quiz02()
+    {
+        SceneManager.LoadScene("Fire_Step4_Quiz02");
+    }
+
+    public void Fire_Step4_Quiz03()
+    {
+        SceneManager.LoadScene("Fire_Step4_Quiz03");
+    }
+
     public void MyBadge()
     {
         SceneManager.LoadScene("MyBadge");
