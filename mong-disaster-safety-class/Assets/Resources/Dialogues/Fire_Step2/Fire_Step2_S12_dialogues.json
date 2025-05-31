@@ -1,0 +1,32 @@
+[
+  {
+    "sequence": 15,
+    "speaker": "몽대장",
+    "dialogue_text": "불이 났을 시 소화기는 필수야. 그렇기에 소화기 사용법은 꼭 미리 숙지해 둬야 해.",
+    "voice_path": ""
+  },
+  {
+    "sequence": 16,
+    "speaker": "몽대장",
+    "dialogue_text": "먼저 소화기의 몸통을 잡고 안전핀을 뽑아야 해",
+    "voice_path": ""
+  },
+  {
+    "sequence": 17,
+    "speaker": "몽대장",
+    "dialogue_text": "그 다음엔 소화기의 노즐을 잡고 불이 있는 쪽으로 조준해",
+    "voice_path": ""
+  },
+  {
+    "sequence": 18,
+    "speaker": "몽대장",
+    "dialogue_text": "그리고 소화기의 손잡이를 힘껏 움켜쥐어!",
+    "voice_path": ""
+  },
+  {
+    "sequence": 18,
+    "speaker": "몽대장",
+    "dialogue_text": "이제 바람을 등지고 불이 있는 곳에 빗자루로 쓸 듯이 분말을 골고루 뿌리면 돼!",
+    "voice_path": ""
+  }
+]

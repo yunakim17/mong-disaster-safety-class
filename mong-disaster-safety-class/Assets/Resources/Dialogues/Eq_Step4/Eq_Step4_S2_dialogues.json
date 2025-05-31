@@ -2,13 +2,25 @@
   {
      "sequence": 4,
      "speaker": "주인공",
-     "dialogue_text": "가스가 새고 있어! 불꽃이 튀면 큰일 나니까 어서 전기를 끄고 가스 밸브를 잠그자!",
+     "dialogue_text": "가스가 새서 혹시 불이 나면 큰일이니까 어서 가스 밸브를 잠그자!",
      "voice_path": ""
    },
    {
      "sequence": 5,
      "speaker": "몽대장",
-     "dialogue_text": "지진으로 인한 흔들림이 멈추면 불이 나거나 가스가 새는 걸 막기 위해 전기와 가스를 차단해야 해.",
+     "dialogue_text": "지진으로 인한 흔들림이 멈추면, 가스가 새서 화재가 발생하는 걸 막기 위해 가스 밸브를 꼭 잠가야 해.",
+     "voice_path": ""
+   },
+   {
+     "sequence": 6,
+     "speaker": "몽대장",
+     "dialogue_text": "그리고 가스가 이미 샜을 수도 있으니, 전기 기구를 함부로 만지거나 조작하지 않도록 조심해!",
+     "voice_path": ""
+   },
+   {
+     "sequence": 7,
+     "speaker": "몽대장",
+     "dialogue_text": "이후에 가스 냄새가 날 때는 꼭  환기를 한 후 신고하고 가스 안전 점검을 받아야 해!",
      "voice_path": ""
    }
 ]

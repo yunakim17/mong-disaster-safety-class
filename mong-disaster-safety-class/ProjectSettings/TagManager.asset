@@ -3,7 +3,14 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Slot
+  - towel
+  - faucet
+  - falseObj
+  - crt1
+  - crt2
+  - crt3
   layers:
   - Default
   - TransparentFX
