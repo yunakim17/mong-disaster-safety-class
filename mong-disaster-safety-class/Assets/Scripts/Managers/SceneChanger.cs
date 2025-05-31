@@ -99,4 +99,9 @@ public class SceneChanger : MonoBehaviour
     {
         SceneManager.LoadScene("Fire_Step4_S1");
     }
+
+    public void Ranking()
+    {
+        SceneManager.LoadScene("Ranking");
+    }
 }
