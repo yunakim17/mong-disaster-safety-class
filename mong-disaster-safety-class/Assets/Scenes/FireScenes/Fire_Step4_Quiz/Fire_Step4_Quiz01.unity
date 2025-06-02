@@ -336,7 +336,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 41.78662, w: 0}
+  m_margin: {x: 0, y: 0, z: -347.34106, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -412,14 +412,13 @@ MonoBehaviour:
     \uD574\uC694."
   correctFeedbackMessage: "\uB9DE\uC544! \uBD88\uC774 \uB0AC\uC744 \uB550 \uBB38\uC744
     \uC5F4\uAE30 \uC804\uC5D0 \uC190\uB4F1\uC73C\uB85C \uC190\uC7A1\uC774\uB97C \uB9CC\uC838\uBD10\uC57C
-    \uD574! \uC190\uC7A1\uC774\uAC00 \uB728\uAC81\uC9C0 \uC54A\uC73C\uBA74 \uB098\uAC00\uACE0,
-    \uB728\uAC70\uC6B0\uBA74 \uC5F4\uC9C0 \uB9D0\uACE0 \uB2E4\uB978 \uAE38\uC744
+    \uD574!\n\uC190\uC7A1\uC774\uAC00 \uB728\uAC81\uC9C0 \uC54A\uC73C\uBA74 \uB098\uAC00\uACE0,
+    \n\uB728\uAC70\uC6B0\uBA74 \uC5F4\uC9C0 \uB9D0\uACE0 \uB2E4\uB978 \uAE38\uC744
     \uCC3E\uC544\uC57C \uD574."
   wrongFeedbackMessage: "\uC544\uB2C8\uC57C! \uBD88\uC774 \uB0AC\uC744 \uB550 \uBB38\uC744
     \uC5F4\uAE30 \uC804\uC5D0 \uC190\uB4F1\uC73C\uB85C \uC190\uC7A1\uC774\uB97C \uB9CC\uC838\uBD10\uC57C
-    \uD574! \uC190\uC7A1\uC774\uAC00 \uB728\uAC81\uC9C0 \uC54A\uC73C\uBA74 \uB098\uAC00\uACE0,
-    \uB728\uAC70\uC6B0\uBA74 \uC5F4\uC9C0 \uB9D0\uACE0 \uB2E4\uB978 \uAE38\uC744
-    \uCC3E\uC544\uC57C \uD574."
+    \uD574! \n\uC190\uC7A1\uC774\uAC00 \uB728\uAC81\uC9C0 \uC54A\uC73C\uBA74 \uB098\uAC00\uACE0,\n\uB728\uAC70\uC6B0\uBA74
+    \uC5F4\uC9C0 \uB9D0\uACE0 \uB2E4\uB978 \uAE38\uC744 \uCC3E\uC544\uC57C \uD574."
   correctIsO: 0
   characterImage: {fileID: 913781760}
   defaultSprite: {fileID: -277781592, guid: bc15573dc5121b14b9d4805268072672, type: 3}
@@ -1005,7 +1004,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
+  m_HorizontalAlignment: 2
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -1034,7 +1033,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 248.2362, w: 0}
+  m_margin: {x: 0, y: 0, z: -21.5, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0

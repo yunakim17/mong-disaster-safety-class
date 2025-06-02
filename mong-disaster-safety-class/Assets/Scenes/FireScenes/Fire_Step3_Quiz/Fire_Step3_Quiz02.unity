@@ -271,8 +271,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "2. \uBD88\uC774 \uB098\uBA74 \uC120\uC0DD\uB2D8 \uB9D0\uBCF4\uB2E4 \uB0B4\uAC00
-    \uC0DD\uAC01\uD55C \uB300\uB85C \uC6C0\uC9C1\uC774\uB294 \uAC8C \uB354 \uC548\uC804\uD574\uC694."
+  m_text: "2. \uBD88\uC774 \uB098\uBA74 \uC120\uC0DD\uB2D8 \uB9D0\uC500\uC744 \uB530\uB974\uAE30
+    \uBCF4\uB2E4\uB294\n\uB0B4 \uB9D8\uB300\uB85C \uD589\uB3D9\uD574\uC57C \uB354
+    \uC548\uC804\uD574\uC694."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6ce05cfa288a0ba45b879d1da63a9542, type: 2}
   m_sharedMaterial: {fileID: -4492946549454870118, guid: 6ce05cfa288a0ba45b879d1da63a9542, type: 2}
@@ -335,7 +336,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 41.78662, w: 0}
+  m_margin: {x: 0, y: 0, z: -433.56848, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -406,16 +407,16 @@ MonoBehaviour:
   oImageButton: {fileID: 1114854705}
   xImageButton: {fileID: 924631433}
   nextButton: {fileID: 1760417057}
-  quizQuestion: "2. \uBD88\uC774 \uB098\uBA74 \uC120\uC0DD\uB2D8 \uB9D0\uBCF4\uB2E4
-    \uB0B4\uAC00 \uC0DD\uAC01\uD55C \uB300\uB85C \uC6C0\uC9C1\uC774\uB294 \uAC8C
+  quizQuestion: "2. \uBD88\uC774 \uB098\uBA74 \uC120\uC0DD\uB2D8 \uB9D0\uC500\uC744
+    \uB530\uB974\uAE30 \uBCF4\uB2E4\uB294\n\uB0B4 \uB9D8\uB300\uB85C \uD589\uB3D9\uD574\uC57C
     \uB354 \uC548\uC804\uD574\uC694."
   correctFeedbackMessage: "\uB9DE\uC544! \uC704\uD5D8\uD55C \uC0C1\uD669\uC5D0\uC11C\uB294
     \uC120\uC0DD\uB2D8 \uB9D0\uC500\uC744 \uC798 \uB4E3\uB294 \uAC8C \uAC00\uC7A5
-    \uC911\uC694\uD574. \uADF8\uB798\uC57C \uBAA8\uB450\uAC00 \uC548\uC804\uD558\uAC8C
+    \uC911\uC694\uD574.\n\uADF8\uB798\uC57C \uBAA8\uB450\uAC00 \uC548\uC804\uD558\uAC8C
     \uB300\uD53C\uD560 \uC218 \uC788\uC5B4."
   wrongFeedbackMessage: "\uC544\uB2C8\uC57C! \uC704\uD5D8\uD55C \uC0C1\uD669\uC5D0\uC11C\uB294
     \uC120\uC0DD\uB2D8 \uB9D0\uC500\uC744 \uC798 \uB4E3\uB294 \uAC8C \uAC00\uC7A5
-    \uC911\uC694\uD574. \uADF8\uB798\uC57C \uBAA8\uB450\uAC00 \uC548\uC804\uD558\uAC8C
+    \uC911\uC694\uD574.\n\uADF8\uB798\uC57C \uBAA8\uB450\uAC00 \uC548\uC804\uD558\uAC8C
     \uB300\uD53C\uD560 \uC218 \uC788\uC5B4. "
   correctIsO: 0
   characterImage: {fileID: 913781760}
@@ -1002,7 +1003,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
+  m_HorizontalAlignment: 2
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -1031,7 +1032,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 248.2362, w: 0}
+  m_margin: {x: 0, y: 0, z: -12.656128, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
