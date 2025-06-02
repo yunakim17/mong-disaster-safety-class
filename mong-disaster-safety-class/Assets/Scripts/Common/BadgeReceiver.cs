@@ -40,11 +40,11 @@ public class BadgeReceiver : MonoBehaviour
 
     void Update()
     {
-        // 화면 클릭 시 메인 씬으로 이동
+        /*// 화면 클릭 시 메인 씬으로 이동
         if (isCompleted && Input.GetMouseButtonDown(0))
         {
             GetComponent<SceneChanger>().Main();
-        }
+        }*/
     }
 
     // 데이터를 서버에 전송
