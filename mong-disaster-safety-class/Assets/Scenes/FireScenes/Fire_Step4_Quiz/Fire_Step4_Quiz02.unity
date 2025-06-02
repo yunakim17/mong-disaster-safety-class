@@ -271,9 +271,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "2. \uBD88\uC774 \uB098\uC11C \uC9D1 \uC548\uC5D0 \uC5F0\uAE30\uAC00 \uAC00\uB4DD\uD560
-    \uB54C\uB294 \uD658\uAE30\uB97C \uC704\uD574 \uCC3D\uBB38\uC744 \uD65C\uC9DD
-    \uC5F4\uC5B4\uC57C \uD574\uC694."
+  m_text: "2. \uBD88\uC774 \uB0AC\uC744 \uB54C\uB294 \uC785\uACFC \uCF54\uB97C \uB9C9\uACE0
+    \uBAB8\uC744 \uC219\uC5EC\uC11C \uC774\uB3D9\uD574\uC57C \uD574\uC694."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6ce05cfa288a0ba45b879d1da63a9542, type: 2}
   m_sharedMaterial: {fileID: -4492946549454870118, guid: 6ce05cfa288a0ba45b879d1da63a9542, type: 2}
@@ -407,17 +406,18 @@ MonoBehaviour:
   oImageButton: {fileID: 1114854705}
   xImageButton: {fileID: 924631433}
   nextButton: {fileID: 1760417057}
-  quizQuestion: "2. \uBD88\uC774 \uB098\uC11C \uC9D1 \uC548\uC5D0 \uC5F0\uAE30\uAC00
-    \uAC00\uB4DD\uD560 \uB54C\uB294 \uD658\uAE30\uB97C \uC704\uD574 \uCC3D\uBB38\uC744
-    \uD65C\uC9DD \uC5F4\uC5B4\uC57C \uD574\uC694."
-  correctFeedbackMessage: "\uB9DE\uC544! \uC5F0\uAE30\uAC00 \uB4E4\uC5B4\uC624\uBA74
-    \uC9C8\uC2DD\uD560 \uC218 \uC788\uC73C\uB2C8\uAE4C \uCC3D\uBB38\uC740 \uC5F4\uBA74
-    \uC548 \uB3FC! \uBC16\uC73C\uB85C \uB300\uD53C\uD560 \uC218 \uC5C6\uC744 \uB54C\uB294
-    \uCC3D\uBB38\uC744 \uB2EB\uACE0 \uAD6C\uC870\uB97C \uAE30\uB2E4\uB824\uC57C \uD574!"
-  wrongFeedbackMessage: "\uC544\uB2C8\uC57C! \uC5F0\uAE30\uAC00 \uB4E4\uC5B4\uC624\uBA74
-    \uC9C8\uC2DD\uD560 \uC218 \uC788\uC73C\uB2C8\uAE4C \uCC3D\uBB38\uC740 \uC5F4\uBA74
-    \uC548 \uB3FC! \uBC16\uC73C\uB85C \uB300\uD53C\uD560 \uC218 \uC5C6\uC744 \uB54C\uB294
-    \uCC3D\uBB38\uC744 \uB2EB\uACE0 \uAD6C\uC870\uB97C \uAE30\uB2E4\uB824\uC57C \uD574!"
+  quizQuestion: "2. \uBD88\uC774 \uB0AC\uC744 \uB54C\uB294 \uC785\uACFC \uCF54\uB97C
+    \uB9C9\uACE0 \uBAB8\uC744 \uC219\uC5EC\uC11C \uC774\uB3D9\uD574\uC57C \uD574\uC694."
+  correctFeedbackMessage: "\uB9DE\uC544! \uBD88\uC774 \uB0AC\uC744 \uB550 \uC218\uAC74
+    \uB4F1\uC758 \uCC9C\uC744 \uACB9\uCE58\uAC70\uB098 \uBB3C\uC5D0 \uC801\uC154\uC11C
+    \uC785\uACFC \uCF54\uB97C \uB9C9\uACE0 \uC5F0\uAE30\uAC00 \uD3D0\uC5D0 \uB4E4\uC5B4\uAC00\uC9C0
+    \uC54A\uB3C4\uB85D \uD574\uC57C \uD574! \uADF8\uB9AC\uACE0 \uBAB8\uC744 \uC219\uC5EC\uC11C
+    \uB0AE\uC740 \uC790\uC138\uB85C \uB300\uD53C\uD574\uC57C \uD574! "
+  wrongFeedbackMessage: "\uC544\uB2C8\uC57C! \uBD88\uC774 \uB0AC\uC744 \uB550 \uC218\uAC74
+    \uB4F1\uC758 \uCC9C\uC744 \uACB9\uCE58\uAC70\uB098 \uBB3C\uC5D0 \uC801\uC154\uC11C
+    \uC785\uACFC \uCF54\uB97C \uB9C9\uACE0 \uC5F0\uAE30\uAC00 \uD3D0\uC5D0 \uB4E4\uC5B4\uAC00\uC9C0
+    \uC54A\uB3C4\uB85D \uD574\uC57C \uD574! \uADF8\uB9AC\uACE0 \uBAB8\uC744 \uC219\uC5EC\uC11C
+    \uB0AE\uC740 \uC790\uC138\uB85C \uB300\uD53C\uD574\uC57C \uD574! "
   correctIsO: 1
   characterImage: {fileID: 913781760}
   defaultSprite: {fileID: -277781592, guid: bc15573dc5121b14b9d4805268072672, type: 3}
@@ -996,8 +996,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 45
-  m_fontSizeBase: 45
+  m_fontSize: 50
+  m_fontSizeBase: 50
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1239,7 +1239,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8004681941794650575, guid: ef02e2e4463bb4543b4309d62d31342c, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: Fire_Step4_Quiz02
+      value: Fire_Step4_Quiz03
       objectReference: {fileID: 0}
     - target: {fileID: 8004681941794650575, guid: ef02e2e4463bb4543b4309d62d31342c, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName

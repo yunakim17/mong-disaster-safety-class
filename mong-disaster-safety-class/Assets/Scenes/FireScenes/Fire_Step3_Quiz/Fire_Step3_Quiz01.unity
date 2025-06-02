@@ -415,7 +415,7 @@ MonoBehaviour:
     \uB300\uD53C\uAC00 \uB2A6\uC5B4\uC9C8 \uC218 \uC788\uC5B4. \uB6F0\uC9C0 \uC54A\uACE0
     \uCE68\uCC29\uD558\uAC8C \uD589\uB3D9\uD574\uC57C \uBAA8\uB450\uAC00 \uB354 \uBE60\uB974\uACE0
     \uC548\uC804\uD558\uAC8C \uB300\uD53C\uD560 \uC218 \uC788\uC5B4!"
-  wrongFeedbackMessage: "\uB9DE\uC544! \uB6F0\uC5B4\uC11C \uB300\uD53C\uD558\uAC8C
+  wrongFeedbackMessage: "\uC544\uB2C8\uC57C! \uB6F0\uC5B4\uC11C \uB300\uD53C\uD558\uAC8C
     \uB418\uBA74 \uB2E4\uB978 \uCE5C\uAD6C\uB4E4\uACFC \uC120\uC0DD\uB2D8\uB3C4 \uB2F9\uD669\uD574\uC11C
     \uB300\uD53C\uAC00 \uB2A6\uC5B4\uC9C8 \uC218 \uC788\uC5B4. \uB6F0\uC9C0 \uC54A\uACE0
     \uCE68\uCC29\uD558\uAC8C \uD589\uB3D9\uD574\uC57C \uBAA8\uB450\uAC00 \uB354 \uBE60\uB974\uACE0
@@ -998,8 +998,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 45
-  m_fontSizeBase: 45
+  m_fontSize: 50
+  m_fontSizeBase: 50
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
