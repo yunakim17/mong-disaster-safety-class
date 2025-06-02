@@ -248,8 +248,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -324.28418, y: 340}
-  m_SizeDelta: {x: 947.4316, y: 132}
+  m_AnchoredPosition: {x: -72.235596, y: 340}
+  m_SizeDelta: {x: 1451.5286, y: 132}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &163310456
 MonoBehaviour:
@@ -271,7 +271,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "1. \uC9C0\uC9C4\uC774 \uB098\uBA74 \uBC14\uB85C \uBC16\uC73C\uB85C \uB3C4\uB9DD\uAC00\uC57C
+  m_text: "1. \uC9C0\uC9C4\uC774 \uB098\uBA74 \uB2F9\uC7A5 \uBC16\uC73C\uB85C \uB3C4\uB9DD\uAC00\uC57C
     \uD574\uC694."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6ce05cfa288a0ba45b879d1da63a9542, type: 2}
@@ -406,16 +406,16 @@ MonoBehaviour:
   oImageButton: {fileID: 1114854705}
   xImageButton: {fileID: 924631433}
   nextButton: {fileID: 1760417057}
-  quizQuestion: "1. \uC9C0\uC9C4\uC774 \uB098\uBA74 \uBC14\uB85C \uBC16\uC73C\uB85C
+  quizQuestion: "1. \uC9C0\uC9C4\uC774 \uB098\uBA74 \uB2F9\uC7A5 \uBC16\uC73C\uB85C
     \uB3C4\uB9DD\uAC00\uC57C \uD574\uC694."
-  correctFeedbackMessage: "\uB9DE\uC544! \uBC16\uC73C\uB85C \uB098\uAC00\uB2E4\uAC00
-    \uB2E4\uCE60 \uC218 \uC788\uC5B4. \uD754\uB4E4\uB9BC\uC774 \uBA48\uCD9C \uB54C\uAE4C\uC9C0
-    \uD2BC\uD2BC\uD55C \uAC00\uAD6C \uC544\uB798\uC5D0\uC11C \uBAB8\uC744 \uBCF4\uD638\uD574\uC57C
-    \uD574."
-  wrongFeedbackMessage: "\uC544\uB2C8\uC57C! \uBC16\uC73C\uB85C \uB098\uAC00\uB2E4\uAC00
-    \uB2E4\uCE60 \uC218 \uC788\uC5B4. \uD754\uB4E4\uB9BC\uC774 \uBA48\uCD9C \uB54C\uAE4C\uC9C0
-    \uD2BC\uD2BC\uD55C \uAC00\uAD6C \uC544\uB798\uC5D0\uC11C \uBAB8\uC744 \uBCF4\uD638\uD574\uC57C
-    \uD574."
+  correctFeedbackMessage: "\uB9DE\uC544! \uC9C0\uC9C4 \uB3C4\uC911\uC5D0 \uBC16\uC73C\uB85C
+    \uB098\uAC00\uB2E4\uAC00 \uB2E4\uCE60 \uC218 \uC788\uC5B4. \n\uD754\uB4E4\uB9BC\uC774
+    \uBA48\uCD9C \uB54C\uAE4C\uC9C0 \uD2BC\uD2BC\uD55C \uAC00\uAD6C \uC544\uB798\uC5D0\uC11C
+    \uBAB8\uC744 \uBCF4\uD638\uD574\uC57C \uD574."
+  wrongFeedbackMessage: "\uC544\uB2C8\uC57C! \uC9C0\uC9C4 \uB3C4\uC911\uC5D0 \uBC16\uC73C\uB85C
+    \uB098\uAC00\uB2E4\uAC00 \uB2E4\uCE60 \uC218 \uC788\uC5B4. \n\uD754\uB4E4\uB9BC\uC774
+    \uBA48\uCD9C \uB54C\uAE4C\uC9C0 \uD2BC\uD2BC\uD55C \uAC00\uAD6C \uC544\uB798\uC5D0\uC11C
+    \uBAB8\uC744 \uBCF4\uD638\uD574\uC57C \uD574."
   correctIsO: 0
   characterImage: {fileID: 913781760}
   defaultSprite: {fileID: -277781592, guid: bc15573dc5121b14b9d4805268072672, type: 3}
@@ -1001,7 +1001,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
+  m_HorizontalAlignment: 2
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -1030,7 +1030,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 248.2362, w: 0}
+  m_margin: {x: 0, y: 0, z: -12.656128, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
