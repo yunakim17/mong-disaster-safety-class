@@ -19,9 +19,10 @@ public class Fire_Step3_GameManager : MonoBehaviour
         popupController.ShowPopup("찾았다! 이제 입과 코를 막고 복도로 나가자!");
     }
 
-    void NextScene()
+    public void NextScene()
     {
+        popupController.popupPanel.SetActive(false);
         popupController.audioSource.Stop();
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        SceneManager.LoadScene("Fire_Step3_S3");
     }
 }
