@@ -409,12 +409,13 @@ MonoBehaviour:
   quizQuestion: "2. \uD754\uB4E4\uB9BC\uC774 \uBA48\uCD94\uBA74 \uAC00\uC2A4\uB97C
     \uCC28\uB2E8\uD574\uC57C \uD574\uC694."
   correctFeedbackMessage: "\uB9DE\uC544! \uC9C0\uC9C4\uC73C\uB85C \uC778\uD574 \uAC00\uC2A4\uAC00
-    \uC0C8\uC11C \uBD88\uC774 \uB0A0 \uC218 \uC788\uC5B4. \uBC16\uC73C\uB85C \uB098\uAC00\uAE30
-    \uC804\uC5D0 \uAF2D \uAC00\uC2A4 \uBC38\uBE0C\uB97C \uC7A0\uAD88\uC57C \uD574."
+    \uC0C8\uC11C \uBD88\uC774 \uB0A0 \uC218 \uC788\uC5B4. \uC9D1\uC5D0\uC11C \uC9C0\uC9C4\uC774
+    \uB0AC\uC744 \uB550 \uD754\uB4E4\uB9BC\uC774 \uBA48\uCD94\uBA74 \uAC00\uC2A4\uB97C
+    \uC7A0\uAC00\uC57C \uD574. "
   wrongFeedbackMessage: "\uC544\uB2C8\uC57C! \uC9C0\uC9C4\uC73C\uB85C \uC778\uD574
-    \uAC00\uC2A4\uAC00 \uC0C8\uC11C \uBD88\uC774 \uB0A0 \uC218 \uC788\uC5B4. \uBC16\uC73C\uB85C
-    \uB098\uAC00\uAE30 \uC804\uC5D0 \uAF2D \uAC00\uC2A4 \uBC38\uBE0C\uB97C \uC7A0\uAD88\uC57C
-    \uD574."
+    \uAC00\uC2A4\uAC00 \uC0C8\uC11C \uBD88\uC774 \uB0A0 \uC218 \uC788\uC5B4. \uC9D1\uC5D0\uC11C
+    \uC9C0\uC9C4\uC774 \uB0AC\uC744 \uB550 \uD754\uB4E4\uB9BC\uC774 \uBA48\uCD94\uBA74
+    \uAC00\uC2A4\uB97C \uC7A0\uAC00\uC57C \uD574. "
   correctIsO: 1
   characterImage: {fileID: 913781760}
   defaultSprite: {fileID: -277781592, guid: bc15573dc5121b14b9d4805268072672, type: 3}
@@ -993,8 +994,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 45
-  m_fontSizeBase: 45
+  m_fontSize: 50
+  m_fontSizeBase: 50
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
