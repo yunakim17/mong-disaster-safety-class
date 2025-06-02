@@ -4,7 +4,7 @@ using UnityEngine.EventSystems;
 
 public class LockerContent : MonoBehaviour, IPointerClickHandler
 {
-    public enum ContentType { Empty, Useless, Towel }
+    public enum ContentType { Useless, Towel }
     public ContentType contentType;
 
     private Fire_Step3_GameManager gameManager;
@@ -28,10 +28,6 @@ public class LockerContent : MonoBehaviour, IPointerClickHandler
 
             case ContentType.Useless:
                 popupController.ShowPopup("연기로부터 입과 코를 막을만한 천이 필요해!");
-                break;
-
-            case ContentType.Empty:
-                // 빈 내용물, 아무 처리 없음.
                 break;
         }
     }

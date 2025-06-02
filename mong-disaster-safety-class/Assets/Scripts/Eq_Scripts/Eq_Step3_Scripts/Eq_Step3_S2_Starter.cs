@@ -8,7 +8,7 @@ public class Eq_Step3_S2_Starter : MonoBehaviour
     {
         dialogueManager.StartDialogue(
             "Dialogues/Eq_Step3/Eq_Step3_S2_dialogues",
-            "",
+            "DIalogues/Eq_Step3/Eq_Step3_S2_choices",
             "Eq_Step3_S3"
         );
     }

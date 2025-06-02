@@ -29,7 +29,10 @@ public class Fire_Step3_PopupController : MonoBehaviour
         audioSource.clip = message.Contains("찾았다") ? successClip : uselessClip;
         audioSource.Play();
 
-        StartCoroutine(WaitAudioEnd());
+        if (!message.Contains("찾았다"))
+        {
+            StartCoroutine(WaitAudioEnd());
+        }
     }
 
     IEnumerator WaitAudioEnd()
