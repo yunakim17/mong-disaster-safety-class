@@ -7,7 +7,7 @@ public class StartManager : MonoBehaviour
     void Awake()
     {
         // uuid 삭제 (개발용)
-        PlayerPrefs.DeleteKey("uuid");
+        //PlayerPrefs.DeleteKey("uuid");
     }
 
     void Start()
