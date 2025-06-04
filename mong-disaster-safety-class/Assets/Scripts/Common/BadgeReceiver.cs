@@ -7,6 +7,7 @@ public class BadgeReceiver : MonoBehaviour
 {
     public int stageId;
     public bool isCompleted = false;
+    public string nextSceneName;
 
     // 서버에 전송할 데이터 형식 정의
     [System.Serializable]
@@ -36,15 +37,6 @@ public class BadgeReceiver : MonoBehaviour
         {
             Debug.LogWarning("user_id 또는 stage_id가 저장되어 있지 않습니다.");
         }
-    }
-
-    void Update()
-    {
-        /*// 화면 클릭 시 메인 씬으로 이동
-        if (isCompleted && Input.GetMouseButtonDown(0))
-        {
-            GetComponent<SceneChanger>().Main();
-        }*/
     }
 
     // 데이터를 서버에 전송
@@ -82,6 +74,25 @@ public class BadgeReceiver : MonoBehaviour
         else
         {
             Debug.Log("스테이지 완료 처리 실패: " + request.error);
+        }
+    }
+
+    // 버튼 클릭 시 메인으로 이동
+    public void OnClickMainButton()
+    {
+        GetComponent<SceneChanger>().Main();
+    }
+
+    // 버튼 클릭 시 다음 스테이지로 이동
+    public void OnClickNextButton()
+    {
+        if (!string.IsNullOrEmpty(nextSceneName))
+        {
+            GetComponent<SceneChanger>().ChangeScene(nextSceneName);
+        }
+        else
+        {
+            Debug.LogWarning("다음 씬 이름이 비어있습니다.");
         }
     }
 }
