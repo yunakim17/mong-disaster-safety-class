@@ -4,15 +4,18 @@ using TMPro;
 
 public class RankSetting : MonoBehaviour
 {
-    public Image rankIcon;            // 1~3위
+    public Image rankIcon;              // 1~3위
     public TextMeshProUGUI rankText;    // 4위 이상
     public TextMeshProUGUI nicknameText;
     public TextMeshProUGUI ageText;
     public TextMeshProUGUI scoreText;
 
-    /*public Sprite goldIcon;
+    public Sprite goldIcon;
     public Sprite silverIcon;
-    public Sprite bronzeIcon;*/
+    public Sprite bronzeIcon;
+
+    public Sprite defaultPanel;
+    public Sprite myPanel;
 
     public string userId;
 
@@ -26,9 +29,9 @@ public class RankSetting : MonoBehaviour
 
         if (rank < 4)
         {
-            /*if (rank == 1) rankIcon.sprite = goldIcon;
+            if (rank == 1) rankIcon.sprite = goldIcon;
             if (rank == 2) rankIcon.sprite = silverIcon;
-            if (rank == 3) rankIcon.sprite = bronzeIcon;*/
+            if (rank == 3) rankIcon.sprite = bronzeIcon;
 
             rankIcon.color = new Color(1f, 1f, 1f, 1f);
             rankText.color = new Color(rankText.color.r, rankText.color.g, rankText.color.b, 0f);
@@ -41,10 +44,15 @@ public class RankSetting : MonoBehaviour
             rankText.color = new Color(rankText.color.r, rankText.color.g, rankText.color.b, 1f);
         }
 
-        // 내 랭킹 패널 색상 바꾸기
+        // 내 랭킹 패널 이미지 바꾸기
+        Image panelImage = transform.Find("RankPanel").GetComponent<Image>();
         if (userId == PlayerPrefs.GetString("uuid"))
         {
-            transform.Find("RankPanel").GetComponent<Image>().color = new Color(1f, 0.878f, 0.396f);
+            panelImage.sprite = myPanel;
+        }
+        else
+        {
+            panelImage.sprite = defaultPanel;
         }
     }
 }
