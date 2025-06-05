@@ -11,6 +11,8 @@ TagManager:
   - crt1
   - crt2
   - crt3
+  - Fire
+  - Wall
   layers:
   - Default
   - TransparentFX
