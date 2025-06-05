@@ -408,14 +408,14 @@ MonoBehaviour:
   nextButton: {fileID: 1760417057}
   quizQuestion: "2. \uB300\uD53C\uD560 \uB54C\uB294 \uC190\uC774\uB098 \uAC00\uBC29\uC73C\uB85C
     \uBA38\uB9AC\uB97C \uBCF4\uD638\uD558\uBA70 \uC774\uB3D9\uD574\uC57C \uD574\uC694."
-  correctFeedbackMessage: "\uB9DE\uC544! \uBC14\uB85C \uC6B4\uB3D9\uC7A5\uC73C\uB85C
-    \uB098\uAC00\uBA74 \uB2E4\uCE60 \uC218 \uC788\uC5B4. \uD754\uB4E4\uB9BC\uC774
-    \uBA48\uCD9C \uB54C\uAE4C\uC9C0 \uCC45\uC0C1\uACFC \uAC19\uC740 \uD2BC\uD2BC\uD55C
-    \uBB3C\uAC74 \uC544\uB798\uC5D0\uC11C \uBAB8\uC744 \uBCF4\uD638\uD574\uC57C \uD574. "
-  wrongFeedbackMessage: "\uC544\uB2C8\uC57C! \uBC14\uB85C \uC6B4\uB3D9\uC7A5\uC73C\uB85C
-    \uB098\uAC00\uBA74 \uB2E4\uCE60 \uC218 \uC788\uC5B4. \uD754\uB4E4\uB9BC\uC774
-    \uBA48\uCD9C \uB54C\uAE4C\uC9C0 \uCC45\uC0C1\uACFC \uAC19\uC740 \uD2BC\uD2BC\uD55C
-    \uBB3C\uAC74 \uC544\uB798\uC5D0\uC11C \uBAB8\uC744 \uBCF4\uD638\uD574\uC57C \uD574. "
+  correctFeedbackMessage: "\uB9DE\uC544! \uB545\uC774 \uD754\uB4E4\uB9AC\uBA74\uC11C
+    \uC704\uC5D0\uC11C \uBB3C\uAC74\uC774 \uB5A8\uC5B4\uC838 \uB2E4\uCE60 \uC704\uD5D8\uC774
+    \uC788\uC5B4.\n\uB300\uD53C\uD560 \uB54C\uB294 \uBA38\uB9AC\uB97C \uBCF4\uD638\uD558\uBA70
+    \uC774\uB3D9\uD574\uC57C \uD574."
+  wrongFeedbackMessage: "\uC544\uB2C8\uC57C! \uB545\uC774 \uD754\uB4E4\uB9AC\uBA74\uC11C
+    \uC704\uC5D0\uC11C \uBB3C\uAC74\uC774 \uB5A8\uC5B4\uC838 \uB2E4\uCE60 \uC704\uD5D8\uC774
+    \uC788\uC5B4.\n\uB300\uD53C\uD560 \uB54C\uB294 \uBA38\uB9AC\uB97C \uBCF4\uD638\uD558\uBA70
+    \uC774\uB3D9\uD574\uC57C \uD574. "
   correctIsO: 1
   characterImage: {fileID: 913781760}
   defaultSprite: {fileID: -277781592, guid: bc15573dc5121b14b9d4805268072672, type: 3}
@@ -598,8 +598,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -46, y: -94}
-  m_SizeDelta: {x: 360, y: 360}
+  m_AnchoredPosition: {x: -46, y: -117}
+  m_SizeDelta: {x: 295, y: 407}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &924631435
 MonoBehaviour:
@@ -677,7 +677,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 774802e1c0061cd46a1c170959536fc3, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f3ec160e37c67054aa59c907c5b8b4c2, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -730,8 +730,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -563, y: -94}
-  m_SizeDelta: {x: 360, y: 360}
+  m_AnchoredPosition: {x: -572, y: -117}
+  m_SizeDelta: {x: 295, y: 407}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1114854707
 MonoBehaviour:
@@ -809,7 +809,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 63fb66d9cb0d9b14c9cb192807cedc9f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 0a9a9b427aea0124da8933186cd4f393, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -989,14 +989,14 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 45
-  m_fontSizeBase: 45
+  m_fontSize: 50
+  m_fontSizeBase: 50
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
+  m_HorizontalAlignment: 2
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -1025,7 +1025,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 248.2362, w: 0}
+  m_margin: {x: 0, y: 0, z: -1.6013184, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0

@@ -92,6 +92,17 @@ public class Login : MonoBehaviour
     {
         string nickname = nicknameInput.text.Trim();
 
+        if (string.IsNullOrEmpty(nickname))
+        {
+            nicknameWarning.SetActive(true);
+            nicknameWarningText.text = "닉네임을 입력해주세요!";
+            nicknameWarningText.color = Color.red;
+
+            isNicknameAvailable = false;
+            UpdateStartButtonState();
+            yield break;
+        }
+
         string url = "http://localhost:8000/user/check-nickname?nickname=" + UnityWebRequest.EscapeURL(nickname);
         UnityWebRequest request = UnityWebRequest.Get(url);
         yield return request.SendWebRequest();

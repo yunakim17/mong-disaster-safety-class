@@ -4,32 +4,49 @@ using System.Collections;
 
 public class LockerDoor : MonoBehaviour
 {
-    public GameObject doorImage;   // 문 이미지 (버튼 자신)
-    public GameObject contentImage; // 내용물 (내용물에 LockerContent 스크립트 있음)
+    public GameObject doorImage;            // 사물함 문 이미지
+    public GameObject contentImage;         // 사물함 안 내용물 (없을 수 있음)
 
-    Button doorButton;
+    private bool isOpen = false;
+    private Fire_Step3_PopupController popupController;
 
     void Start()
     {
-        doorButton = GetComponent<Button>();
-        doorButton.onClick.AddListener(OpenDoor);
+        popupController = FindObjectOfType<Fire_Step3_PopupController>();
 
-        contentImage.SetActive(false);
+        // 내용물이 있는 경우에만 비활성화해둠
+        if (contentImage != null)
+            contentImage.SetActive(false);
     }
 
-    void OpenDoor()
+    public void OnDoorClicked()
     {
-        doorImage.SetActive(false);
-        contentImage.SetActive(true);
+        // 팝업이 떠 있는 동안은 클릭 차단
+        if (popupController != null && popupController.IsPopupActive)
+            return;
 
-        StartCoroutine(CloseDoorAfterDelay());
+        if (isOpen) return;
+
+        if (doorImage != null)
+            doorImage.SetActive(false);
+
+        if (contentImage != null)
+            contentImage.SetActive(true);
+
+        StartCoroutine(CloseAfterDelay());
+        isOpen = true;
     }
 
-    IEnumerator CloseDoorAfterDelay()
+    IEnumerator CloseAfterDelay()
     {
         yield return new WaitForSeconds(2f);
 
-        doorImage.SetActive(true);
-        contentImage.SetActive(false);
+        if (doorImage != null)
+            doorImage.SetActive(true);
+
+        if (contentImage != null)
+            contentImage.SetActive(false);
+
+        isOpen = false;
     }
 }

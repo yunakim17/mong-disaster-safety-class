@@ -70,6 +70,51 @@ public class SceneChanger : MonoBehaviour
         SceneManager.LoadScene("Eq_Step3_Quiz03");
     }
 
+    public void Eq_Step4_Quiz01()
+    {
+        SceneManager.LoadScene("Eq_Step4_Quiz01");
+    }
+
+    public void Eq_Step4_Quiz02()
+    {
+        SceneManager.LoadScene("Eq_Step4_Quiz02");
+    }
+
+    public void Eq_Step4_Quiz03()
+    {
+        SceneManager.LoadScene("Eq_Step4_Quiz03");
+    }
+
+    public void Fire_Step3_Quiz01()
+    {
+        SceneManager.LoadScene("Fire_Step3_Quiz01");
+    }
+
+    public void Fire_Step3_Quiz02()
+    {
+        SceneManager.LoadScene("Fire_Step3_Quiz02");
+    }
+
+    public void Fire_Step3_Quiz03()
+    {
+        SceneManager.LoadScene("Fire_Step3_Quiz03");
+    }
+
+    public void Fire_Step4_Quiz01()
+    {
+        SceneManager.LoadScene("Fire_Step4_Quiz01");
+    }
+
+    public void Fire_Step4_Quiz02()
+    {
+        SceneManager.LoadScene("Fire_Step4_Quiz02");
+    }
+
+    public void Fire_Step4_Quiz03()
+    {
+        SceneManager.LoadScene("Fire_Step4_Quiz03");
+    }
+
     public void MyBadge()
     {
         SceneManager.LoadScene("MyBadge");
@@ -98,5 +143,16 @@ public class SceneChanger : MonoBehaviour
     public void Fire_Step4_S1()
     {
         SceneManager.LoadScene("Fire_Step4_S1");
+    }
+
+    public void Ranking()
+    {
+        SceneManager.LoadScene("Ranking");
+    }
+
+    // 배지 획득 후 씬 이동 시 사용할 용도 -> 씬 이름을 입력해서 이동
+    public void ChangeScene(string sceneName)
+    {
+        SceneManager.LoadScene(sceneName);
     }
 }
