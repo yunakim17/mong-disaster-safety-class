@@ -257,4 +257,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Ranking.unity
     guid: b7938283dbfd9274886e1e2c43bc68cd
+  - enabled: 1
+    path: Assets/Scenes/TryQuiz.unity
+    guid: 1cdef8618ef67874aad36ca41328d65f
+  - enabled: 1
+    path: Assets/Scenes/MainQuizScenes/oxQuiz_Main.unity
+    guid: 7c654554a7a798445a872e8506c5b7a8
   m_configObjects: {}

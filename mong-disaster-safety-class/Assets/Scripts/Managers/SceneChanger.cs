@@ -10,6 +10,12 @@ public class SceneChanger : MonoBehaviour
         SceneManager.LoadScene("Sign_Up");
     }
 
+    public void oxQuiz_Main()
+    {
+        SceneManager.LoadScene("oxQuiz_Main");
+    }
+
+
     public void Main()
     {
         SceneManager.LoadScene("Main");
