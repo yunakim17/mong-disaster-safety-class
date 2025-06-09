@@ -23,6 +23,10 @@ public class ReviewQuizManager : MonoBehaviour
     public Sprite defaultSprite;
     public Sprite correctAnswerSprite;
 
+    [Header("정답 효과음")]
+    public AudioSource audioSource;
+    public AudioClip correctSound;
+
     void Start()
     {
         questionText.text = quizQuestion;
@@ -55,18 +59,42 @@ public class ReviewQuizManager : MonoBehaviour
         oImageButton.GetComponent<Button>().interactable = false;
         xImageButton.GetComponent<Button>().interactable = false;
 
-        feedbackText.text = feedbackMessage;
-        feedbackText.color = Color.white;
-
         if (userChoseO == correctIsO)
         {
+            feedbackText.color = Color.white;
+            feedbackText.text = feedbackMessage;
+
             if (characterImage != null && correctAnswerSprite != null)
             {
                 characterImage.sprite = correctAnswerSprite;
             }
-        }
 
-        feedbackText.gameObject.SetActive(true);
+            feedbackText.gameObject.SetActive(true);
+
+            if (audioSource != null && correctSound != null)
+            {
+                audioSource.clip = correctSound;
+                audioSource.Play();
+                StartCoroutine(ShowNextButtonAfterAudio());
+            }
+            else
+            {
+                nextButton.gameObject.SetActive(true);
+            }
+        }
+        else
+        {
+            feedbackText.color = new Color32(255, 80, 80, 255);
+            feedbackText.text = "아니야! " + feedbackMessage;
+
+            feedbackText.gameObject.SetActive(true);
+            nextButton.gameObject.SetActive(true);
+        }
+    }
+
+    IEnumerator ShowNextButtonAfterAudio()
+    {
+        yield return new WaitWhile(() => audioSource.isPlaying);
         nextButton.gameObject.SetActive(true);
     }
 
