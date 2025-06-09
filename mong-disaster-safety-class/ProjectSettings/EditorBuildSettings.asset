@@ -36,21 +36,6 @@ EditorBuildSettings:
     path: Assets/Scenes/EqScenes/Eq_Step2/Eq_Step2_S1.unity
     guid: b40919b000b3b374fbe6f6f79bf1f15c
   - enabled: 1
-    path: Assets/Scenes/MainQuizScenes/Eq_Step1_OX/Eq_Step1_OX1.unity
-    guid: 6d60ff4b625490a4490178d3b617600e
-  - enabled: 1
-    path: Assets/Scenes/MainQuizScenes/Eq_Step1_OX/Eq_Step1_OX2.unity
-    guid: fa3ce1b78d23c9a4088a88ab05d2b676
-  - enabled: 1
-    path: Assets/Scenes/MainQuizScenes/Eq_Step1_OX/Eq_Step1_OX3.unity
-    guid: be6638db08042ef4d854260de6b193f6
-  - enabled: 1
-    path: Assets/Scenes/MainQuizScenes/Eq_Step1_OX/Eq_Step1_OX4.unity
-    guid: 3eb9ddd1dac8bcc458d323d789e0cd47
-  - enabled: 1
-    path: Assets/Scenes/MainQuizScenes/Eq_Step1_OX/Eq_Step1_OX5.unity
-    guid: fda10d3eb0ea9414a86fd51b32c78289
-  - enabled: 1
     path: Assets/Scenes/EqScenes/Eq_Step2/Eq_Step2_S2.unity
     guid: 1301530bf39f4fe43881cae433b53ff8
   - enabled: 1
@@ -81,21 +66,6 @@ EditorBuildSettings:
     path: Assets/Scenes/EqScenes/Eq_Step2/Eq_Step2_S11.unity
     guid: a008f18daefb0c24fb4e2f016202c265
   - enabled: 1
-    path: Assets/Scenes/MainQuizScenes/Eq_Step2_OX/Eq_Step2_OX1.unity
-    guid: 7be8c57a4a2c18642bd5d232c8295179
-  - enabled: 1
-    path: Assets/Scenes/MainQuizScenes/Eq_Step2_OX/Eq_Step2_OX2.unity
-    guid: 61e5a1226a062b5479116724cf2f3b13
-  - enabled: 1
-    path: Assets/Scenes/MainQuizScenes/Eq_Step2_OX/Eq_Step2_OX3.unity
-    guid: ac1539597f29ccd4cb7451641de77a8d
-  - enabled: 1
-    path: Assets/Scenes/MainQuizScenes/Eq_Step2_OX/Eq_Step2_OX4.unity
-    guid: cecb15e68129c3c4bbf7c13c5fb4e7a6
-  - enabled: 1
-    path: Assets/Scenes/MainQuizScenes/Eq_Step2_OX/Eq_Step2_OX5.unity
-    guid: 755e2c575098e6b4cbdb5df48596d3f6
-  - enabled: 1
     path: Assets/Scenes/EqScenes/Eq_Step3/Eq_Step3_S1.unity
     guid: ee14d67a772adfa448d0d302cd2bc725
   - enabled: 1
@@ -108,42 +78,12 @@ EditorBuildSettings:
     path: Assets/Scenes/EqScenes/Eq_Step3/Eq_Step3_S4.unity
     guid: ac7f82fb001f20a4d9e223ed72256ee9
   - enabled: 1
-    path: Assets/Scenes/MainQuizScenes/Eq_Step3_OX/Eq_Step3_OX1.unity
-    guid: d95223f33a99cbb46b1543da50ff61f1
-  - enabled: 1
-    path: Assets/Scenes/MainQuizScenes/Eq_Step3_OX/Eq_Step3_OX2.unity
-    guid: 5f16a8c2ac87c0542a24b25c7ee6b200
-  - enabled: 1
-    path: Assets/Scenes/MainQuizScenes/Eq_Step3_OX/Eq_Step3_OX3.unity
-    guid: cba57119faa8ebd479939903bd9e1109
-  - enabled: 1
-    path: Assets/Scenes/MainQuizScenes/Eq_Step3_OX/Eq_Step3_OX4.unity
-    guid: a0bf1dd50fd9a6b4b8fb656872c9a4ba
-  - enabled: 1
-    path: Assets/Scenes/MainQuizScenes/Eq_Step3_OX/Eq_Step3_OX5.unity
-    guid: 38e1710e46c9f594cac77faa1d287545
-  - enabled: 1
-    path: Assets/Scenes/MainQuizScenes/Eq_Step3_OX/Eq_Step3_OX6.unity
-    guid: 33bf9f7e5d316e348b0b9e3f24ee0191
-  - enabled: 1
-    path: Assets/Scenes/MainQuizScenes/Eq_Step3_OX/Eq_Step3_OX7.unity
-    guid: 21c221f896c3d4a4dae450ae3db52037
-  - enabled: 1
-    path: Assets/Scenes/MainQuizScenes/Eq_Step3_OX/Eq_Step3_OX8.unity
-    guid: 14a0b25d1e0272c4881727d3854feeb0
-  - enabled: 1
-    path: Assets/Scenes/MainQuizScenes/Eq_Step3_OX/Eq_Step3_OX9.unity
-    guid: 870b781fa49df1d43b6ef1c8452439b3
-  - enabled: 1
-    path: Assets/Scenes/MainQuizScenes/Eq_Step3_OX/Eq_Step3_OX10.unity
-    guid: e6d8afc0181ce004c8c51957bb0ee2e0
-  - enabled: 0
     path: Assets/Scenes/EqScenes/Eq_Step3_Quiz/Eq_Step3_Quiz01.unity
     guid: 559cccf7e2bbe784396257c1e19c1f4d
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/EqScenes/Eq_Step3_Quiz/Eq_Step3_Quiz02.unity
     guid: a4769fda0580b834e860340b68c434c7
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/EqScenes/Eq_Step3_Quiz/Eq_Step3_Quiz03.unity
     guid: 6b24fd29b3c524548a459ead8151d149
   - enabled: 1
@@ -201,21 +141,6 @@ EditorBuildSettings:
     path: Assets/Scenes/FireScenes/Fire_Step1/Fire_Step1_S5.unity
     guid: 8d6045426b9b64443aa235d5205186e5
   - enabled: 1
-    path: Assets/Scenes/MainQuizScenes/Fire_Step1_OX/Fire_Step1_OX1.unity
-    guid: 6e05528c840373e45a42a41d69013f35
-  - enabled: 1
-    path: Assets/Scenes/MainQuizScenes/Fire_Step1_OX/Fire_Step1_OX2.unity
-    guid: eeda28a5ab4375647ab1c2b8bcd8c3bd
-  - enabled: 1
-    path: Assets/Scenes/MainQuizScenes/Fire_Step1_OX/Fire_Step1_OX3.unity
-    guid: bf1fa75e0e1ee7346a783f0605af7b02
-  - enabled: 1
-    path: Assets/Scenes/MainQuizScenes/Fire_Step1_OX/Fire_Step1_OX4.unity
-    guid: 89651aee14f723649bbebb6c9fe68800
-  - enabled: 1
-    path: Assets/Scenes/MainQuizScenes/Fire_Step1_OX/Fire_Step1_OX5.unity
-    guid: 649659436bdfa264fbda1a3193a7d2fd
-  - enabled: 1
     path: Assets/Scenes/FireScenes/Fire_Step2/Fire_Step2_Badge.unity
     guid: 2dd2ef4817eda2c4e997365cfe68c475
   - enabled: 1
@@ -261,21 +186,6 @@ EditorBuildSettings:
     path: Assets/Scenes/FireScenes/Fire_Step2/Fire_Step2_S13.unity
     guid: e7d899bc5de1bee43915f876693ffd01
   - enabled: 1
-    path: Assets/Scenes/MainQuizScenes/Fire_Step2_OX/Fire_Step2_OX1.unity
-    guid: e11272380117dc244983bbd1b9b6391c
-  - enabled: 1
-    path: Assets/Scenes/MainQuizScenes/Fire_Step2_OX/Fire_Step2_OX2.unity
-    guid: 338384d1e6cf7ff4f910a08a14a66574
-  - enabled: 1
-    path: Assets/Scenes/MainQuizScenes/Fire_Step2_OX/Fire_Step2_OX3.unity
-    guid: 4bf3f8a1605768f45bad775562e569d6
-  - enabled: 1
-    path: Assets/Scenes/MainQuizScenes/Fire_Step2_OX/Fire_Step2_OX4.unity
-    guid: ad1999e8f35cf164b8e8c99c039359ba
-  - enabled: 1
-    path: Assets/Scenes/MainQuizScenes/Fire_Step2_OX/Fire_Step2_OX5.unity
-    guid: b2fc7ba5cab0a4248ad7c1ffddc51851
-  - enabled: 1
     path: Assets/Scenes/FireScenes/Fire_Step3/Fire_Step3_Badge.unity
     guid: fadb64efaab671d4795cce419309420f
   - enabled: 1
@@ -300,42 +210,12 @@ EditorBuildSettings:
     path: Assets/Scenes/FireScenes/Fire_Step3/Fire_Step3_S7.unity
     guid: 514583cff1b86e544a5f055fd624e235
   - enabled: 1
-    path: Assets/Scenes/MainQuizScenes/Fire_Step3_OX/Fire_Step3_OX1.unity
-    guid: 6011e8030686e1e4c9eae908d1af1438
-  - enabled: 1
-    path: Assets/Scenes/MainQuizScenes/Fire_Step3_OX/Fire_Step3_OX2.unity
-    guid: 96aa60c0f2c087b4b93da480c1ec5fa0
-  - enabled: 1
-    path: Assets/Scenes/MainQuizScenes/Fire_Step3_OX/Fire_Step3_OX3.unity
-    guid: 1f37fbe681398bf41b03ca54c7c8d30d
-  - enabled: 1
-    path: Assets/Scenes/MainQuizScenes/Fire_Step3_OX/Fire_Step3_OX4.unity
-    guid: cde891eb1cf38fd44b475e11928b90d2
-  - enabled: 1
-    path: Assets/Scenes/MainQuizScenes/Fire_Step3_OX/Fire_Step3_OX5.unity
-    guid: bd6d888340cd726439169ea1c25a54dc
-  - enabled: 1
-    path: Assets/Scenes/MainQuizScenes/Fire_Step3_OX/Fire_Step3_OX6.unity
-    guid: d6ed0d1f2ff8cf54da3d128dd2f53ec7
-  - enabled: 1
-    path: Assets/Scenes/MainQuizScenes/Fire_Step3_OX/Fire_Step3_OX7.unity
-    guid: 1becf7f005a09304ead73167df3364e0
-  - enabled: 1
-    path: Assets/Scenes/MainQuizScenes/Fire_Step3_OX/Fire_Step3_OX8.unity
-    guid: b43e63e872132b243aeefbc13a172873
-  - enabled: 1
-    path: Assets/Scenes/MainQuizScenes/Fire_Step3_OX/Fire_Step3_OX9.unity
-    guid: cb72738d78870bb48bd405518b49e81d
-  - enabled: 1
-    path: Assets/Scenes/MainQuizScenes/Fire_Step3_OX/Fire_Step3_OX10.unity
-    guid: 310ebdf31116df84680b56e3a8e44219
-  - enabled: 0
     path: Assets/Scenes/FireScenes/Fire_Step3_Quiz/Fire_Step3_Quiz01.unity
     guid: ac67933e59c2e8c4692394d8f1d7e97b
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/FireScenes/Fire_Step3_Quiz/Fire_Step3_Quiz02.unity
     guid: ab7ad886389c511479879f3bb97c3159
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/FireScenes/Fire_Step3_Quiz/Fire_Step3_Quiz03.unity
     guid: e4e686fd9e502a846ba33b3c3fd70ce0
   - enabled: 1
@@ -365,13 +245,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/FireScenes/Fire_Step4/Fire_Step4_S8.unity
     guid: f657bd23bd713364fb04bcc989be4519
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/FireScenes/Fire_Step4_Quiz/Fire_Step4_Quiz01.unity
     guid: 0fa9f23a579e476478727995044eb7f5
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/FireScenes/Fire_Step4_Quiz/Fire_Step4_Quiz02.unity
     guid: aeb22b92fd6ee234fa7a643b8d4ad48e
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/FireScenes/Fire_Step4_Quiz/Fire_Step4_Quiz03.unity
     guid: 1eb1f40469b6f9f40960c129d6162629
   - enabled: 1

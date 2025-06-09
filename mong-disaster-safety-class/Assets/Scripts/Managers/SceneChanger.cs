@@ -25,118 +25,15 @@ public class SceneChanger : MonoBehaviour
         SceneManager.LoadScene("Eq_Step1_S1");
     }
 
-    public void Eq_Step1_OX1()
-    {
-        SceneManager.LoadScene("Eq_Step1_OX1");
-    }
-
-    public void Eq_Step1_OX2()
-    {
-        SceneManager.LoadScene("Eq_Step1_OX2");
-    }
-
-    public void Eq_Step1_OX3()
-    {
-        SceneManager.LoadScene("Eq_Step1_OX3");
-    }
-
-    public void Eq_Step1_OX4()
-    {
-        SceneManager.LoadScene("Eq_Step1_OX4");
-    }
-
-    public void Eq_Step1_OX5()
-    {
-        SceneManager.LoadScene("Eq_Step1_OX5");
-    }
-
-
     public void Eq_Step2_S1()
     {
         SceneManager.LoadScene("Eq_Step2_S1");
     }
 
-    public void Eq_Step2_OX1()
-    {
-        SceneManager.LoadScene("Eq_Step2_OX1");
-    }
-
-    public void Eq_Step2_OX2()
-    {
-        SceneManager.LoadScene("Eq_Step2_OX2");
-    }
-
-    public void Eq_Step2_OX3()
-    {
-        SceneManager.LoadScene("Eq_Step2_OX3");
-    }
-
-    public void Eq_Step2_OX4()
-    {
-        SceneManager.LoadScene("Eq_Step2_OX4");
-    }
-
-    public void Eq_Step2_OX5()
-    {
-        SceneManager.LoadScene("Eq_Step2_OX5");
-    }
-
-
     public void Eq_Step3_S1()
     {
         SceneManager.LoadScene("Eq_Step3_S1");
     }
-
-    public void Eq_Step3_OX1()
-    {
-        SceneManager.LoadScene("Eq_Step3_OX1");
-    }
-
-    public void Eq_Step3_OX2()
-    {
-        SceneManager.LoadScene("Eq_Step3_OX2");
-    }
-
-    public void Eq_Step3_OX3()
-    {
-        SceneManager.LoadScene("Eq_Step3_OX3");
-    }
-
-    public void Eq_Step3_OX4()
-    {
-        SceneManager.LoadScene("Eq_Step3_OX4");
-    }
-
-    public void Eq_Step3_OX5()
-    {
-        SceneManager.LoadScene("Eq_Step3_OX5");
-    }
-
-    public void Eq_Step3_OX6()
-    {
-        SceneManager.LoadScene("Eq_Step3_OX6");
-    }
-
-    public void Eq_Step3_OX7()
-    {
-        SceneManager.LoadScene("Eq_Step3_OX7");
-    }
-
-    public void Eq_Step3_OX8()
-    {
-        SceneManager.LoadScene("Eq_Step3_OX8");
-    }
-
-    public void Eq_Step3_OX9()
-    {
-        SceneManager.LoadScene("Eq_Step3_OX9");
-    }
-
-    public void Eq_Step3_OX10()
-    {
-        SceneManager.LoadScene("Eq_Step3_OX10");
-    }
-
 
     public void Eq_Step4_S1()
     {
@@ -233,116 +130,14 @@ public class SceneChanger : MonoBehaviour
         SceneManager.LoadScene("Fire_Step1_S1");
     }
 
-    public void Fire_Step1_OX1()
-    {
-        SceneManager.LoadScene("Fire_Step1_OX1");
-    }
-
-    public void Fire_Step1_OX2()
-    {
-        SceneManager.LoadScene("Fire_Step1_OX2");
-    }
-
-    public void Fire_Step1_OX3()
-    {
-        SceneManager.LoadScene("Fire_Step1_OX3");
-    }
-
-    public void Fire_Step1_OX4()
-    {
-        SceneManager.LoadScene("Fire_Step1_OX4");
-    }
-
-    public void Fire_Step1_OX5()
-    {
-        SceneManager.LoadScene("Fire_Step1_OX5");
-    }
-
-
     public void Fire_Step2_S1()
     {
         SceneManager.LoadScene("Fire_Step2_S1");
     }
 
-    public void Fire_Step2_OX1()
-    {
-        SceneManager.LoadScene("Fire_Step2_OX1");
-    }
-
-    public void Fire_Step2_OX2()
-    {
-        SceneManager.LoadScene("Fire_Step2_OX2");
-    }
-
-    public void Fire_Step2_OX3()
-    {
-        SceneManager.LoadScene("Fire_Step2_OX3");
-    }
-
-    public void Fire_Step2_OX4()
-    {
-        SceneManager.LoadScene("Fire_Step2_OX4");
-    }
-
-    public void Fire_Step2_OX5()
-    {
-        SceneManager.LoadScene("Fire_Step2_OX5");
-    }
-
-
     public void Fire_Step3_S1()
     {
         SceneManager.LoadScene("Fire_Step3_S1");
-    }
-
-    public void Fire_Step3_OX1()
-    {
-        SceneManager.LoadScene("Fire_Step3_OX1");
-    }
-
-    public void Fire_Step3_OX2()
-    {
-        SceneManager.LoadScene("Fire_Step3_OX2");
-    }
-
-    public void Fire_Step3_OX3()
-    {
-        SceneManager.LoadScene("Fire_Step3_OX3");
-    }
-
-    public void Fire_Step3_OX4()
-    {
-        SceneManager.LoadScene("Fire_Step3_OX4");
-    }
-
-    public void Fire_Step3_OX5()
-    {
-        SceneManager.LoadScene("Fire_Step3_OX5");
-    }
-
-    public void Fire_Step3_OX6()
-    {
-        SceneManager.LoadScene("Fire_Step3_OX6");
-    }
-
-    public void Fire_Step3_OX7()
-    {
-        SceneManager.LoadScene("Fire_Step3_OX7");
-    }
-
-    public void Fire_Step3_OX8()
-    {
-        SceneManager.LoadScene("Fire_Step3_OX8");
-    }
-
-    public void Fire_Step3_OX9()
-    {
-        SceneManager.LoadScene("Fire_Step3_OX9");
-    }
-
-    public void Fire_Step3_OX10()
-    {
-        SceneManager.LoadScene("Fire_Step3_OX10");
     }
 
     public void Fire_Step4_S1()
