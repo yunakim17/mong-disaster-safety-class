@@ -149,10 +149,8 @@ public class SceneChanger : MonoBehaviour
     {
         SceneManager.LoadScene("Ranking");
     }
-
-    // 배지 획득 후 씬 이동 시 사용할 용도 -> 씬 이름을 입력해서 이동
-    public void ChangeScene(string sceneName)
+    public void TryQuiz()
     {
-        SceneManager.LoadScene(sceneName);
+        SceneManager.LoadScene("TryQuiz");
     }
 }
