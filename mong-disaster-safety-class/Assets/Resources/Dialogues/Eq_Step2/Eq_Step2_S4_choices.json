@@ -2,11 +2,12 @@
   {
     "sequence": 5,
     "speaker": "몽대장",
-    "question": "대피할 공간으로 어디가 좋을까?",
-    "option1": "책상이나 탁자 밑.",
-    "option2": "건물 밖.",
+    "question": "건물 안에 있는데 지진이 일어나면 어떡해야 하지?",
+    "option1": "책상 밑으로 숨는다.",
+    "option2": "건물 밖으로 나간다.",
     "correct_option": 1,
-    "feedback": "지진으로 건물이 흔들릴 때 급하게 나가면 위험해! 다시 선택해 볼까?",
-    "voice_path": ""
+    "feedback": "지진이 멈추지  않았는데 급하게 나가면 위험해! 먼저 흔들림이 멈출 때까지 책상이나 베개로 머리와 몸을 보호해야 해! 다시 생각해 볼까?",
+    "voice_path": "",
+    "feedback_voice_path": ""
   }
 ]
