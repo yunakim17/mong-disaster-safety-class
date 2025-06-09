@@ -9,20 +9,19 @@ public class ReviewQuizManager : MonoBehaviour
     [Header("UI 요소")]
     public TextMeshProUGUI questionText;
     public TextMeshProUGUI feedbackText;
-    public GameObject oImageButton;  
-    public GameObject xImageButton;  
+    public GameObject oImageButton;
+    public GameObject xImageButton;
     public Button nextButton;
 
     [Header("퀴즈 설정")]
     [TextArea] public string quizQuestion;
-    [TextArea] public string correctFeedbackMessage; 
-    [TextArea] public string wrongFeedbackMessage;  
-    public bool correctIsO; 
+    [TextArea] public string feedbackMessage;
+    public bool correctIsO;
 
     [Header("캐릭터 이미지")]
-    public Image characterImage;         
-    public Sprite defaultSprite;          
-    public Sprite correctAnswerSprite;    
+    public Image characterImage;
+    public Sprite defaultSprite;
+    public Sprite correctAnswerSprite;
 
     void Start()
     {
@@ -53,29 +52,17 @@ public class ReviewQuizManager : MonoBehaviour
 
     private void CheckAnswer(bool userChoseO)
     {
-        bool isCorrect = (userChoseO == correctIsO);
-
         oImageButton.GetComponent<Button>().interactable = false;
         xImageButton.GetComponent<Button>().interactable = false;
 
-        if (isCorrect)
-        {
-            feedbackText.text = correctFeedbackMessage;
-            feedbackText.color = Color.green;
+        feedbackText.text = feedbackMessage;
+        feedbackText.color = Color.white;
 
+        if (userChoseO == correctIsO)
+        {
             if (characterImage != null && correctAnswerSprite != null)
             {
                 characterImage.sprite = correctAnswerSprite;
-            }
-        }
-        else
-        {
-            feedbackText.text = wrongFeedbackMessage;
-            feedbackText.color = Color.red;
-
-            if (characterImage != null && defaultSprite != null)
-            {
-                characterImage.sprite = defaultSprite;
             }
         }
 
