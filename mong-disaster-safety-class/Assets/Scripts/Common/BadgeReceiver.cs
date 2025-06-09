@@ -7,7 +7,6 @@ public class BadgeReceiver : MonoBehaviour
 {
     public int stageId;
     public bool isCompleted = false;
-    public string nextSceneName;
 
     // 서버에 전송할 데이터 형식 정의
     [System.Serializable]
@@ -77,22 +76,15 @@ public class BadgeReceiver : MonoBehaviour
         }
     }
 
-    // 버튼 클릭 시 메인으로 이동
-    public void OnClickMainButton()
+    // 화면 클릭 시 씬 전환
+    public void ChangeScene()
     {
-        GetComponent<SceneChanger>().Main();
-    }
+        if (!isCompleted)
+        {
+            Debug.Log("서버 저장 중입니다.");
+            return;
+        }
 
-    // 버튼 클릭 시 다음 스테이지로 이동
-    public void OnClickNextButton()
-    {
-        if (!string.IsNullOrEmpty(nextSceneName))
-        {
-            GetComponent<SceneChanger>().ChangeScene(nextSceneName);
-        }
-        else
-        {
-            Debug.LogWarning("다음 씬 이름이 비어있습니다.");
-        }
+        GetComponent<SceneChanger>().TryQuiz();
     }
 }
