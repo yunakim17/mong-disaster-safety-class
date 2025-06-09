@@ -4,12 +4,12 @@ using System.Collections;
 public class SpeakerEffectController : MonoBehaviour
 {
     public DialogueManager dialogueManager;
-    public GameObject speakerSprite; // Áøµ¿½ÃÅ³ ½ºÇÁ¶óÀÌÆ® ¿ÀºêÁ§Æ®
+    public GameObject speakerSprite; // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Å³ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ® ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ®
 
     private Coroutine pulseCoroutine = null;
     private int currentIdx = -1;
 
-    // ±âº»/È®´ë ½ºÄÉÀÏ ¼³Á¤
+    // ï¿½âº»/È®ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
     private Vector3 originalScale = Vector3.one * 0.85f;
     private Vector3 enlargedScale = Vector3.one * 0.95f;
 
@@ -31,7 +31,7 @@ public class SpeakerEffectController : MonoBehaviour
         {
             currentIdx = idx;
 
-            if (currentIdx == 2) // 3¹øÂ° ´ë»çÀÏ ¶§
+            if (currentIdx ==1 || currentIdx == 2) // 3ï¿½ï¿½Â° ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½
             {
                 if (pulseCoroutine == null)
                     pulseCoroutine = StartCoroutine(PulseEffect());
@@ -43,7 +43,7 @@ public class SpeakerEffectController : MonoBehaviour
                     StopCoroutine(pulseCoroutine);
                     pulseCoroutine = null;
 
-                    // ½ºÄÉÀÏ ¿ø·¡´ë·Î º¹¿ø
+                    // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
                     speakerSprite.transform.localScale = originalScale;
                 }
             }

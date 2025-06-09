@@ -10,17 +10,21 @@ public class Fire_Step3_S1_Starter : MonoBehaviour
         dialogueManager.StartDialogue(
             "Dialogues/Fire_Step3/Fire_Step3_S1_dialogues",
             "",
-            "Fire_Step3_S2");
+            "Fire_Step3_S3");
     }
 
     void Update()
     {
         int currentIdx = dialogueManager.GetCurrentLineIndex();
 
-        // 3¹øÂ° ´ë»ç(index = 2)¿¡¼­ ÀÌ¹ÌÁö È°¼ºÈ­
-        if (currentIdx == 2)
+        //ì¸ë±ìŠ¤ 2ì¼ë–„ ìŠ¤í”¼ì»¤ ì´ë¯¸ì§€ 
+        if (currentIdx == 1)
         {
             speaker?.SetActive(true);
+        }
+        if (currentIdx == 3)
+        {
+            speaker?.SetActive(false);
         }
     }
 }
