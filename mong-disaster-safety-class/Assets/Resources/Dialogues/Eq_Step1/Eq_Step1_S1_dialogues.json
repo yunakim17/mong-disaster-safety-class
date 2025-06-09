@@ -2,7 +2,7 @@
   {
     "sequence": 0,
     "speaker": "몽대장",
-    "dialogue_text": "안녕! 나는 몽대장! 나와 함께 지진에 대해 알아보자~",
+    "dialogue_text": "안녕! 나는 몽대장! 오늘 나와 함께 지진이 무엇인지 함께 알아보자~",
     "voice_path": ""
   },
   {
@@ -14,7 +14,7 @@
   {
     "sequence": 2,
     "speaker": "몽대장",
-    "dialogue_text": "지진이 어떻게 일어나는지 알아볼까?",
+    "dialogue_text": "지진이 어떻게 일어나는지 한번 알아볼까?",
     "voice_path": ""
   }
 ]

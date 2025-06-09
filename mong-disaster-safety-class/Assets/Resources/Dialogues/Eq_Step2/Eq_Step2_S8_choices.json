@@ -1,12 +1,13 @@
 [
     {
-        "sequence": 12,
+        "sequence": 11,
         "speaker": "몽대장",
         "question": "그렇다면 어떻게 해야 할까?",
-        "option1": "잽싸게 피한다.",
-        "option2": "넘어지지 않게 고정해 둔다.",
+        "option1": "넘어지기 전에 피한다. ",
+        "option2": "책장과 냉장고를 움직이지 않게 해둔다.",
         "correct_option": 2,
-        "feedback": "물론 피할 수는 있겠으나 다칠 위험이 너무 커! 다시 선택해 볼까?",
-        "voice_path": ""
+        "feedback": "그건  너무 위험하고 다칠 수 있어! 다시 생각해 볼까?",
+        "voice_path": "",
+        "feedback_voice_path": ""
     }
 ]
