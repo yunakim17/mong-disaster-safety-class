@@ -9,10 +9,11 @@ public class DragCup : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragH
     public Transform matchTransform;
     public GameObject match;
     public GameObject coveredMatch;
+    public GameObject nextButton;
 
     private Vector3 originalPosition;
     private Vector3 dragOffset;
-    private bool alreadyTriggered = false; // ÄÅÀÌ ÀÌ¹Ì µå·¡±× µÇ¾ú´ÂÁö ¿©ºÎ (Áßº¹ ¹æÁö)
+    private bool alreadyTriggered = false; // ï¿½ï¿½ï¿½ï¿½ ï¿½Ì¹ï¿½ ï¿½å·¡ï¿½ï¿½ ï¿½Ç¾ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ (ï¿½ßºï¿½ ï¿½ï¿½ï¿½ï¿½)
 
     private RectTransform rectTransform;
     private Canvas canvas;
@@ -23,7 +24,7 @@ public class DragCup : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragH
         canvas = GetComponentInParent<Canvas>();
     }
 
-    // µå·¡±× ½ÃÀÛ
+    // ï¿½å·¡ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
     public void OnBeginDrag(PointerEventData eventData)
     {
         if (alreadyTriggered) return;
@@ -31,7 +32,7 @@ public class DragCup : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragH
         originalPosition = rectTransform.anchoredPosition;
     }
     
-    // µå·¡±× Áß - ÄÅ À§Ä¡ ¿Å±â±â
+    // ï¿½å·¡ï¿½ï¿½ ï¿½ï¿½ - ï¿½ï¿½ ï¿½ï¿½Ä¡ ï¿½Å±ï¿½ï¿½
     public void OnDrag(PointerEventData eventData)
     {
         if (alreadyTriggered) return;
@@ -47,20 +48,21 @@ public class DragCup : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragH
         }
     }
 
-    // µå·¡±× ³¡
+    // ï¿½å·¡ï¿½ï¿½ ï¿½ï¿½
     public void OnEndDrag(PointerEventData eventData)
     {
         if (alreadyTriggered) return;
 
         float distance = Vector3.Distance(rectTransform.position, matchTransform.position);
 
-        // ÀÏÁ¤ ¹üÀ§¿¡ µé¾î¿À¸é ÀÌ¹ÌÁö º¯°æ
+        // ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ì¹ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
         if (distance < 100f)
         {
             match.SetActive(false);
             coveredMatch.SetActive(true);
             gameObject.SetActive(false);
             alreadyTriggered = true;
+            nextButton.SetActive(true);
         }
         else
         {
