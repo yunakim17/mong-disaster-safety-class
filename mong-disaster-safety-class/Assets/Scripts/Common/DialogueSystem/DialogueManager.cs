@@ -29,7 +29,7 @@ public class DialogueManager : MonoBehaviour
     private HashSet<int> visitedIndices = new HashSet<int>();
     private List<int> requiredVisitedIndices = new List<int>();
 
-    private Coroutine typingCoroutine; // ÇöÀç ½ÇÇà ÁßÀÎ Å¸ÀÌÇÎ ÄÚ·çÆ¾ ÃßÀû¿ë
+    private Coroutine typingCoroutine; // ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ Å¸ï¿½ï¿½ï¿½ï¿½ ï¿½Ú·ï¿½Æ¾ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 
     public void StartDialogue(string dialogueFile, string choiceFile, string nextScene = "")
     {
@@ -70,7 +70,7 @@ public class DialogueManager : MonoBehaviour
         TextAsset json = Resources.Load<TextAsset>(fileName);
         if (json == null)
         {
-            Debug.LogError($"JSON ÆÄÀÏ ¸ø Ã£À½: {fileName}");
+            Debug.LogError($"JSON ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ Ã£ï¿½ï¿½: {fileName}");
             return;
         }
 
@@ -85,7 +85,7 @@ public class DialogueManager : MonoBehaviour
 
         if (json == null)
         {
-            Debug.LogWarning($" ¼±ÅÃÁö JSON ÆÄÀÏÀ» Ã£À» ¼ö ¾ø½À´Ï´Ù: {fileName}");
+            Debug.LogWarning($" ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ JSON ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ Ã£ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï´ï¿½: {fileName}");
             return;
         }
 
@@ -184,10 +184,10 @@ public class DialogueManager : MonoBehaviour
         Debug.Log($"[ShowSingleLine] index: {index}");
         if (index < 0 || index >= dialogueLines.Count)
         {
-            Debug.LogWarning("Àß¸øµÈ ÀÎµ¦½º ¿äÃ»");
+            Debug.LogWarning("ï¿½ß¸ï¿½ï¿½ï¿½ ï¿½Îµï¿½ï¿½ï¿½ ï¿½ï¿½Ã»");
             return;
         }
-        Debug.Log($"´ë»ç: {dialogueLines[index].dialogue_text}");
+        Debug.Log($"ï¿½ï¿½ï¿½: {dialogueLines[index].dialogue_text}");
 
         DialogueLine line = dialogueLines[index];
         currentText = line.dialogue_text;
@@ -208,11 +208,6 @@ public class DialogueManager : MonoBehaviour
         visitedIndices.Add(index);
 
         string currentScene = SceneManager.GetActiveScene().name;
-
-        if (currentScene != "Fire_Step1_S4" && requiredVisitedIndices.TrueForAll(i => visitedIndices.Contains(i)))
-        {
-            nextButton.SetActive(true);
-        }
     }
 
     public IEnumerator ShowSingleLineAndWait(int index)

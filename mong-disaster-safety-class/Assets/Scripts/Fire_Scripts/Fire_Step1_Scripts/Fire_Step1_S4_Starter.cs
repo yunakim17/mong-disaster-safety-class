@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Fe_Step1_S4_Starter : MonoBehaviour
+public class Fire_Step1_S4_Starter : MonoBehaviour
 {
     public DialogueManager dialogueManager;
 
@@ -9,6 +9,6 @@ public class Fe_Step1_S4_Starter : MonoBehaviour
         dialogueManager.StartDialogue(
             "Dialogues/Fire_Step1/Fire_Step1_S4_dialogues",
             "",
-            "Fire_Step1_S5");
+            "Fire_Step1_S4_1");
     }
 }
