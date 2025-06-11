@@ -50,7 +50,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueText: {fileID: 8418021574541606082}
   audioSource: {fileID: 2295885040766925348}
-  typingSpeed: 0.05
+  typingSpeed: 0.1
   nextButton: {fileID: 7342054664919758976}
   btn1_2: {fileID: 0}
   btn3_4: {fileID: 0}
@@ -252,7 +252,7 @@ Canvas:
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_TargetDisplay: 0
 --- !u!114 &3742443724329177131
 MonoBehaviour:
