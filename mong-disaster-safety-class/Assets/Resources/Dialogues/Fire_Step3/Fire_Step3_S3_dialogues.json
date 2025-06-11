@@ -1,18 +1,18 @@
 [
   {
-    "sequence": 5,
+    "sequence": 6,
     "speaker": "선생님",
     "dialogue_text": "얘들아! 모두 창가에 두줄로 잘 섰지? 입과 코를 잘 막고, 몸을 숙여!",
     "voice_path": ""
   },
   {
-    "sequence": 6,
+    "sequence": 7,
     "speaker": "선생님",
     "dialogue_text": "이제 줄을 지켜서 운동장으로 나갈 거야. 대피할 때는 절대 뛰면 안돼. 알겠지?",
     "voice_path": ""
   },
   {
-    "sequence": 7,
+    "sequence": 8,
     "speaker": "몽대장",
     "dialogue_text": "",
     "voice_path": ""

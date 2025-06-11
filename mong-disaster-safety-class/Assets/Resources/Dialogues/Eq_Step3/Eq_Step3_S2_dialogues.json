@@ -1,18 +1,18 @@
 [
 {
-    "sequence": 7,
+    "sequence": 8,
     "speaker": "선생님",
     "dialogue_text": "모두 창문에서 떨어져서 한줄로 서자! 유리창이 깨지면 위험하니까!",
     "voice_path": ""
   },  
   {
-    "sequence": 8,
+    "sequence": 9,
     "speaker": "선생님",
     "dialogue_text": "그리고 지진이 났을 때 엘리베이터는 멈출 수 있어서 타면 안되니 계단으로 가자! 다들 머리를 잘 감쌌지? 이제 뛰지 말고 줄을 맞춰서 가자!",
     "voice_path": ""
   },
   {
-    "sequence": 9,
+    "sequence": 10,
     "speaker": "주인공",
     "dialogue_text": "",
     "voice_path": ""
