@@ -438,10 +438,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Step2_Group
       objectReference: {fileID: 0}
-    - target: {fileID: 4302378064661111594, guid: 08296c46cdca93b4e9a115f0b981112c, type: 3}
-      propertyPath: shakeTarget
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 5482573496944860674, guid: 08296c46cdca93b4e9a115f0b981112c, type: 3}
       propertyPath: m_Camera
       value: 
