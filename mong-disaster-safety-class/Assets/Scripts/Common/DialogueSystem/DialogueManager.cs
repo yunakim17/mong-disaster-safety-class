@@ -9,7 +9,7 @@ public class DialogueManager : MonoBehaviour
 {
     public TextMeshProUGUI dialogueText;
     public AudioSource audioSource;
-    public float typingSpeed = 0.05f;
+    public float typingSpeed = 1f;
     public GameObject nextButton;
 
     public Button btn1_2;
@@ -29,7 +29,7 @@ public class DialogueManager : MonoBehaviour
     private HashSet<int> visitedIndices = new HashSet<int>();
     private List<int> requiredVisitedIndices = new List<int>();
 
-    private Coroutine typingCoroutine; // ���� ���� ���� Ÿ���� �ڷ�ƾ ������
+    private Coroutine typingCoroutine;
 
     public void StartDialogue(string dialogueFile, string choiceFile, string nextScene = "")
     {
@@ -53,6 +53,7 @@ public class DialogueManager : MonoBehaviour
             btn7.onClick.AddListener(() => StartCoroutine(ShowTwoLinesSequentially(4, 5)));
             requiredVisitedIndices = new List<int> { 1, 2, 3, 4 };
             currentLineIndex = 4;
+            nextButton.SetActive(false); // 처음엔 비활성화
         }
 
         if (currentScene == "Fire_Step1_S3")
@@ -62,6 +63,7 @@ public class DialogueManager : MonoBehaviour
             btn5_6.onClick.AddListener(() => ShowSingleLine(3));
             requiredVisitedIndices = new List<int> { 1, 2, 3 };
             currentLineIndex = 3;
+            nextButton.SetActive(false); // 처음엔 비활성화
         }
     }
 
@@ -70,7 +72,7 @@ public class DialogueManager : MonoBehaviour
         TextAsset json = Resources.Load<TextAsset>(fileName);
         if (json == null)
         {
-            Debug.LogError($"JSON ���� �� ã��: {fileName}");
+            Debug.LogError($"JSON 파일을 찾을 수 없습니다: {fileName}");
             return;
         }
 
@@ -85,7 +87,7 @@ public class DialogueManager : MonoBehaviour
 
         if (json == null)
         {
-            Debug.LogWarning($" ������ JSON ������ ã�� �� �����ϴ�: {fileName}");
+            Debug.LogWarning($"선택지 JSON 파일을 찾을 수 없습니다: {fileName}");
             return;
         }
 
@@ -184,10 +186,9 @@ public class DialogueManager : MonoBehaviour
         Debug.Log($"[ShowSingleLine] index: {index}");
         if (index < 0 || index >= dialogueLines.Count)
         {
-            Debug.LogWarning("�߸��� �ε��� ��û");
+            Debug.LogWarning("잘못된 인덱스 요청");
             return;
         }
-        Debug.Log($"���: {dialogueLines[index].dialogue_text}");
 
         DialogueLine line = dialogueLines[index];
         currentText = line.dialogue_text;
@@ -207,7 +208,15 @@ public class DialogueManager : MonoBehaviour
 
         visitedIndices.Add(index);
 
-        string currentScene = SceneManager.GetActiveScene().name;
+        CheckAllButtonsClicked();
+    }
+
+    private void CheckAllButtonsClicked()
+    {
+        if (new HashSet<int>(requiredVisitedIndices).IsSubsetOf(visitedIndices))
+        {
+            nextButton.SetActive(true);
+        }
     }
 
     public IEnumerator ShowSingleLineAndWait(int index)
