@@ -300,6 +300,7 @@ GameObject:
   - component: {fileID: 851769131}
   - component: {fileID: 851769133}
   - component: {fileID: 851769132}
+  - component: {fileID: 851769134}
   m_Layer: 0
   m_Name: Mong
   m_TagString: Untagged
@@ -346,7 +347,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 1947679391, guid: f203a89d6c457d34a9621e7c4be730e6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 4972cff526e94d64ca38ed62240594f2, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -364,6 +365,27 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 851769130}
   m_CullTransparentMesh: 1
+--- !u!95 &851769134
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 851769130}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 6a6e15efe13ab1b45b3daddfb1e39cc0, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1470990004
 GameObject:
   m_ObjectHideFlags: 0
@@ -541,6 +563,14 @@ PrefabInstance:
       propertyPath: m_fontSizeBase
       value: 54
       objectReference: {fileID: 0}
+    - target: {fileID: 8859463567647334104, guid: ef02e2e4463bb4543b4309d62d31342c, type: 3}
+      propertyPath: mong_animator
+      value: 
+      objectReference: {fileID: 851769134}
+    - target: {fileID: 8859463567647334104, guid: ef02e2e4463bb4543b4309d62d31342c, type: 3}
+      propertyPath: mong_default_img
+      value: 
+      objectReference: {fileID: 21300000, guid: 4972cff526e94d64ca38ed62240594f2, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
