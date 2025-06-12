@@ -11,6 +11,6 @@ public class Fire_Step1_S5_Starter : MonoBehaviour
         dialogueManager.StartDialogue(
             "Dialogues/Fire_Step1/Fire_Step1_S6_dialogues",
             "",
-            "");
+            "Fire_Step1_Badge");
     }
 }

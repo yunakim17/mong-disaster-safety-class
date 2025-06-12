@@ -9,6 +9,6 @@ public class Eq_Step1_S4_Starter : MonoBehaviour
         dialogueManager.StartDialogue(
             "Dialogues/Eq_Step1/Eq_Step1_S4_dialogues",
             "",
-            "");
+            "Eq_Step1_Badge");
     }
 }

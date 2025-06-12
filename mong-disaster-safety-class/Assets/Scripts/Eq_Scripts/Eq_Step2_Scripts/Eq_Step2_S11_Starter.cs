@@ -9,7 +9,7 @@ public class Eq_Step2_S11_Starter : MonoBehaviour
         dialogueManager.StartDialogue(
             "Dialogues/Eq_Step2/Eq_Step2_S11_dialogues",
             "",
-            "" // ´ÙÀ½ ¾À ÀÌ¸§
+            "Eq_Step2_Badge" // ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½Ì¸ï¿½
         );
     }
 }
