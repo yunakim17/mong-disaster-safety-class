@@ -530,6 +530,10 @@ PrefabInstance:
       propertyPath: mong_animator
       value: 
       objectReference: {fileID: 2140802885}
+    - target: {fileID: 4302378064661111594, guid: 08296c46cdca93b4e9a115f0b981112c, type: 3}
+      propertyPath: mong_default_img
+      value: 
+      objectReference: {fileID: 21300000, guid: 61443fbb951d9fd4e93b15312b73fdde, type: 3}
     - target: {fileID: 8392072422211829542, guid: 08296c46cdca93b4e9a115f0b981112c, type: 3}
       propertyPath: m_LocalPosition.x
       value: 119.03966
@@ -722,7 +726,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 1831425828, guid: 4f1cebb689251224b98e8bad013b08f6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 61443fbb951d9fd4e93b15312b73fdde, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -748,7 +752,7 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2140802881}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 25ad1c4063e43684da6e5907ae315d43, type: 2}
   m_CullingMode: 0

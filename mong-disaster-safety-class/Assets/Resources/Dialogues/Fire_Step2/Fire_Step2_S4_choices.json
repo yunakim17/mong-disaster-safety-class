@@ -1,8 +1,8 @@
 [
- {
+  {
     "sequence": 6,
     "speaker": "몽대장",
-    "question": "전자제품은 어떻게 사용하면 좋을까?",
+    "question": "전자제품은 어떻게 \n 사용하면 좋을까?",
     "option1": "젖어 있거나 물이 있는 곳에 놓지 않는다.",
     "option2": "젖어 있거나 물이 있는 곳에 놔도 된다.",
     "correct_option": 1,
