@@ -271,7 +271,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "2. \uB300\uD53C\uD560 \uB54C\uB294 \uB6F0\uC9C0 \uB9D0\uACE0 \uC904\uC744
+  m_text: "2. \uB300\uD53C\uD560 \uB54C\uB294 \uB6F0\uC9C0 \uB9D0\uACE0 \n    \uC904\uC744
     \uB9DE\uCDB0 \uC6C0\uC9C1\uC5EC\uC57C \uD574\uC694."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6ce05cfa288a0ba45b879d1da63a9542, type: 2}
@@ -281,8 +281,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4283432956
+  m_fontColor: {r: 0.9882353, g: 1, b: 0.30980393, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -335,7 +335,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 41.78662, w: 0}
+  m_margin: {x: 0, y: 0, z: -251.89954, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -410,7 +410,7 @@ MonoBehaviour:
   quizQuestion: "2. \uB300\uD53C\uD560 \uB54C\uB294 \uB6F0\uC9C0 \uB9D0\uACE0 \uC904\uC744
     \uB9DE\uCDB0 \uC6C0\uC9C1\uC5EC\uC57C \uD574\uC694."
   feedbackMessage: "\uB6F0\uBA74 \uB118\uC5B4\uC9C8 \uC218 \uC788\uC5B4! \uCE5C\uAD6C\uB791
-    \uBD80\uB52A\uD788\uBA74 \uB354 \uC704\uD5D8\uD558\uB2C8\uAE4C \uC904 \uC798
+    \uBD80\uB52A\uD788\uBA74 \uB354 \uC704\uD5D8\uD558\uB2C8\uAE4C \n\uC904 \uC798
     \uC11C\uC11C \uCC9C\uCC9C\uD788 \uC6C0\uC9C1\uC774\uC790!"
   correctIsO: 1
   characterImage: {fileID: 913781760}
@@ -418,6 +418,8 @@ MonoBehaviour:
   correctAnswerSprite: {fileID: -1584791325, guid: 98d6f2f9bd423e34c8ff16c908b6b20e, type: 3}
   audioSource: {fileID: 712506087}
   correctSound: {fileID: 8300000, guid: 65134f8fe53e88a40bf4bfca322123b6, type: 3}
+  stageId: 0
+  totalQuestions: 0
 --- !u!82 &712506087
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1249,6 +1251,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1022721806925144833, guid: ef02e2e4463bb4543b4309d62d31342c, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4654244146373178581, guid: ef02e2e4463bb4543b4309d62d31342c, type: 3}
       propertyPath: m_IsActive
       value: 0

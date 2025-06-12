@@ -37,6 +37,8 @@ public class FireTouch : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
                 hasLongPressed = true; // �� ���� ����ǰ�
                 SirenCtrl.StartPulse(); // ���⼭ �ٷ� ����˴ϴ�
 
+                SirenCtrl.GetComponent<AudioSource>().Play();
+
                 if (dialogueManager != null)
                 {
                     dialogueManager.StartDialogue(
@@ -58,6 +60,7 @@ public class FireTouch : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
             }
 
             hasLongPressed = false; // �� ���� ����ǰ�
+            SirenCtrl.GetComponent<AudioSource>().Stop();
             SirenCtrl.StopPulse();
 
         }

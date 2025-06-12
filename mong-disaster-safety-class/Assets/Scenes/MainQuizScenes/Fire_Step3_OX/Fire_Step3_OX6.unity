@@ -281,8 +281,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4283432956
+  m_fontColor: {r: 0.9882353, g: 1, b: 0.30980393, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -335,7 +335,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 41.78662, w: 0}
+  m_margin: {x: 0, y: 0, z: -169.59265, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -410,13 +410,15 @@ MonoBehaviour:
   quizQuestion: "6. \uB300\uD53C\uD558\uB2E4\uAC00 \uB2E4\uCE58\uBA74 \uC120\uC0DD\uB2D8\uAED8
     \uAF2D \uB9D0\uD574\uC57C \uD574\uC694."
   feedbackMessage: "\uC870\uAE08\uB9CC \uB2E4\uCCD0\uB3C4 \uB9D0\uD574\uC57C \uC120\uC0DD\uB2D8\uC774
-    \uB3C4\uC640\uC904 \uC218 \uC788\uC5B4! \uC544\uD504\uBA74 \uAF2D \uC774\uC57C\uAE30\uD558\uC790!"
+    \uB3C4\uC640\uC904 \uC218 \uC788\uC5B4! \n\uC544\uD504\uBA74 \uAF2D \uC774\uC57C\uAE30\uD558\uC790!"
   correctIsO: 1
   characterImage: {fileID: 913781760}
   defaultSprite: {fileID: -277781592, guid: bc15573dc5121b14b9d4805268072672, type: 3}
   correctAnswerSprite: {fileID: -1584791325, guid: 98d6f2f9bd423e34c8ff16c908b6b20e, type: 3}
   audioSource: {fileID: 712506087}
   correctSound: {fileID: 8300000, guid: 65134f8fe53e88a40bf4bfca322123b6, type: 3}
+  stageId: 0
+  totalQuestions: 0
 --- !u!82 &712506087
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1248,6 +1250,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1022721806925144833, guid: ef02e2e4463bb4543b4309d62d31342c, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4654244146373178581, guid: ef02e2e4463bb4543b4309d62d31342c, type: 3}
       propertyPath: m_IsActive
       value: 0
