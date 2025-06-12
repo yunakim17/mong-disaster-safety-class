@@ -439,7 +439,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 249467948}
         m_TargetAssemblyTypeName: SceneChanger, Assembly-CSharp
-        m_MethodName: MyBadge
+        m_MethodName: Fire_Step2_OX1
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -584,7 +584,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 307557200}
         m_TargetAssemblyTypeName: SceneChanger, Assembly-CSharp
-        m_MethodName: Ranking
+        m_MethodName: Fire_Step3_OX1
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -644,6 +644,7 @@ GameObject:
   - component: {fileID: 440092249}
   - component: {fileID: 440092248}
   - component: {fileID: 440092247}
+  - component: {fileID: 440092250}
   m_Layer: 5
   m_Name: Fire1_Quiz_Select
   m_TagString: Untagged
@@ -713,7 +714,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 440092248}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 440092250}
+        m_TargetAssemblyTypeName: SceneChanger, Assembly-CSharp
+        m_MethodName: Fire_Step1_OX1
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &440092248
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -752,6 +765,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 440092245}
   m_CullTransparentMesh: 1
+--- !u!114 &440092250
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 440092245}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ff691d255994f542af7dd968b33e8a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &476119574
 GameObject:
   m_ObjectHideFlags: 0
@@ -817,6 +842,51 @@ MonoBehaviour:
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
+--- !u!1 &541315075
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 541315077}
+  - component: {fileID: 541315076}
+  m_Layer: 0
+  m_Name: QuizMainManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &541315076
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 541315075}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4cc5b127220c18749aa5210609ed3159, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreValue: {fileID: 1928674953}
+--- !u!4 &541315077
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 541315075}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 710.19025, y: 525.59326, z: -5.734862}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &831970730
 GameObject:
   m_ObjectHideFlags: 0
@@ -1439,7 +1509,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1710872129}
         m_TargetAssemblyTypeName: SceneChanger, Assembly-CSharp
-        m_MethodName: Ranking
+        m_MethodName: Eq_Step3_OX1
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1694,7 +1764,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1878606150}
         m_TargetAssemblyTypeName: SceneChanger, Assembly-CSharp
-        m_MethodName: MyBadge
+        m_MethodName: Eq_Step2_OX1
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1799,7 +1869,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 100
+  m_text: 0
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f76872322363f7241a3b09e83662ffad, type: 2}
   m_sharedMaterial: {fileID: -1251774678217824519, guid: f76872322363f7241a3b09e83662ffad, type: 2}
@@ -1888,6 +1958,7 @@ GameObject:
   - component: {fileID: 2026675041}
   - component: {fileID: 2026675040}
   - component: {fileID: 2026675039}
+  - component: {fileID: 2026675042}
   m_Layer: 5
   m_Name: Eq1_Quiz_Select
   m_TagString: Untagged
@@ -1957,7 +2028,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2026675040}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2026675042}
+        m_TargetAssemblyTypeName: SceneChanger, Assembly-CSharp
+        m_MethodName: Eq_Step1_OX1
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2026675040
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1996,6 +2079,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2026675037}
   m_CullTransparentMesh: 1
+--- !u!114 &2026675042
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2026675037}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ff691d255994f542af7dd968b33e8a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -2003,3 +2098,4 @@ SceneRoots:
   - {fileID: 1040207097}
   - {fileID: 1777444641}
   - {fileID: 1624173974}
+  - {fileID: 541315077}

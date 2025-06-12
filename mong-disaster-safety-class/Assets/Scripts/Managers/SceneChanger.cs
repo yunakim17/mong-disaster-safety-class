@@ -364,4 +364,9 @@ public class SceneChanger : MonoBehaviour
     {
         SceneManager.LoadScene("TryQuiz");
     }
+
+    public void QuizResult()
+    {
+        SceneManager.LoadScene("QuizResult");
+    }
 }

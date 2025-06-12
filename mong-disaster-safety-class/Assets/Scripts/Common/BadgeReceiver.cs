@@ -20,13 +20,13 @@ public class BadgeReceiver : MonoBehaviour
     // 스테이지 ID를 PlayerPrefs에 저장
     void Awake()
     {
-        PlayerPrefs.SetInt("stage_id", stageId);
+        PlayerPrefs.SetInt("stage_id_badge", stageId);
     }
 
     void Start()
     {
         string userId = PlayerPrefs.GetString("uuid", "default_user");
-        int stageId = PlayerPrefs.GetInt("stage_id", -1);
+        int stageId = PlayerPrefs.GetInt("stage_id_badge", -1);
 
         if (userId != "default_user" && stageId != -1)
         {

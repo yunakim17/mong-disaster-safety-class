@@ -27,6 +27,9 @@ public class ReviewQuizManager : MonoBehaviour
     public AudioSource audioSource;
     public AudioClip correctSound;
 
+    public int stageId;
+    public int totalQuestions = 0;
+
     void Start()
     {
         questionText.text = quizQuestion;
@@ -61,6 +64,8 @@ public class ReviewQuizManager : MonoBehaviour
 
         if (userChoseO == correctIsO)
         {
+            QuizSum.AddCorrect(); // 정답 개수 더하기
+
             feedbackText.color = Color.white;
             feedbackText.text = feedbackMessage;
 
@@ -109,5 +114,14 @@ public class ReviewQuizManager : MonoBehaviour
         buttonObj.transform.localScale = originalScale * 0.9f;
         yield return new WaitForSeconds(0.1f);
         buttonObj.transform.localScale = originalScale;
+    }
+
+    // 결과 씬으로 이동
+    public void GoToResultScene()
+    {
+        PlayerPrefs.SetInt("stage_id_quiz", stageId);
+        PlayerPrefs.SetInt("quiz_total", totalQuestions);
+
+        SceneManager.LoadScene("QuizResult");
     }
 }

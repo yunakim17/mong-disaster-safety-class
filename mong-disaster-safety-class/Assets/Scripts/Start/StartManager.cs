@@ -8,6 +8,9 @@ public class StartManager : MonoBehaviour
     {
         // uuid 삭제 (개발용)
         //PlayerPrefs.DeleteKey("uuid");
+
+        // 퀴즈 정답 개수 초기화
+        QuizSum.Reset();
     }
 
     void Start()
