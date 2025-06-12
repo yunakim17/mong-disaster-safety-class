@@ -282,8 +282,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4283432956
+  m_fontColor: {r: 0.9882353, g: 1, b: 0.30980393, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -409,8 +409,8 @@ MonoBehaviour:
   xImageButton: {fileID: 924631433}
   nextButton: {fileID: 1760417057}
   quizQuestion: "3. \uC9C0\uC9C4\uC740 \u2018\uC9C4\uB3C4\u2019\uB77C\uB294 \uC22B\uC790\uB85C
-    \uB545\uC774 \uD754\uB4E4\uB9AC\uB294 \uC815\uB3C4\uB97C \uB098\uD0C0\uB0BC \uC218
-    \uC788\uC5B4\uC694."
+    \uB545\uC774 \uD754\uB4E4\uB9AC\uB294 \n    \uC815\uB3C4\uB97C \uB098\uD0C0\uB0BC
+    \uC218 \uC788\uC5B4\uC694."
   feedbackMessage: "\uC9C4\uB3C4\uB294 \uB545\uC774 \uC5BC\uB9C8\uB098 \uC138\uAC8C
     \uD754\uB4E4\uB838\uB294\uC9C0\uB97C \uC54C\uB824\uC8FC\uB294 \uC22B\uC790\uC57C~"
   correctIsO: 1
@@ -419,6 +419,8 @@ MonoBehaviour:
   correctAnswerSprite: {fileID: -1584791325, guid: 98d6f2f9bd423e34c8ff16c908b6b20e, type: 3}
   audioSource: {fileID: 712506087}
   correctSound: {fileID: 8300000, guid: 65134f8fe53e88a40bf4bfca322123b6, type: 3}
+  stageId: 0
+  totalQuestions: 0
 --- !u!82 &712506087
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1250,6 +1252,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1022721806925144833, guid: ef02e2e4463bb4543b4309d62d31342c, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4654244146373178581, guid: ef02e2e4463bb4543b4309d62d31342c, type: 3}
       propertyPath: m_IsActive
       value: 0
