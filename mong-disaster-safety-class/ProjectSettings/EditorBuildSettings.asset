@@ -386,4 +386,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MainQuizScenes/oxQuiz_Main.unity
     guid: 7c654554a7a798445a872e8506c5b7a8
+  - enabled: 1
+    path: Assets/Scenes/QuizResult.unity
+    guid: f207d3bfc3656ed4fb05d76c7abc4db1
   m_configObjects: {}

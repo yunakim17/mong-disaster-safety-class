@@ -760,7 +760,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 100
+  m_text: 0
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f76872322363f7241a3b09e83662ffad, type: 2}
   m_sharedMaterial: {fileID: -1251774678217824519, guid: f76872322363f7241a3b09e83662ffad, type: 2}
@@ -987,8 +987,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 219412292}
   m_HandleRect: {fileID: 219412291}
   m_Direction: 2
-  m_Value: 1
-  m_Size: 1
+  m_Value: 0
+  m_Size: 0.9978893
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -1367,6 +1367,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1636848603}
   - component: {fileID: 1636848604}
+  - component: {fileID: 1636848605}
   m_Layer: 0
   m_Name: RankingManager
   m_TagString: Untagged
@@ -1404,6 +1405,19 @@ MonoBehaviour:
   schoolName: {fileID: 392367048}
   rankPrefab: {fileID: 1227752853164333566, guid: 6d9498e269d71b049bde8b9f4507e18e, type: 3}
   contentTransform: {fileID: 258717401}
+--- !u!114 &1636848605
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1636848602}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63900cec6e147364e98cd0ce3b6b25ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreValue: {fileID: 814011993}
 --- !u!1 &1874799369
 GameObject:
   m_ObjectHideFlags: 0

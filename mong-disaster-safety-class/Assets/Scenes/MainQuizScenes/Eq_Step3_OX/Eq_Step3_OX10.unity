@@ -418,6 +418,8 @@ MonoBehaviour:
   correctAnswerSprite: {fileID: -1584791325, guid: 98d6f2f9bd423e34c8ff16c908b6b20e, type: 3}
   audioSource: {fileID: 712506087}
   correctSound: {fileID: 8300000, guid: 65134f8fe53e88a40bf4bfca322123b6, type: 3}
+  stageId: 7
+  totalQuestions: 10
 --- !u!82 &712506087
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1324,18 +1326,18 @@ PrefabInstance:
     - target: {fileID: 8004681941794650575, guid: ef02e2e4463bb4543b4309d62d31342c, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1760417061}
+      objectReference: {fileID: 712506086}
     - target: {fileID: 8004681941794650575, guid: ef02e2e4463bb4543b4309d62d31342c, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8004681941794650575, guid: ef02e2e4463bb4543b4309d62d31342c, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: MyBadge
+      value: GoToResultScene
       objectReference: {fileID: 0}
     - target: {fileID: 8004681941794650575, guid: ef02e2e4463bb4543b4309d62d31342c, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: SceneChanger, Assembly-CSharp
+      value: ReviewQuizManager, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 8004681941794650575, guid: ef02e2e4463bb4543b4309d62d31342c, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
