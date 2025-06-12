@@ -50,7 +50,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueText: {fileID: 84157516705632044}
   audioSource: {fileID: 8047812379636953336}
-  typingSpeed: 0.1
+  typingSpeed: 0.08
   nextButton: {fileID: 0}
   btn1_2: {fileID: 0}
   btn3_4: {fileID: 0}
