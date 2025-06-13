@@ -54,14 +54,15 @@ public class BadgeReceiver : MonoBehaviour
     // 서버에 PUT 요청 보내기
     IEnumerator SendStageProgress(StageProgressData requestData)
     {
-        string url = "http://localhost:8000/stage_progress/complete" +
+        string url = "http://3.35.180.225:8000/stage_progress/complete" +
             $"?user_id={requestData.user_id}&stage_id={requestData.stage_id}&" +
-            $"completed={requestData.completed.ToString().ToLower()}"; // 추후 빌드 시 url 주소 바꿔주기
+            $"completed={requestData.completed.ToString().ToLower()}";
 
         UnityWebRequest request = UnityWebRequest.Put(url, "");
         request.method = UnityWebRequest.kHttpVerbPUT;
         request.SetRequestHeader("Content-Type", "application/json");
 
+        request.certificateHandler = new BypassCertificate();
         yield return request.SendWebRequest();
 
         // 디버깅용
@@ -81,10 +82,11 @@ public class BadgeReceiver : MonoBehaviour
     // 랭킹 점수 업데이트
     IEnumerator UpdateScore(string userId)
     {
-        string url = $"http://localhost:8000/ranking/update-badge?user_id={userId}";
+        string url = $"http://3.35.180.225:8000/ranking/update-badge?user_id={userId}";
 
         UnityWebRequest request = UnityWebRequest.Put(url, "");
         request.SetRequestHeader("Content-Type", "application/json");
+        request.certificateHandler = new BypassCertificate();
         yield return request.SendWebRequest();
 
         if (request.result == UnityWebRequest.Result.Success)
