@@ -7,7 +7,7 @@
     "option2": "나 혼자 엘리베이터를 탄다.",
     "correct_option": 1,
     "feedback": "지진이 났을 때 엘리베이터는 고장날 수 있어서 절대로 타면 안돼! 그리고 선생님의 지시대로 침착하게 행동해야 해. 다시 선택해볼까?",
-    "voice_path": "",
-    "feedback_voice_path": ""
+    "voice_path": "Eq_Step3/10",
+    "feedback_voice_path": "Eq_Step3/feedback/2"
   }
 ]
