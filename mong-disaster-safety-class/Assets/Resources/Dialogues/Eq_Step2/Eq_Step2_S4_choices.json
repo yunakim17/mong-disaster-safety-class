@@ -8,6 +8,6 @@
     "correct_option": 1,
     "feedback": "지진이 멈추지  않았는데 급하게 나가면 위험해! 먼저 흔들림이 멈출 때까지 책상이나 베개로 머리와 몸을 보호해야 해! 다시 생각해 볼까?",
     "voice_path": "Eq_Step2/05",
-    "feedback_voice_path": ""
+    "feedback_voice_path": "Eq_Step2/feedback/2"
   }
 ]

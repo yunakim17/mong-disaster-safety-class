@@ -8,6 +8,6 @@
         "correct_option": 2,
         "feedback": "건물은 무너질 수도 있어! 그래서 흔들림이 멈추면 안전한 곳으로 나가야 해! 다시 생각해 볼까?",
         "voice_path": "Eq_Step2/14",
-        "feedback_voice_path": ""
+        "feedback_voice_path": "Eq_Step2/feedback/5"
     }
 ]

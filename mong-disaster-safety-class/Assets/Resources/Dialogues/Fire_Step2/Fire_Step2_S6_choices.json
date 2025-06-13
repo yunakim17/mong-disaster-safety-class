@@ -7,7 +7,7 @@
     "option2": "휴지와 수건을 가까이 둔다.",
     "correct_option": 1,
     "feedback": "휴지와 수건은 불이 붙기 쉬워서 가스레인지 가까이 놓으면 정말 위험해! 다시 생각해 볼까?",
-    "voice_path": "",
-    "feedback_voice_path": ""
+    "voice_path": "Fire_Step2/11",
+    "feedback_voice_path": "Fire_Step2/feedback/3"
   }
 ]
