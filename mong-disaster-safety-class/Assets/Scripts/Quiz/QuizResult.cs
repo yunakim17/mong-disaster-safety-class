@@ -39,7 +39,7 @@ public class QuizResult : MonoBehaviour
 
     IEnumerator SendScore(string userId, int stageId, int score)
     {
-        string url = $"http://localhost:8000/stage_progress/update_score" +
+        string url = $"http://3.35.180.225:8000/stage_progress/update_score" +
             $"?user_id={userId}&stage_id={stageId}";
         string rawScore = score.ToString();
 
@@ -48,6 +48,7 @@ public class QuizResult : MonoBehaviour
         request.uploadHandler = new UploadHandlerRaw(System.Text.Encoding.UTF8.GetBytes(rawScore));
         request.downloadHandler = new DownloadHandlerBuffer();
 
+        request.certificateHandler = new BypassCertificate();
         yield return request.SendWebRequest();
 
         if (request.result == UnityWebRequest.Result.Success)
@@ -64,11 +65,12 @@ public class QuizResult : MonoBehaviour
 
     IEnumerator UpdateRanking(string userId)
     {
-        string url = $"http://localhost:8000/ranking/update-quiz/{userId}";
+        string url = $"http://3.35.180.225:8000/ranking/update-quiz/{userId}";
 
         UnityWebRequest request = UnityWebRequest.Put(url, "");
         request.SetRequestHeader("Content-Type", "application/json");
 
+        request.certificateHandler = new BypassCertificate();
         yield return request.SendWebRequest();
 
         if (request.result == UnityWebRequest.Result.Success)
