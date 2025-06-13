@@ -7,6 +7,9 @@ public class OX_BGM_Manager : MonoBehaviour
 
     private void Start()
     {
+        var audioSource = GetComponent<AudioSource>();
+        audioSource.volume = SettingsManager.GlobalVolume;
+
         if (SceneManager.GetActiveScene().name == "QuizResult")
         {
             GameObject bgm = GameObject.Find("BGMManager");
