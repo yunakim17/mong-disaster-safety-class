@@ -208,6 +208,7 @@ GameObject:
   - component: {fileID: 330323340}
   - component: {fileID: 330323342}
   - component: {fileID: 330323341}
+  - component: {fileID: 330323343}
   m_Layer: 0
   m_Name: Mong
   m_TagString: Untagged
@@ -254,7 +255,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 1947679391, guid: f203a89d6c457d34a9621e7c4be730e6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 4972cff526e94d64ca38ed62240594f2, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -272,6 +273,27 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 330323339}
   m_CullTransparentMesh: 1
+--- !u!95 &330323343
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 330323339}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 6a6e15efe13ab1b45b3daddfb1e39cc0, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &506891905
 GameObject:
   m_ObjectHideFlags: 0
@@ -352,6 +374,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Step2_Group
       objectReference: {fileID: 0}
+    - target: {fileID: 4302378064661111594, guid: 08296c46cdca93b4e9a115f0b981112c, type: 3}
+      propertyPath: mong_animator
+      value: 
+      objectReference: {fileID: 330323343}
+    - target: {fileID: 4302378064661111594, guid: 08296c46cdca93b4e9a115f0b981112c, type: 3}
+      propertyPath: mong_default_img
+      value: 
+      objectReference: {fileID: 21300000, guid: 4972cff526e94d64ca38ed62240594f2, type: 3}
     - target: {fileID: 8392072422211829542, guid: 08296c46cdca93b4e9a115f0b981112c, type: 3}
       propertyPath: m_LocalPosition.x
       value: 119.03966

@@ -4,6 +4,7 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using System;
 
 public class DialogueManager : MonoBehaviour
 {
@@ -18,6 +19,9 @@ public class DialogueManager : MonoBehaviour
     public Button btn7;
 
     public Shake shakeTarget;
+
+    public Animator mong_animator; //몽대장 말하는 애니메이션-애니메이터
+    public Sprite mong_default_img;
 
     private bool isTyping = false;
     private string currentText = "";
@@ -58,6 +62,8 @@ public class DialogueManager : MonoBehaviour
 
         if (currentScene == "Fire_Step1_S3")
         {
+            mong_animator.enabled = true;
+
             btn1_2.onClick.AddListener(() => ShowSingleLine(1));
             btn3_4.onClick.AddListener(() => ShowSingleLine(2));
             btn5_6.onClick.AddListener(() => ShowSingleLine(3));
@@ -145,6 +151,7 @@ public class DialogueManager : MonoBehaviour
     {
         isTyping = true;
         dialogueText.text = "";
+        mong_animator.enabled = true; //몽대장 애니메이션 시작
 
         foreach (char letter in sentence)
         {
@@ -153,6 +160,8 @@ public class DialogueManager : MonoBehaviour
         }
 
         isTyping = false;
+        mong_animator.enabled = false;//몽대장 애니메이션 중지
+        mong_animator.GetComponent<Image>().sprite = mong_default_img;//몽대장 입 다문 이미지로 변경
     }
 
     public void OnTouch()
@@ -163,6 +172,8 @@ public class DialogueManager : MonoBehaviour
         {
             dialogueText.text = currentText;
             if (typingCoroutine != null) StopCoroutine(typingCoroutine);
+            mong_animator.enabled = false; //만약 타이핑 스킵을하면(다음버튼 누르면) 몽대장 애니메이션 중지
+            mong_animator.GetComponent<Image>().sprite= mong_default_img; //몽대장 입 다문 이미지로 변경
             isTyping = false;
         }
         else
@@ -260,4 +271,10 @@ public class DialogueManager : MonoBehaviour
     {
         return currentLineIndex;
     }
+
+    private void Start()
+    {
+        if(isTyping==false) mong_animator.enabled = false; //시작했을때 대사 타이핑이 나올때만 애니메이션이 나와야함
+    }
 }
+

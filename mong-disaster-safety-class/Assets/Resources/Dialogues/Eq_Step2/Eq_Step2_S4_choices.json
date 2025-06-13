@@ -2,7 +2,7 @@
   {
     "sequence": 5,
     "speaker": "몽대장",
-    "question": "건물 안에 있는데 지진이 일어나면 어떡해야 하지?",
+    "question": "건물 안에 있는데 지진이 일어나면 \n 어떡해야 하지?",
     "option1": "책상 밑으로 숨는다.",
     "option2": "건물 밖으로 나간다.",
     "correct_option": 1,

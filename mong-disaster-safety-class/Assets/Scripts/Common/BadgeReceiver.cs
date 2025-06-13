@@ -20,13 +20,13 @@ public class BadgeReceiver : MonoBehaviour
     // 스테이지 ID를 PlayerPrefs에 저장
     void Awake()
     {
-        PlayerPrefs.SetInt("stage_id", stageId);
+        PlayerPrefs.SetInt("stage_id_badge", stageId);
     }
 
     void Start()
     {
         string userId = PlayerPrefs.GetString("uuid", "default_user");
-        int stageId = PlayerPrefs.GetInt("stage_id", -1);
+        int stageId = PlayerPrefs.GetInt("stage_id_badge", -1);
 
         if (userId != "default_user" && stageId != -1)
         {
@@ -69,10 +69,31 @@ public class BadgeReceiver : MonoBehaviour
         {
             Debug.Log("스테이지 완료 처리 성공");
             isCompleted = true;
+
+            StartCoroutine(UpdateScore(requestData.user_id));
         }
         else
         {
             Debug.Log("스테이지 완료 처리 실패: " + request.error);
+        }
+    }
+
+    // 랭킹 점수 업데이트
+    IEnumerator UpdateScore(string userId)
+    {
+        string url = $"http://localhost:8000/ranking/update-badge?user_id={userId}";
+
+        UnityWebRequest request = UnityWebRequest.Put(url, "");
+        request.SetRequestHeader("Content-Type", "application/json");
+        yield return request.SendWebRequest();
+
+        if (request.result == UnityWebRequest.Result.Success)
+        {
+            Debug.Log("배지 점수 업데이트 성공");
+        }
+        else
+        {
+            Debug.Log("배지 점수 업데이트 실패: " + request.error);
         }
     }
 
