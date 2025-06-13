@@ -129,13 +129,25 @@ public class DialogueManager : MonoBehaviour
 
         // ✅ 음성 재생 추가
         if (audioSource.isPlaying)
+        {
             audioSource.Stop();
+
+            mong_animator.enabled = false;//몽대장 애니메이션 중지
+            mong_animator.GetComponent<Image>().sprite = mong_default_img;//몽대장 입 다문 이미지로 변경
+
+        }
+
+
+
 
         AudioClip clip = line.GetVoice();
         if (clip != null)
         {
             audioSource.clip = clip;
             audioSource.Play();
+
+            mong_animator.enabled = true; //오디오소스가 나올때만 몽대장 애니메이션 시작
+            StartCoroutine(WaitForAudioToEnd()); // ✅ 애니메이션 끄기 예약
         }
 
         if (typingCoroutine != null) StopCoroutine(typingCoroutine);
@@ -151,7 +163,7 @@ public class DialogueManager : MonoBehaviour
     {
         isTyping = true;
         dialogueText.text = "";
-        mong_animator.enabled = true; //몽대장 애니메이션 시작
+       // mong_animator.enabled = true; //몽대장 애니메이션 시작
 
         foreach (char letter in sentence)
         {
@@ -160,8 +172,8 @@ public class DialogueManager : MonoBehaviour
         }
 
         isTyping = false;
-        mong_animator.enabled = false;//몽대장 애니메이션 중지
-        mong_animator.GetComponent<Image>().sprite = mong_default_img;//몽대장 입 다문 이미지로 변경
+      //  mong_animator.enabled = false;//몽대장 애니메이션 중지
+       // mong_animator.GetComponent<Image>().sprite = mong_default_img;//몽대장 입 다문 이미지로 변경
     }
 
     public void OnTouch()
@@ -172,8 +184,8 @@ public class DialogueManager : MonoBehaviour
         {
             dialogueText.text = currentText;
             if (typingCoroutine != null) StopCoroutine(typingCoroutine);
-            mong_animator.enabled = false; //만약 타이핑 스킵을하면(다음버튼 누르면) 몽대장 애니메이션 중지
-            mong_animator.GetComponent<Image>().sprite= mong_default_img; //몽대장 입 다문 이미지로 변경
+           // mong_animator.enabled = false; //만약 타이핑 스킵을하면(다음버튼 누르면) 몽대장 애니메이션 중지
+            //mong_animator.GetComponent<Image>().sprite= mong_default_img; //몽대장 입 다문 이미지로 변경
             isTyping = false;
         }
         else
@@ -223,6 +235,9 @@ public class DialogueManager : MonoBehaviour
         {
             audioSource.clip = clip;
             audioSource.Play();
+
+            mong_animator.enabled = true; //몽대장 애니메이션 재생
+            StartCoroutine(WaitForAudioToEnd()); // ✅ 애니메이션 끄기 예약
         }
 
         if (typingCoroutine != null) StopCoroutine(typingCoroutine);
@@ -272,9 +287,16 @@ public class DialogueManager : MonoBehaviour
         return currentLineIndex;
     }
 
-    private void Start()
+
+    // 1. 새로운 코루틴 함수 추가
+    private IEnumerator WaitForAudioToEnd()
     {
-        if(isTyping==false) mong_animator.enabled = false; //시작했을때 대사 타이핑이 나올때만 애니메이션이 나와야함
+        yield return new WaitWhile(() => audioSource.isPlaying);
+        mong_animator.enabled = false;
+        mong_animator.GetComponent<Image>().sprite = mong_default_img; // 입 다문 이미지로 변경
     }
+
+
+
 }
 
