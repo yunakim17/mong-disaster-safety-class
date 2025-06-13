@@ -8,6 +8,6 @@
         "correct_option": 2,
         "feedback": "그건 너무 위험하고 다칠 수 있어! 다시 생각해 볼까?",
         "voice_path": "Eq_Step2/11",
-        "feedback_voice_path": ""
+        "feedback_voice_path": "Eq_Step2/feedback/4"
     }
 ]

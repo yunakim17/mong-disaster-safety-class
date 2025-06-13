@@ -11,6 +11,7 @@ public class ChoiceEntry
     public int correct_option;
     public string feedback;
     public string voice_path;
+    public string feedback_voice_path;
 
     public AudioClip GetVoice()
     {
