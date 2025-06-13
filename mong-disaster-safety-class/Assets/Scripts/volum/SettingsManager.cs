@@ -3,36 +3,49 @@ using UnityEngine.UI;
 
 public class SettingsManager : MonoBehaviour
 {
+    public static float GlobalVolume = 0.5f;
+
     public GameObject settingsPanel;
     public Slider volumeSlider;
     public AudioSource audioSource;
 
     void Start()
     {
-        if (audioSource != null)
+        if (audioSource == null)
         {
-            audioSource.volume = 1f;
+            var bgm = FindObjectOfType<BGMPlayer>();
+            if (bgm != null)
+                audioSource = bgm.GetComponent<AudioSource>();
         }
 
         if (volumeSlider != null)
         {
+            volumeSlider.onValueChanged.RemoveAllListeners();
             volumeSlider.onValueChanged.AddListener(OnVolumeChanged);
-            volumeSlider.value = 1f;
+            volumeSlider.value = GlobalVolume;
+        }
+
+        if (audioSource != null)
+        {
+            audioSource.volume = GlobalVolume;
+        }
+    }
+
+    public void OnVolumeChanged(float value)
+    {
+        GlobalVolume = value;
+
+        if (audioSource != null)
+        {
+            audioSource.volume = value;
         }
     }
 
     public void ToggleSettingsPanel()
     {
-        settingsPanel.SetActive(!settingsPanel.activeSelf);
-    }
-
-    public void OnVolumeChanged(float value)
-    {
-        if (audioSource == null)
+        if (settingsPanel != null)
         {
-            return; 
+            settingsPanel.SetActive(!settingsPanel.activeSelf);
         }
-
-        audioSource.volume = value;
     }
 }

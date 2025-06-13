@@ -3,6 +3,13 @@ using UnityEngine.SceneManagement;
 
 public class BGMPlayer : MonoBehaviour
 {
+
+    void Start()
+    {
+        var audioSource = GetComponent<AudioSource>();
+        audioSource.volume = SettingsManager.GlobalVolume;
+    }
+
     private static BGMPlayer instance;
 
     private readonly string[] allowedScenes = {
