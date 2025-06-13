@@ -24,7 +24,7 @@ public class Eq_Step3_S1_Starter : MonoBehaviour
     void Update()
     {
         int currentIdx = dialogueManager.GetCurrentLineIndex();
-        if (currentIdx == 3 && !imageShown)
+        if (currentIdx == 4 && !imageShown)
         {
             underDesk.SetActive(true);
             imageShown = true;
