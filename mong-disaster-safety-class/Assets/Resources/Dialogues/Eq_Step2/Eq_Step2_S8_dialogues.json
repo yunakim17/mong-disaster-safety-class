@@ -3,7 +3,7 @@
         "sequence": 10,
         "speaker": "몽대장",
         "dialogue_text": "지진이 일어나면 책장이나 냉장고 같은 커다란 가구가 흔들려서 넘어질 수도 있어.",
-        "voice_path": ""
+        "voice_path": "Eq_Step2/10"
     },
   {
     "sequence": 11,
