@@ -57,7 +57,7 @@ public class DialogueManager : MonoBehaviour
             btn7.onClick.AddListener(() => StartCoroutine(ShowTwoLinesSequentially(4, 5)));
             requiredVisitedIndices = new List<int> { 1, 2, 3, 4 };
             currentLineIndex = 4;
-            nextButton.SetActive(false); // 처음엔 비활성화
+            nextButton.SetActive(false);
         }
 
         if (currentScene == "Fire_Step1_S3")
@@ -69,7 +69,7 @@ public class DialogueManager : MonoBehaviour
             btn5_6.onClick.AddListener(() => ShowSingleLine(3));
             requiredVisitedIndices = new List<int> { 1, 2, 3 };
             currentLineIndex = 3;
-            nextButton.SetActive(false); // 처음엔 비활성화
+            nextButton.SetActive(false);
         }
     }
 
@@ -126,6 +126,17 @@ public class DialogueManager : MonoBehaviour
         }
 
         currentText = line.dialogue_text;
+
+        // ✅ 음성 재생 추가
+        if (audioSource.isPlaying)
+            audioSource.Stop();
+
+        AudioClip clip = line.GetVoice();
+        if (clip != null)
+        {
+            audioSource.clip = clip;
+            audioSource.Play();
+        }
 
         if (typingCoroutine != null) StopCoroutine(typingCoroutine);
         typingCoroutine = StartCoroutine(TypeSentence(currentText));
@@ -266,3 +277,4 @@ public class DialogueManager : MonoBehaviour
         if(isTyping==false) mong_animator.enabled = false; //시작했을때 대사 타이핑이 나올때만 애니메이션이 나와야함
     }
 }
+
