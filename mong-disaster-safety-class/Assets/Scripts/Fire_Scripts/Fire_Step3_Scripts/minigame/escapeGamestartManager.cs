@@ -6,11 +6,20 @@ public class escapeGamestartManager : MonoBehaviour
     public GameObject gamePanel;
     public GameObject map_2F;
 
+    public AudioSource dialogueAudioSource;
+
     public void OnStartButtonClick()
     {
         startPanel.SetActive(false);
         gamePanel.SetActive(true);
         map_2F.SetActive(true);
+
+        // 시작 설명 오디오 끄기
+        if (dialogueAudioSource != null && dialogueAudioSource.isPlaying)
+        {
+            dialogueAudioSource.Stop();
+            Debug.Log("시작 설명 오디오 정지됨");
+        }
 
         // BGM 재생
         AudioClip clip = Resources.Load<AudioClip>("BGMs/fire_step3_minigame");
