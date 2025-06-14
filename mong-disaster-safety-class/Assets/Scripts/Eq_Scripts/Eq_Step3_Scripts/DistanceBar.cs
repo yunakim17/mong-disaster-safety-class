@@ -88,7 +88,7 @@ public class DistanceBar : MonoBehaviour
         // 클리어 UI 활성화
         FindObjectOfType<GameManager>().ShowClearText();
 
-        StartCoroutine(GoToNextSceneAfterDelay(2f));
+        StartCoroutine(GoToNextSceneAfterDelay(4f));
     }
 
     private IEnumerator GoToNextSceneAfterDelay(float delay) //다음 씬 이동
