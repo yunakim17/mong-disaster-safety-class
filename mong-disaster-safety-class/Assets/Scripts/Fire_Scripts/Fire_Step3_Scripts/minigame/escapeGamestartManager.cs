@@ -1,17 +1,32 @@
 using UnityEngine;
 
-public class GameStartManager : MonoBehaviour
+public class escapeGamestartManager : MonoBehaviour
 {
-    public GameObject startPanel;   // StartPanel ¿ÀºêÁ§Æ®
-    public GameObject gamePanel; // gamePanel ¿ÀºêÁ§Æ®
+    public GameObject startPanel;
+    public GameObject gamePanel;
     public GameObject map_2F;
 
     public void OnStartButtonClick()
     {
-        startPanel.SetActive(false);   // ´ë±â È­¸é ¼û±â±â
-        gamePanel.SetActive(true);     // °ÔÀÓ È­¸é º¸ÀÌ±â
+        startPanel.SetActive(false);
+        gamePanel.SetActive(true);
         map_2F.SetActive(true);
 
-        // È¿°úÀ½ Àç»ı, Æ©Åä¸®¾ó ½ÃÀÛ, Å¸ÀÌ¸Ó ½ÃÀÛ µî Ãß°¡ °¡´É
+        // BGM ì¬ìƒ
+        AudioClip clip = Resources.Load<AudioClip>("BGMs/fire_step3_minigame");
+
+        if (clip == null)
+        {
+            Debug.LogError(" AudioClipì´ Resourcesì—ì„œ ë¡œë“œë˜ì§€ ì•Šì•˜ìŠµë‹ˆë‹¤.");
+            return;
+        }
+
+        if (fire_step3_BGM.Instance == null)
+        {
+            Debug.LogError(" fire_step3_BGM ì¸ìŠ¤í„´ìŠ¤ê°€ nullì…ë‹ˆë‹¤.");
+            return;
+        }
+
+        fire_step3_BGM.Instance.PlayBGM(clip);
     }
 }

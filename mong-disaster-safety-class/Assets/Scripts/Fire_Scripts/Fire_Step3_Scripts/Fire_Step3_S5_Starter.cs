@@ -14,7 +14,13 @@ public class Fire_Step3_S5_Starter : MonoBehaviour
             "", 
             "");
 
-        StartCoroutine(HideTextAfterDelay(10f));      
+        StartCoroutine(HideTextAfterDelay(10f));     
+        Debug.Log("BGMManager 인스턴스: " + fire_step3_BGM.Instance);
+        Debug.Log("오디오 소스 존재? " + fire_step3_BGM.Instance.bgmSource);
+        Debug.Log("현재 clip: " + fire_step3_BGM.Instance.bgmSource.clip);
+        Debug.Log("isPlaying: " + fire_step3_BGM.Instance.bgmSource.isPlaying);
+        Debug.Log("mute: " + fire_step3_BGM.Instance.bgmSource.mute);
+        Debug.Log("volume: " + fire_step3_BGM.Instance.bgmSource.volume); 
     }
 
     private IEnumerator HideTextAfterDelay(float delay)
