@@ -63,7 +63,7 @@ public class DialogueManager : MonoBehaviour
         if (currentScene == "Fire_Step1_S3")
         {
 
-
+            
             btn1_2.onClick.AddListener(() => ShowSingleLine(1));
             btn3_4.onClick.AddListener(() => ShowSingleLine(2));
             btn5_6.onClick.AddListener(() => ShowSingleLine(3));
@@ -149,7 +149,7 @@ public class DialogueManager : MonoBehaviour
             audioSource.clip = clip;
             audioSource.Play();
 
-            if (mong_animator != null && mong_default_img != null)
+            if (mong_animator != null && mong_default_img != null&&audioSource.isPlaying)
             {
                 mong_animator.enabled = true; //오디오소스가 나올때만 몽대장 애니메이션 시작
                 StartCoroutine(WaitForAudioToEnd()); // ✅ 애니메이션 끄기 예약
@@ -313,9 +313,18 @@ public class DialogueManager : MonoBehaviour
     {
         if (mong_animator != null && mong_default_img != null)
         {
-            mong_animator.enabled = false;
-            mong_animator.GetComponent<Image>().sprite = mong_default_img; // 입 다문 이미지로 변경
+            if(SceneManager.GetActiveScene().name == "Fire_Step1_S2"  )
+                mong_animator.enabled = false; 
+                mong_animator.GetComponent<Image>().sprite = mong_default_img; // 입 다문 이미지로 변경
         }
+
+        //if (mong_animator != null && mong_default_img != null && SceneManager.GetActiveScene().name == "Fire_Step1_S3")
+        //{
+        //    mong_animator.enabled = true;
+        //    StartCoroutine(WaitForAudioToEnd());
+        //}
+
+
     }
 
 }
