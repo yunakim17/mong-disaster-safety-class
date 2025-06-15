@@ -9,20 +9,26 @@ public class ReviewQuizManager : MonoBehaviour
     [Header("UI 요소")]
     public TextMeshProUGUI questionText;
     public TextMeshProUGUI feedbackText;
-    public GameObject oImageButton;  
-    public GameObject xImageButton;  
+    public GameObject oImageButton;
+    public GameObject xImageButton;
     public Button nextButton;
 
     [Header("퀴즈 설정")]
     [TextArea] public string quizQuestion;
-    [TextArea] public string correctFeedbackMessage; 
-    [TextArea] public string wrongFeedbackMessage;  
-    public bool correctIsO; 
+    [TextArea] public string feedbackMessage;
+    public bool correctIsO;
 
     [Header("캐릭터 이미지")]
-    public Image characterImage;         
-    public Sprite defaultSprite;          
-    public Sprite correctAnswerSprite;    
+    public Image characterImage;
+    public Sprite defaultSprite;
+    public Sprite correctAnswerSprite;
+
+    [Header("정답 효과음")]
+    public AudioSource audioSource;
+    public AudioClip correctSound;
+
+    public int stageId;
+    public int totalQuestions = 0;
 
     void Start()
     {
@@ -53,33 +59,47 @@ public class ReviewQuizManager : MonoBehaviour
 
     private void CheckAnswer(bool userChoseO)
     {
-        bool isCorrect = (userChoseO == correctIsO);
-
         oImageButton.GetComponent<Button>().interactable = false;
         xImageButton.GetComponent<Button>().interactable = false;
 
-        if (isCorrect)
+        if (userChoseO == correctIsO)
         {
-            feedbackText.text = correctFeedbackMessage;
-            feedbackText.color = Color.green;
+            QuizSum.AddCorrect(); // 정답 개수 더하기
+
+            feedbackText.color = Color.white;
+            feedbackText.text = feedbackMessage;
 
             if (characterImage != null && correctAnswerSprite != null)
             {
                 characterImage.sprite = correctAnswerSprite;
             }
+
+            feedbackText.gameObject.SetActive(true);
+
+            if (audioSource != null && correctSound != null)
+            {
+                audioSource.clip = correctSound;
+                audioSource.Play();
+                StartCoroutine(ShowNextButtonAfterAudio());
+            }
+            else
+            {
+                nextButton.gameObject.SetActive(true);
+            }
         }
         else
         {
-            feedbackText.text = wrongFeedbackMessage;
-            feedbackText.color = Color.red;
+            feedbackText.color = new Color32(255, 80, 80, 255);
+            feedbackText.text = "아니야! " + feedbackMessage;
 
-            if (characterImage != null && defaultSprite != null)
-            {
-                characterImage.sprite = defaultSprite;
-            }
+            feedbackText.gameObject.SetActive(true);
+            nextButton.gameObject.SetActive(true);
         }
+    }
 
-        feedbackText.gameObject.SetActive(true);
+    IEnumerator ShowNextButtonAfterAudio()
+    {
+        yield return new WaitWhile(() => audioSource.isPlaying);
         nextButton.gameObject.SetActive(true);
     }
 
@@ -94,5 +114,14 @@ public class ReviewQuizManager : MonoBehaviour
         buttonObj.transform.localScale = originalScale * 0.9f;
         yield return new WaitForSeconds(0.1f);
         buttonObj.transform.localScale = originalScale;
+    }
+
+    // 결과 씬으로 이동
+    public void GoToResultScene()
+    {
+        PlayerPrefs.SetInt("stage_id_quiz", stageId);
+        PlayerPrefs.SetInt("quiz_total", totalQuestions);
+
+        SceneManager.LoadScene("QuizResult");
     }
 }

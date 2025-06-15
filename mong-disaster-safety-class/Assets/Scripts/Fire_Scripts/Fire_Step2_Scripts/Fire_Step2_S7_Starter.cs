@@ -9,6 +9,6 @@ public class Fire_Step2_S7_Starter : MonoBehaviour
         dialogueManager.StartDialogue(
             "Dialogues/Fire_Step2/Fire_Step2_S7_dialogues",
             "",
-            "Fire_Step2_S8");
+            "Fire_Step2_S12");
     }
 }

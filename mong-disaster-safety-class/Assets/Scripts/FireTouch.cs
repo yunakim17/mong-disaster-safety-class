@@ -5,8 +5,8 @@ using UnityEngine.EventSystems;
 
 public class FireTouch : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
 {
-    public float longPressDuration = 3f; // ·ÕÅÍÄ¡·Î ÀÎ½ÄµÇ´Â ½Ã°£
-    public Vector3 enlargedScale = new Vector3(2.5f, 2.5f, 1f); // Ä¿Áú Å©±â
+    public float longPressDuration = 3f; // ï¿½ï¿½ï¿½ï¿½Ä¡ï¿½ï¿½ ï¿½Î½ÄµÇ´ï¿½ ï¿½Ã°ï¿½
+    public Vector3 enlargedScale = new Vector3(2.5f, 2.5f, 1f); // Ä¿ï¿½ï¿½ Å©ï¿½ï¿½
 
     private Vector3 originalScale;
     private float pressTime;
@@ -15,6 +15,8 @@ public class FireTouch : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
     private bool hasLongPressed = false;
 
     public SirenCtrl SirenCtrl;
+
+    public DialogueManager dialogueManager;
 
     void Start()
     {
@@ -32,14 +34,24 @@ public class FireTouch : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
 
             if (pressTime >= 2f && !hasLongPressed)
             {
-                hasLongPressed = true; // ÇÑ ¹ø¸¸ ½ÇÇàµÇ°Ô
-                SirenCtrl.StartPulse(); // ¿©±â¼­ ¹Ù·Î ½ÇÇàµË´Ï´Ù
+                hasLongPressed = true; // ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Ç°ï¿½
+                SirenCtrl.StartPulse(); // ï¿½ï¿½ï¿½â¼­ ï¿½Ù·ï¿½ ï¿½ï¿½ï¿½ï¿½Ë´Ï´ï¿½
+
+                SirenCtrl.GetComponent<AudioSource>().Play();
+
+                if (dialogueManager != null)
+                {
+                    dialogueManager.StartDialogue(
+                        "Dialogues/Fire_Step1/Fire_Step1_S2_dialogues",
+                        "",
+                        "Fire_Step1_S3");
+                }
             }
         }
 
         if (!isPointerDown && isScaling)
         {
-            // ¼ÕÀ» ¶¾ ÈÄ ´Ù½Ã ¿ø·¡ Å©±â·Î ¼­¼­È÷ µÇµ¹¸²
+            // ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ ï¿½Ù½ï¿½ ï¿½ï¿½ï¿½ï¿½ Å©ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Çµï¿½ï¿½ï¿½
             transform.localScale = Vector3.Lerp(transform.localScale, originalScale, Time.deltaTime * 5f);
             if (Vector3.Distance(transform.localScale, originalScale) < 0.01f)
             {
@@ -47,7 +59,8 @@ public class FireTouch : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
                 isScaling = false;
             }
 
-            hasLongPressed = false; // ÇÑ ¹ø¸¸ ½ÇÇàµÇ°Ô
+            hasLongPressed = false; // ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Ç°ï¿½
+            SirenCtrl.GetComponent<AudioSource>().Stop();
             SirenCtrl.StopPulse();
 
         }

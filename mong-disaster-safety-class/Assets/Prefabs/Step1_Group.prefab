@@ -50,7 +50,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueText: {fileID: 8418021574541606082}
   audioSource: {fileID: 2295885040766925348}
-  typingSpeed: 0.05
+  typingSpeed: 0.08
   nextButton: {fileID: 7342054664919758976}
   btn1_2: {fileID: 0}
   btn3_4: {fileID: 0}
@@ -252,7 +252,7 @@ Canvas:
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_TargetDisplay: 0
 --- !u!114 &3742443724329177131
 MonoBehaviour:
@@ -361,8 +361,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 6ce05cfa288a0ba45b879d1da63a9542, type: 2}
-  m_sharedMaterial: {fileID: -4492946549454870118, guid: 6ce05cfa288a0ba45b879d1da63a9542, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 159ac8a3a179e6942817ce8d1bf20f31, type: 2}
+  m_sharedMaterial: {fileID: 7858937968217129460, guid: 159ac8a3a179e6942817ce8d1bf20f31, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []

@@ -92,8 +92,20 @@ public class Login : MonoBehaviour
     {
         string nickname = nicknameInput.text.Trim();
 
-        string url = "http://localhost:8000/user/check-nickname?nickname=" + UnityWebRequest.EscapeURL(nickname);
+        if (string.IsNullOrEmpty(nickname))
+        {
+            nicknameWarning.SetActive(true);
+            nicknameWarningText.text = "닉네임을 입력해주세요!";
+            nicknameWarningText.color = Color.red;
+
+            isNicknameAvailable = false;
+            UpdateStartButtonState();
+            yield break;
+        }
+
+        string url = "http://3.35.180.225:8000/user/check-nickname?nickname=" + UnityWebRequest.EscapeURL(nickname);
         UnityWebRequest request = UnityWebRequest.Get(url);
+        request.certificateHandler = new BypassCertificate();
         yield return request.SendWebRequest();
 
         if (request.result == UnityWebRequest.Result.Success)
@@ -137,7 +149,7 @@ public class Login : MonoBehaviour
         };
 
         string json = JsonUtility.ToJson(data);
-        string url = "http://localhost:8000/user/register"; // 추후 빌드 시 url 주소 바꿔주기
+        string url = "http://3.35.180.225:8000/user/register";
         UnityWebRequest request = new UnityWebRequest(url, "POST");
         
         byte[] bodyRaw = System.Text.Encoding.UTF8.GetBytes(json);
@@ -145,6 +157,7 @@ public class Login : MonoBehaviour
         request.downloadHandler = new DownloadHandlerBuffer();
         request.SetRequestHeader("Content-Type", "application/json");
 
+        request.certificateHandler = new BypassCertificate();
         yield return request.SendWebRequest();
 
         // 회원가입 성공 -> 메인 씬으로 전환
@@ -193,6 +206,7 @@ public class Login : MonoBehaviour
     public void OnNicknameChanged()
     {
         isNicknameValid = true;
+        isNicknameAvailable = false;
 
         if (string.IsNullOrWhiteSpace(nicknameInput.text))
         {
@@ -261,9 +275,10 @@ public class Login : MonoBehaviour
     // 초기 랭킹 등록
     IEnumerator RegisterRanking(string userId)
     {
-        string url = "http://localhost:8000/ranking/register/" +
+        string url = "http://3.35.180.225:8000/ranking/register/" +
                         UnityWebRequest.EscapeURL(userId);
         UnityWebRequest request = UnityWebRequest.PostWwwForm(url, "");
+        request.certificateHandler = new BypassCertificate();
         yield return request.SendWebRequest();
 
         if (request.result == UnityWebRequest.Result.Success)
@@ -273,6 +288,14 @@ public class Login : MonoBehaviour
         else
         {
             Debug.LogError("초기 랭킹 등록 실패: " + request.downloadHandler.text);
+        }
+    }
+
+    public class BypassCertificate : CertificateHandler
+    {
+        protected override bool ValidateCertificate(byte[] certificateData)
+        {
+            return true;
         }
     }
 }

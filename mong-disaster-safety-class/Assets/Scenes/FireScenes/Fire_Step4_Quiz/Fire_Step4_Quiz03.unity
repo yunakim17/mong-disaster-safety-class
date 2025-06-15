@@ -335,7 +335,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 41.78662, w: 0}
+  m_margin: {x: 0, y: 0, z: -323.0205, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -409,15 +409,15 @@ MonoBehaviour:
   quizQuestion: "3. 119\uC5D0 \uC804\uD654\uB97C \uD574\uC11C \uAD6C\uC870\uB97C
     \uC694\uCCAD\uD558\uACE0 \uBC14\uB85C \uC804\uD654\uB97C \uB04A\uC5B4\uC57C \uD574\uC694."
   correctFeedbackMessage: "\uB9DE\uC544! \uC2E0\uACE0\uB97C \uD588\uB2E4\uACE0 \uD574\uC11C
-    \uB0B4\uAC00 \uBA3C\uC800 \uC804\uD654\uB97C \uB04A\uC73C\uBA74 \uC548 \uB3FC!
-    \uC18C\uBC29\uC11C\uC5D0\uC11C \uC9C0\uC2DC \uC0AC\uD56D\uC774 \uC788\uAC70\uB098
-    \uC0C1\uD669\uC774 \uBC14\uB014 \uC218\uB3C4 \uC788\uC73C\uB2C8 \uC804\uD654\uB97C
-    \uB04A\uC9C0 \uB9D0\uACE0 \uAE30\uB2E4\uB824\uC57C \uD574!"
+    \uB0B4\uAC00 \uBA3C\uC800 \uC804\uD654\uB97C \uB04A\uC73C\uBA74 \uC548 \uB3FC!\n\uC18C\uBC29\uC11C\uC5D0\uC11C
+    \uC9C0\uC2DC \uC0AC\uD56D\uC774 \uC788\uAC70\uB098 \uC0C1\uD669\uC774 \uBC14\uB014
+    \uC218\uB3C4 \uC788\uC73C\uB2C8\n\uC804\uD654\uB97C \uB04A\uC9C0 \uB9D0\uACE0
+    \uAE30\uB2E4\uB824\uC57C \uD574!"
   wrongFeedbackMessage: "\uC544\uB2C8\uC57C! \uC2E0\uACE0\uB97C \uD588\uB2E4\uACE0
     \uD574\uC11C \uB0B4\uAC00 \uBA3C\uC800 \uC804\uD654\uB97C \uB04A\uC73C\uBA74
-    \uC548 \uB3FC! \uC18C\uBC29\uC11C\uC5D0\uC11C \uC9C0\uC2DC \uC0AC\uD56D\uC774
-    \uC788\uAC70\uB098 \uC0C1\uD669\uC774 \uBC14\uB014 \uC218\uB3C4 \uC788\uC73C\uB2C8
-    \uC804\uD654\uB97C \uB04A\uC9C0 \uB9D0\uACE0 \uAE30\uB2E4\uB824\uC57C \uD574!"
+    \uC548 \uB3FC!\n\uC18C\uBC29\uC11C\uC5D0\uC11C \uC9C0\uC2DC \uC0AC\uD56D\uC774
+    \uC788\uAC70\uB098 \uC0C1\uD669\uC774 \uBC14\uB014 \uC218\uB3C4 \uC788\uC73C\uB2C8\n\uC804\uD654\uB97C
+    \uB04A\uC9C0 \uB9D0\uACE0 \uAE30\uB2E4\uB824\uC57C \uD574!"
   correctIsO: 0
   characterImage: {fileID: 913781760}
   defaultSprite: {fileID: -277781592, guid: bc15573dc5121b14b9d4805268072672, type: 3}
@@ -1003,7 +1003,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
+  m_HorizontalAlignment: 2
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -1032,7 +1032,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 248.2362, w: 0}
+  m_margin: {x: 0, y: 0, z: -12.656128, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0

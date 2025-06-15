@@ -3,7 +3,9 @@ using UnityEngine;
 public class Eq_Step3_S1_Starter : MonoBehaviour
 {
     public DialogueManager dialogueManager;
-    public Shake shakeTarget;  // Èçµé ´ë»ó ¿ÀºêÁ§Æ® ¿¬°á
+    public Shake shakeTarget;  // ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ® ï¿½ï¿½ï¿½ï¿½
+    public GameObject underDesk;
+    private bool imageShown = false;
 
     void Start()
     {
@@ -19,11 +21,21 @@ public class Eq_Step3_S1_Starter : MonoBehaviour
         );
     }
 
+    void Update()
+    {
+        int currentIdx = dialogueManager.GetCurrentLineIndex();
+        if (currentIdx == 4 && !imageShown)
+        {
+            underDesk.SetActive(true);
+            imageShown = true;
+        }
+    }
+
     void StopShakeSmoothly()
     {
         if (shakeTarget != null)
         {
-            shakeTarget.StopShake(1f); // 1ÃÊ µ¿¾È ¼­¼­È÷ ¸ØÃã
+            shakeTarget.StopShake(1f); // 1ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
         }
     }
 }

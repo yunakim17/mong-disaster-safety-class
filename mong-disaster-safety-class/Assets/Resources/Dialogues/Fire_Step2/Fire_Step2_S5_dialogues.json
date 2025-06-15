@@ -1,8 +1,20 @@
 [
- {
-    "sequence": 6,
+  {
+    "sequence": 7,
     "speaker": "몽대장",
-    "dialogue_text": "맞아! 전자제품은 습하거나 물기 있는 곳에 보관해선 안 돼. 반드시 물기 없는 곳에 둬야 해.",
-    "voice_path": ""
+    "dialogue_text": "맞아! 핸드폰이나 컴퓨터, 드라이기 같은 전자 제품은 젖어 있거나 물이 있는 곳에 두면 안 돼.",
+    "voice_path": "Fire_Step2/07"
+  },
+  {
+    "sequence": 8,
+    "speaker": "몽대장",
+    "dialogue_text": "예를 들면 화장실처럼 물이 있는 공간에 두고 사용하면 안 돼! 반드시 물이 없는 곳에 둬야 해.",
+    "voice_path": "Fire_Step2/08"
+  },
+  {
+    "sequence": 9,
+    "speaker": "몽대장",
+    "dialogue_text": "우리 집도 한번 확인해 보고 집안 어른들께 알려 드려볼까?",
+    "voice_path": "Fire_Step2/09"
   }
 ]

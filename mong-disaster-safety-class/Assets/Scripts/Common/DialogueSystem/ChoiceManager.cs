@@ -4,53 +4,53 @@ using TMPro;
 
 public class ChoiceManager : MonoBehaviour
 {
-    public static ChoiceManager Instance; // ½Ì±ÛÅæ ÀÎ½ºÅÏ½º (´Ù¸¥ ½ºÅ©¸³Æ®¿¡¼­ ½±°Ô Á¢±Ù °¡´É)
+    public static ChoiceManager Instance; // ï¿½Ì±ï¿½ï¿½ï¿½ ï¿½Î½ï¿½ï¿½Ï½ï¿½ (ï¿½Ù¸ï¿½ ï¿½ï¿½Å©ï¿½ï¿½Æ®ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½)
 
     [Header("UI Components")]
-    public GameObject choicePanel; // ¼±ÅÃÁö ÀüÃ¼¸¦ °¨½Î´Â ÆÐ³Î
-    public TextMeshProUGUI questionText; // Áú¹® ÅØ½ºÆ®
-    public Button option1Button; // ¼±ÅÃÁö ¹öÆ° 1
-    public Button option2Button; // ¼±ÅÃÁö ¹öÆ° 2
-    public TextMeshProUGUI feedbackText; // ¿À´ä ÇÇµå¹é ÅØ½ºÆ®
-    public AudioSource audioSource; // ¼±ÅÃÁö À½¼º Àç»ý¿ë ¿Àµð¿À ¼Ò½º
+    public GameObject choicePanel; // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Ã¼ï¿½ï¿½ ï¿½ï¿½ï¿½Î´ï¿½ ï¿½Ð³ï¿½
+    public TextMeshProUGUI questionText; // ï¿½ï¿½ï¿½ï¿½ ï¿½Ø½ï¿½Æ®
+    public Button option1Button; // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Æ° 1
+    public Button option2Button; // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Æ° 2
+    public TextMeshProUGUI feedbackText; // ï¿½ï¿½ï¿½ï¿½ ï¿½Çµï¿½ï¿½ ï¿½Ø½ï¿½Æ®
+    public AudioSource audioSource; // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ò½ï¿½
 
-    private System.Action<bool> resultCallback; // Á¤´ä/¿À´ä °á°ú¸¦ Àü´ÞÇÒ ÄÝ¹é
-    private ChoiceEntry currentChoice; // ÇöÀç º¸¿©Áö´Â ¼±ÅÃÁö Á¤º¸
+    private System.Action<bool> resultCallback; // ï¿½ï¿½ï¿½ï¿½/ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ý¹ï¿½
+    private ChoiceEntry currentChoice; // ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 
     private void Awake()
     {
-        // ½Ì±ÛÅæ ÆÐÅÏ ÃÊ±âÈ­
+        // ï¿½Ì±ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ê±ï¿½È­
         if (Instance == null)
             Instance = this;
         else
             Destroy(gameObject);
 
-        choicePanel.SetActive(false); // ½ÃÀÛ ½Ã ¼±ÅÃÁö ÆÐ³Î ºñÈ°¼ºÈ­
-        feedbackText.gameObject.SetActive(false); // ÇÇµå¹éµµ ºñÈ°¼ºÈ­
+        choicePanel.SetActive(false); // ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ð³ï¿½ ï¿½ï¿½È°ï¿½ï¿½È­
+        feedbackText.gameObject.SetActive(false); // ï¿½Çµï¿½éµµ ï¿½ï¿½È°ï¿½ï¿½È­
     }
 
-    // ¼±ÅÃÁö º¸¿©ÁÖ±â
+    // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ö±ï¿½
     public void ShowChoice(ChoiceEntry choice, System.Action<bool> callback)
     {
-        Debug.Log($"¼±ÅÃÁö UI Ç¥½Ã Áß: {choice.question}");
+        Debug.Log($"ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ UI Ç¥ï¿½ï¿½ ï¿½ï¿½: {choice.question}");
         currentChoice = choice;
         resultCallback = callback;
 
         choicePanel.SetActive(true);
         feedbackText.gameObject.SetActive(false);
 
-        questionText.text = choice.question; // Áú¹® ÅØ½ºÆ® ¼³Á¤
+        questionText.text = choice.question; // ï¿½ï¿½ï¿½ï¿½ ï¿½Ø½ï¿½Æ® ï¿½ï¿½ï¿½ï¿½
         option1Button.GetComponentInChildren<TextMeshProUGUI>().text = choice.option1;
         option2Button.GetComponentInChildren<TextMeshProUGUI>().text = choice.option2;
 
-        // ÀÌÀü ÀÌº¥Æ® Á¦°ÅÇÏ°í »õ·Î Ãß°¡
+        // ï¿½ï¿½ï¿½ï¿½ ï¿½Ìºï¿½Æ® ï¿½ï¿½ï¿½ï¿½ï¿½Ï°ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ß°ï¿½
         option1Button.onClick.RemoveAllListeners();
         option2Button.onClick.RemoveAllListeners();
 
         option1Button.onClick.AddListener(() => OnSelectOption(1));
         option2Button.onClick.AddListener(() => OnSelectOption(2));
 
-        // ¼±ÅÃÁö À½¼º Àç»ý (voice_path »ç¿ë)
+        // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ (voice_path ï¿½ï¿½ï¿½)
         if (!string.IsNullOrEmpty(choice.voice_path))
         {
             AudioClip clip = Resources.Load<AudioClip>("Audio/" + choice.voice_path);
@@ -62,28 +62,39 @@ public class ChoiceManager : MonoBehaviour
         }
     }
 
-    // ¼±ÅÃÁö ¹öÆ° Å¬¸¯ ½Ã ½ÇÇà
+    // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Æ° Å¬ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
     private void OnSelectOption(int selectedOption)
     {
         if (selectedOption == currentChoice.correct_option)
         {
-            // Á¤´äÀÌ¸é ÆÐ³Î ´Ý°í ÄÝ¹é È£Ãâ (true)
+            // ï¿½ï¿½ï¿½ï¿½ï¿½Ì¸ï¿½ ï¿½Ð³ï¿½ ï¿½Ý°ï¿½ ï¿½Ý¹ï¿½ È£ï¿½ï¿½ (true)
             choicePanel.SetActive(false);
             resultCallback?.Invoke(true);
         }
         else
         {
-            // ¿À´äÀÌ¸é ÇÇµå¹é Ãâ·Â
+            // ï¿½ï¿½ï¿½ï¿½ï¿½Ì¸ï¿½ ï¿½Çµï¿½ï¿½ ï¿½ï¿½ï¿½
             StartCoroutine(ShowFeedback());
             resultCallback?.Invoke(false);
         }
     }
 
-    // ¿À´ä ÇÇµå¹é º¸¿©ÁÖ±â ÄÚ·çÆ¾
+    // ï¿½ï¿½ï¿½ï¿½ ï¿½Çµï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ö±ï¿½ ï¿½Ú·ï¿½Æ¾
     private System.Collections.IEnumerator ShowFeedback()
     {
         feedbackText.text = currentChoice.feedback;
         feedbackText.gameObject.SetActive(true);
+
+        if (!string.IsNullOrEmpty(currentChoice.feedback_voice_path))
+        {
+            AudioClip feedbackClip = Resources.Load<AudioClip>("Audio/" + currentChoice.feedback_voice_path);
+            if (feedbackClip != null)
+            {
+                audioSource.clip = feedbackClip;
+                audioSource.Play();
+            }
+        }
+
         yield return new WaitForSeconds(2.5f);
     }
 }

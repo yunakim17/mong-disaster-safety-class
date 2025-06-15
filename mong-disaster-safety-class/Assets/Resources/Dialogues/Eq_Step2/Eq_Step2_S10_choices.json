@@ -1,12 +1,13 @@
 [
     {
-        "sequence": 15,
+        "sequence": 14,
         "speaker": "몽대장",
-        "question": "어느 장소가 좋을까?",
-        "option1": "다른 높은 건물 안.",
-        "option2": "지정된 대피소.",
+        "question": "지진이 났을 때 안전한 공간은 \n 어디가 있을까?",
+        "option1": "높은 건물 안.",
+        "option2": "정해져 있는 안전한 지진 대피 장소.",
         "correct_option": 2,
-        "feedback": "높은 건물 안도 마찬가지로 안전하지 않아! 다시 선택해 볼까?",
-        "voice_path": ""
+        "feedback": "건물은 무너질 수도 있어! 그래서 흔들림이 멈추면 안전한 곳으로 나가야 해! 다시 생각해 볼까?",
+        "voice_path": "Eq_Step2/14",
+        "feedback_voice_path": "Eq_Step2/feedback/5"
     }
 ]

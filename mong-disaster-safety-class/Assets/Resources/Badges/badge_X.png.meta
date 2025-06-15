@@ -113,10 +113,10 @@ TextureImporter:
       name: badge_X_0
       rect:
         serializedVersion: 2
-        x: 34
-        y: 364
-        width: 244
-        height: 291
+        x: 117
+        y: 351
+        width: 222
+        height: 265
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -124,8 +124,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7a9954b2487481b41aa3372a3f00e3a1
-      internalID: 2073847257
+      spriteID: e97acc2f0e9f95a458f0a11e234a3b90
+      internalID: -334297955
       vertices: []
       indices: 
       edges: []
@@ -134,10 +134,10 @@ TextureImporter:
       name: badge_X_1
       rect:
         serializedVersion: 2
-        x: 365
-        y: 364
-        width: 271
-        height: 292
+        x: 418
+        y: 351
+        width: 247
+        height: 266
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -145,8 +145,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dcc596e0a7f0a5742a2f35f20cc29e23
-      internalID: 1165698577
+      spriteID: 7e957e066f6dc234e8d67234a7357cb1
+      internalID: -990360127
       vertices: []
       indices: 
       edges: []
@@ -155,10 +155,10 @@ TextureImporter:
       name: badge_X_2
       rect:
         serializedVersion: 2
-        x: 723
-        y: 364
-        width: 263
-        height: 292
+        x: 744
+        y: 351
+        width: 240
+        height: 266
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -166,8 +166,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 71e40ae87ca761047b259b6ec203b005
-      internalID: -1671514397
+      spriteID: 4802924e084307f42adf9b61de1a0a80
+      internalID: -107701341
       vertices: []
       indices: 
       edges: []
@@ -176,10 +176,10 @@ TextureImporter:
       name: badge_X_3
       rect:
         serializedVersion: 2
-        x: 1073
-        y: 364
-        width: 260
-        height: 294
+        x: 1063
+        y: 351
+        width: 237
+        height: 268
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -187,8 +187,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a1cba162fd6316946b30fc81c0ffa577
-      internalID: 740246559
+      spriteID: 2cc92be674e0b4e4385665cb5829fe6c
+      internalID: -2031094473
       vertices: []
       indices: 
       edges: []
@@ -197,10 +197,10 @@ TextureImporter:
       name: badge_X_4
       rect:
         serializedVersion: 2
-        x: 24
-        y: 34
-        width: 244
-        height: 291
+        x: 108
+        y: 51
+        width: 222
+        height: 264
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -208,8 +208,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f7e14bcf1d0df2e488b012a0f64ee8c7
-      internalID: 1424528101
+      spriteID: 8231c17d2978343469ab438b20b39fe3
+      internalID: -1216841610
       vertices: []
       indices: 
       edges: []
@@ -218,10 +218,10 @@ TextureImporter:
       name: badge_X_5
       rect:
         serializedVersion: 2
-        x: 363
-        y: 34
-        width: 271
-        height: 292
+        x: 417
+        y: 51
+        width: 246
+        height: 265
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -229,8 +229,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d1f444f8823f35e40bba92cc85b1ebd6
-      internalID: -1843056623
+      spriteID: 75ce2b1f6d916734c95028a60ad98379
+      internalID: -355876255
       vertices: []
       indices: 
       edges: []
@@ -239,10 +239,10 @@ TextureImporter:
       name: badge_X_6
       rect:
         serializedVersion: 2
-        x: 730
-        y: 34
-        width: 263
-        height: 292
+        x: 750
+        y: 51
+        width: 240
+        height: 265
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -250,8 +250,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 022af429c9e84f54daf1722fc0063fee
-      internalID: -922614111
+      spriteID: e0b418d5196b07a4eb4df9b4009b19f9
+      internalID: 55968385
       vertices: []
       indices: 
       edges: []
@@ -260,10 +260,10 @@ TextureImporter:
       name: badge_X_7
       rect:
         serializedVersion: 2
-        x: 1088
-        y: 34
-        width: 260
-        height: 293
+        x: 1076
+        y: 51
+        width: 237
+        height: 267
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -271,8 +271,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a8e5a11437ba751419e3c9cbf528bb2f
-      internalID: 492535011
+      spriteID: ff8345316cb8c1f46a003114ee86666a
+      internalID: 1560079173
       vertices: []
       indices: 
       edges: []
@@ -288,14 +288,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      badge_X_0: 2073847257
-      badge_X_1: 1165698577
-      badge_X_2: -1671514397
-      badge_X_3: 740246559
-      badge_X_4: 1424528101
-      badge_X_5: -1843056623
-      badge_X_6: -922614111
-      badge_X_7: 492535011
+      badge_X_0: -334297955
+      badge_X_1: -990360127
+      badge_X_2: -107701341
+      badge_X_3: -2031094473
+      badge_X_4: -1216841610
+      badge_X_5: -355876255
+      badge_X_6: 55968385
+      badge_X_7: 1560079173
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

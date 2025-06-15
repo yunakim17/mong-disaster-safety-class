@@ -335,7 +335,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 41.78662, w: 0}
+  m_margin: {x: 0, y: 0, z: -150.56628, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -410,13 +410,13 @@ MonoBehaviour:
     \uB9C9\uACE0 \uBAB8\uC744 \uC219\uC5EC\uC11C \uC774\uB3D9\uD574\uC57C \uD574\uC694."
   correctFeedbackMessage: "\uB9DE\uC544! \uBD88\uC774 \uB0AC\uC744 \uB550 \uC218\uAC74
     \uB4F1\uC758 \uCC9C\uC744 \uACB9\uCE58\uAC70\uB098 \uBB3C\uC5D0 \uC801\uC154\uC11C
-    \uC785\uACFC \uCF54\uB97C \uB9C9\uACE0 \uC5F0\uAE30\uAC00 \uD3D0\uC5D0 \uB4E4\uC5B4\uAC00\uC9C0
-    \uC54A\uB3C4\uB85D \uD574\uC57C \uD574! \uADF8\uB9AC\uACE0 \uBAB8\uC744 \uC219\uC5EC\uC11C
+    \n\uC785\uACFC \uCF54\uB97C \uB9C9\uACE0 \uC5F0\uAE30\uAC00 \uD3D0\uC5D0 \uB4E4\uC5B4\uAC00\uC9C0
+    \uC54A\uB3C4\uB85D \uD574\uC57C \uD574! \n\uADF8\uB9AC\uACE0 \uBAB8\uC744 \uC219\uC5EC\uC11C
     \uB0AE\uC740 \uC790\uC138\uB85C \uB300\uD53C\uD574\uC57C \uD574! "
   wrongFeedbackMessage: "\uC544\uB2C8\uC57C! \uBD88\uC774 \uB0AC\uC744 \uB550 \uC218\uAC74
     \uB4F1\uC758 \uCC9C\uC744 \uACB9\uCE58\uAC70\uB098 \uBB3C\uC5D0 \uC801\uC154\uC11C
-    \uC785\uACFC \uCF54\uB97C \uB9C9\uACE0 \uC5F0\uAE30\uAC00 \uD3D0\uC5D0 \uB4E4\uC5B4\uAC00\uC9C0
-    \uC54A\uB3C4\uB85D \uD574\uC57C \uD574! \uADF8\uB9AC\uACE0 \uBAB8\uC744 \uC219\uC5EC\uC11C
+    \n\uC785\uACFC \uCF54\uB97C \uB9C9\uACE0 \uC5F0\uAE30\uAC00 \uD3D0\uC5D0 \uB4E4\uC5B4\uAC00\uC9C0
+    \uC54A\uB3C4\uB85D \uD574\uC57C \uD574! \n\uADF8\uB9AC\uACE0 \uBAB8\uC744 \uC219\uC5EC\uC11C
     \uB0AE\uC740 \uC790\uC138\uB85C \uB300\uD53C\uD574\uC57C \uD574! "
   correctIsO: 1
   characterImage: {fileID: 913781760}
@@ -1003,7 +1003,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
+  m_HorizontalAlignment: 2
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -1032,7 +1032,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 248.2362, w: 0}
+  m_margin: {x: 0, y: 0, z: -12.656128, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0

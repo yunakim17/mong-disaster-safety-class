@@ -1,12 +1,13 @@
 [
- {
-    "sequence": 5,
+  {
+    "sequence": 6,
     "speaker": "몽대장",
-    "question": "전자제품은 어떻게 사용하면 좋을까?",
-    "option1": "습하거나 물기 있는 곳에 보관하지 않는다.",
-    "option2": "습하고 물기있는 곳에 보관해도 된다.",
+    "question": "전자제품은 어떻게 \n 사용하면 좋을까?",
+    "option1": "젖어 있거나 물이 있는 곳에 놓지 않는다.",
+    "option2": "젖어 있거나 물이 있는 곳에 놔도 된다.",
     "correct_option": 1,
-    "feedback": "전자제품이 넘어졌을 경우 안전장치가 없으면 가열되어 화재가 일어날 수도 있어! 다시 선택해 볼까?",
-    "voice_path": ""
+    "feedback": "전자 제품은 젖어 있거나 물이 있는 곳에 두면 잘못해서 불이 날 수 있어!  조금 더 생각해 볼까?",
+    "voice_path": "Fire_Step2/06",
+    "feedback_voice_path": "Fire_Step2/feedback/2"
   }
 ]

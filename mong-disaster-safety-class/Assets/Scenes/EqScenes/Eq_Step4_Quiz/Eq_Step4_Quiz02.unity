@@ -271,8 +271,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "2. \uD754\uB4E4\uB9BC\uC774 \uBA48\uCD94\uBA74 \uAC00\uC2A4\uB97C \uCC28\uB2E8\uD574\uC57C
-    \uD574\uC694."
+  m_text: "2. \uC9D1\uC5D0\uC11C \uC9C0\uC9C4\uC774 \uB0AC\uC744 \uB54C \uD754\uB4E4\uB9BC\uC774
+    \uBA48\uCD94\uBA74 \uAC00\uC2A4\uB97C \uC7A0\uAC00\uC57C \uD574\uC694."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6ce05cfa288a0ba45b879d1da63a9542, type: 2}
   m_sharedMaterial: {fileID: -4492946549454870118, guid: 6ce05cfa288a0ba45b879d1da63a9542, type: 2}
@@ -335,7 +335,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 41.78662, w: 0}
+  m_margin: {x: 0, y: 0, z: -499.1516, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -406,16 +406,16 @@ MonoBehaviour:
   oImageButton: {fileID: 1114854705}
   xImageButton: {fileID: 924631433}
   nextButton: {fileID: 1760417057}
-  quizQuestion: "2. \uD754\uB4E4\uB9BC\uC774 \uBA48\uCD94\uBA74 \uAC00\uC2A4\uB97C
-    \uCC28\uB2E8\uD574\uC57C \uD574\uC694."
+  quizQuestion: "2. \uC9D1\uC5D0\uC11C \uC9C0\uC9C4\uC774 \uB0AC\uC744 \uB54C \uD754\uB4E4\uB9BC\uC774
+    \uBA48\uCD94\uBA74 \uAC00\uC2A4\uB97C \uC7A0\uAC00\uC57C \uD574\uC694."
   correctFeedbackMessage: "\uB9DE\uC544! \uC9C0\uC9C4\uC73C\uB85C \uC778\uD574 \uAC00\uC2A4\uAC00
-    \uC0C8\uC11C \uBD88\uC774 \uB0A0 \uC218 \uC788\uC5B4. \uC9D1\uC5D0\uC11C \uC9C0\uC9C4\uC774
-    \uB0AC\uC744 \uB550 \uD754\uB4E4\uB9BC\uC774 \uBA48\uCD94\uBA74 \uAC00\uC2A4\uB97C
-    \uC7A0\uAC00\uC57C \uD574. "
+    \uC0C8\uC11C \uBD88\uC774 \uB0A0 \uC218 \uC788\uC73C\uB2C8\n\uC9D1 \uBC16\uC73C\uB85C
+    \uB098\uAC00\uAE30 \uC804\uC5D0 \uAF2D \uAC00\uC2A4\uBC38\uBE0C\uB97C \uC7A0\uAC00\uC57C
+    \uD574."
   wrongFeedbackMessage: "\uC544\uB2C8\uC57C! \uC9C0\uC9C4\uC73C\uB85C \uC778\uD574
-    \uAC00\uC2A4\uAC00 \uC0C8\uC11C \uBD88\uC774 \uB0A0 \uC218 \uC788\uC5B4. \uC9D1\uC5D0\uC11C
-    \uC9C0\uC9C4\uC774 \uB0AC\uC744 \uB550 \uD754\uB4E4\uB9BC\uC774 \uBA48\uCD94\uBA74
-    \uAC00\uC2A4\uB97C \uC7A0\uAC00\uC57C \uD574. "
+    \uAC00\uC2A4\uAC00 \uC0C8\uC11C \uBD88\uC774 \uB0A0 \uC218 \uC788\uC73C\uB2C8\n\uC9D1
+    \uBC16\uC73C\uB85C \uB098\uAC00\uAE30 \uC804\uC5D0 \uAF2D \uAC00\uC2A4\uBC38\uBE0C\uB97C
+    \uC7A0\uAC00\uC57C \uD574."
   correctIsO: 1
   characterImage: {fileID: 913781760}
   defaultSprite: {fileID: -277781592, guid: bc15573dc5121b14b9d4805268072672, type: 3}
@@ -1001,7 +1001,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
+  m_HorizontalAlignment: 2
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -1030,7 +1030,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 248.2362, w: 0}
+  m_margin: {x: 0, y: 0, z: -14.8671875, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0

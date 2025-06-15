@@ -336,7 +336,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: -2.2198486, w: 0}
+  m_margin: {x: 0, y: 0, z: -459.88696, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -411,13 +411,13 @@ MonoBehaviour:
     \uC9D1\uC73C\uB85C \uAC00\uC9C0 \uC54A\uACE0 \uC120\uC0DD\uB2D8\uC758 \uC548\uB0B4\uC5D0
     \uB530\uB77C \uD589\uB3D9\uD574\uC57C \uD574\uC694."
   correctFeedbackMessage: "\uB9DE\uC544! \uC9C0\uC9C4 \uC774\uD6C4\uC5D0\uB294 \uCD94\uAC00\uC801\uC778
-    \uC704\uD5D8\uC774 \uC788\uC744 \uC218 \uC788\uC5B4. \uC120\uC0DD\uB2D8\uC758
+    \uC704\uD5D8\uC774 \uC788\uC744 \uC218 \uC788\uC5B4.\n\uC120\uC0DD\uB2D8\uC758
     \uC548\uB0B4\uC5D0 \uB530\uB77C \uC548\uC804\uD55C \uACF3\uC5D0\uC11C \uAE30\uB2E4\uB824\uC57C
     \uD574."
   wrongFeedbackMessage: "\uC544\uB2C8\uC57C! \uC9C0\uC9C4 \uC774\uD6C4\uC5D0\uB294
-    \uCD94\uAC00\uC801\uC778 \uC704\uD5D8\uC774 \uC788\uC744 \uC218 \uC788\uC5B4.
-    \uC120\uC0DD\uB2D8\uC758 \uC548\uB0B4\uC5D0 \uB530\uB77C \uC548\uC804\uD55C \uACF3\uC5D0\uC11C
-    \uAE30\uB2E4\uB824\uC57C \uD574."
+    \uCD94\uAC00\uC801\uC778 \uC704\uD5D8\uC774 \uC788\uC744 \uC218 \uC788\uC5B4.\n\uC120\uC0DD\uB2D8\uC758
+    \uC548\uB0B4\uC5D0 \uB530\uB77C \uC548\uC804\uD55C \uACF3\uC5D0\uC11C \uAE30\uB2E4\uB824\uC57C
+    \uD574."
   correctIsO: 1
   characterImage: {fileID: 913781760}
   defaultSprite: {fileID: -277781592, guid: bc15573dc5121b14b9d4805268072672, type: 3}
@@ -998,7 +998,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
+  m_HorizontalAlignment: 2
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -1027,7 +1027,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 248.2362, w: 0}
+  m_margin: {x: 0, y: 0, z: -14.8671875, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0

@@ -1,8 +1,20 @@
 [
  {
-    "sequence": 11,
+    "sequence": 12,
     "speaker": "몽대장",
-    "dialogue_text": "여기까지 몽대장의 화재 수업을 잘 따라와줘서 고마워!",
-    "voice_path": ""
+    "dialogue_text": "유리컵을 옮겨서 성냥불을 덮어보자~!",
+    "voice_path": "Fire_Step1/12"
+  },
+  {
+    "sequence": 13,
+    "speaker": "몽대장",
+    "dialogue_text": "짠! 불이 꺼졌지? 유리컵이 불이 숨 쉴 수 있는 산소를 막아버렸기 때문이야~",
+    "voice_path": "Fire_Step1/13"
+  },
+  {
+    "sequence": 14,
+    "speaker": "몽대장",
+    "dialogue_text": "불이 어떻게 나고, 또 어떻게 꺼지는지 이제 알았지?",
+    "voice_path": "Fire_Step1/14"
   }
 ]

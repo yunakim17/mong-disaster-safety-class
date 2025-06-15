@@ -1,12 +1,13 @@
 [
   {
-    "sequence": 9,
+    "sequence": 8,
     "speaker": "몽대장",
-    "question": "그렇다면 어떻게 해야 할까?",
-    "option1": "높은 곳에 있는 물건들을 낮은 곳으로 옮긴다.",
-    "option2": "떨어질 가능성 있는 물건들은 죄다 가져다 버린다.",
+    "question": "높은 곳에 있는 물건들이 많은데 \n 어떡하지?",
+    "option1": "물건들을 낮은 곳으로 옮긴다.",
+    "option2": "그대로 둔다.",
     "correct_option": 1,
-    "feedback": "물론 떨어질 위험은 없겠지만 평상시 일상생활이 불가능하겠지? 다시 선택해 볼까?",
-    "voice_path": ""
+    "feedback": "지진 때문에 높은 곳에 있는 물건들이 떨어져서 다칠 수도 있어! 다시 골라 볼까?",
+    "voice_path": "Eq_Step2/08",
+    "feedback_voice_path": "Eq_Step2/feedback/3"
   }
 ]

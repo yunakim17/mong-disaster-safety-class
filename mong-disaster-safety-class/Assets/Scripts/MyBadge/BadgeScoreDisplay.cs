@@ -36,9 +36,10 @@ public class BadgeScoreDisplay : MonoBehaviour
     // 배지 점수 불러오기
     IEnumerator FetchBadgeScore(string userId)
     {
-        string url = $"http://localhost:8000/ranking/get/{userId}";
+        string url = $"http://3.35.180.225:8000/ranking/get/{userId}";
 
         UnityWebRequest request = UnityWebRequest.Get(url);
+        request.certificateHandler = new BypassCertificate();
         yield return request.SendWebRequest();
 
         if (request.result == UnityWebRequest.Result.Success)

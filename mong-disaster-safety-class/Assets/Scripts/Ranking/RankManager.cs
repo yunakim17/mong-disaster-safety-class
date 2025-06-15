@@ -47,8 +47,9 @@ public class RankManager : MonoBehaviour
         string userId = PlayerPrefs.GetString("uuid");
 
         // 학교 이름 요청
-        string userUrl = "http://localhost:8000/user/school/" + userId; // 추후 빌드 시 url 주소 바꿔주기
+        string userUrl = "http://3.35.180.225:8000/user/school/" + userId;
         UnityWebRequest userRequest = UnityWebRequest.Get(userUrl);
+        userRequest.certificateHandler = new BypassCertificate();
         yield return userRequest.SendWebRequest();
 
         if (userRequest.result != UnityWebRequest.Result.Success)
@@ -62,8 +63,9 @@ public class RankManager : MonoBehaviour
         SchoolData schoolData = JsonUtility.FromJson<SchoolData>(userJson);
         string schoolName = schoolData.school_name;
 
-        string rankUrl = "http://localhost:8000/ranking/list/" + schoolName;
+        string rankUrl = "http://3.35.180.225:8000/ranking/list/" + schoolName;
         UnityWebRequest rankRequest = UnityWebRequest.Get(rankUrl);
+        rankRequest.certificateHandler = new BypassCertificate();
         yield return rankRequest.SendWebRequest();
 
         if (rankRequest.result != UnityWebRequest.Result.Success)

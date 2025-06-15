@@ -4,12 +4,13 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using System;
 
 public class DialogueManager : MonoBehaviour
 {
     public TextMeshProUGUI dialogueText;
     public AudioSource audioSource;
-    public float typingSpeed = 0.05f;
+    public float typingSpeed = 1f;
     public GameObject nextButton;
 
     public Button btn1_2;
@@ -18,6 +19,9 @@ public class DialogueManager : MonoBehaviour
     public Button btn7;
 
     public Shake shakeTarget;
+
+    public Animator mong_animator; //몽대장 말하는 애니메이션-애니메이터
+    public Sprite mong_default_img;
 
     private bool isTyping = false;
     private string currentText = "";
@@ -29,7 +33,7 @@ public class DialogueManager : MonoBehaviour
     private HashSet<int> visitedIndices = new HashSet<int>();
     private List<int> requiredVisitedIndices = new List<int>();
 
-    private Coroutine typingCoroutine; // ���� ���� ���� Ÿ���� �ڷ�ƾ ������
+    private Coroutine typingCoroutine;
 
     public void StartDialogue(string dialogueFile, string choiceFile, string nextScene = "")
     {
@@ -53,15 +57,19 @@ public class DialogueManager : MonoBehaviour
             btn7.onClick.AddListener(() => StartCoroutine(ShowTwoLinesSequentially(4, 5)));
             requiredVisitedIndices = new List<int> { 1, 2, 3, 4 };
             currentLineIndex = 4;
+            nextButton.SetActive(false);
         }
 
         if (currentScene == "Fire_Step1_S3")
         {
+
+            
             btn1_2.onClick.AddListener(() => ShowSingleLine(1));
             btn3_4.onClick.AddListener(() => ShowSingleLine(2));
             btn5_6.onClick.AddListener(() => ShowSingleLine(3));
             requiredVisitedIndices = new List<int> { 1, 2, 3 };
             currentLineIndex = 3;
+            nextButton.SetActive(false);
         }
     }
 
@@ -70,7 +78,7 @@ public class DialogueManager : MonoBehaviour
         TextAsset json = Resources.Load<TextAsset>(fileName);
         if (json == null)
         {
-            Debug.LogError($"JSON ���� �� ã��: {fileName}");
+            Debug.LogError($"JSON 파일을 찾을 수 없습니다: {fileName}");
             return;
         }
 
@@ -85,7 +93,7 @@ public class DialogueManager : MonoBehaviour
 
         if (json == null)
         {
-            Debug.LogWarning($" ������ JSON ������ ã�� �� �����ϴ�: {fileName}");
+            Debug.LogWarning($"선택지 JSON 파일을 찾을 수 없습니다: {fileName}");
             return;
         }
 
@@ -119,6 +127,36 @@ public class DialogueManager : MonoBehaviour
 
         currentText = line.dialogue_text;
 
+        // ✅ 음성 재생 추가
+        if (audioSource.isPlaying)
+        {
+            audioSource.Stop();
+
+            if (mong_animator != null && mong_default_img != null)
+            {
+                mong_animator.enabled = false;//몽대장 애니메이션 중지
+                mong_animator.GetComponent<Image>().sprite = mong_default_img;//몽대장 입 다문 이미지로 변경
+            }
+
+        }
+
+
+
+
+        AudioClip clip = line.GetVoice();
+        if (clip != null)
+        {
+            audioSource.clip = clip;
+            audioSource.Play();
+
+            if (mong_animator != null && mong_default_img != null&&audioSource.isPlaying)
+            {
+                mong_animator.enabled = true; //오디오소스가 나올때만 몽대장 애니메이션 시작
+                StartCoroutine(WaitForAudioToEnd()); // ✅ 애니메이션 끄기 예약
+            }
+
+        }
+
         if (typingCoroutine != null) StopCoroutine(typingCoroutine);
         typingCoroutine = StartCoroutine(TypeSentence(currentText));
 
@@ -132,6 +170,7 @@ public class DialogueManager : MonoBehaviour
     {
         isTyping = true;
         dialogueText.text = "";
+        // mong_animator.enabled = true; //몽대장 애니메이션 시작
 
         foreach (char letter in sentence)
         {
@@ -140,6 +179,8 @@ public class DialogueManager : MonoBehaviour
         }
 
         isTyping = false;
+        //  mong_animator.enabled = false;//몽대장 애니메이션 중지
+        // mong_animator.GetComponent<Image>().sprite = mong_default_img;//몽대장 입 다문 이미지로 변경
     }
 
     public void OnTouch()
@@ -150,6 +191,8 @@ public class DialogueManager : MonoBehaviour
         {
             dialogueText.text = currentText;
             if (typingCoroutine != null) StopCoroutine(typingCoroutine);
+            // mong_animator.enabled = false; //만약 타이핑 스킵을하면(다음버튼 누르면) 몽대장 애니메이션 중지
+            //mong_animator.GetComponent<Image>().sprite= mong_default_img; //몽대장 입 다문 이미지로 변경
             isTyping = false;
         }
         else
@@ -184,10 +227,9 @@ public class DialogueManager : MonoBehaviour
         Debug.Log($"[ShowSingleLine] index: {index}");
         if (index < 0 || index >= dialogueLines.Count)
         {
-            Debug.LogWarning("�߸��� �ε��� ��û");
+            Debug.LogWarning("잘못된 인덱스 요청");
             return;
         }
-        Debug.Log($"���: {dialogueLines[index].dialogue_text}");
 
         DialogueLine line = dialogueLines[index];
         currentText = line.dialogue_text;
@@ -200,6 +242,12 @@ public class DialogueManager : MonoBehaviour
         {
             audioSource.clip = clip;
             audioSource.Play();
+
+            if (mong_animator != null && mong_default_img != null)
+            {
+                mong_animator.enabled = true; //몽대장 애니메이션 재생
+                StartCoroutine(WaitForAudioToEnd()); // ✅ 애니메이션 끄기 예약
+            }
         }
 
         if (typingCoroutine != null) StopCoroutine(typingCoroutine);
@@ -207,9 +255,12 @@ public class DialogueManager : MonoBehaviour
 
         visitedIndices.Add(index);
 
-        string currentScene = SceneManager.GetActiveScene().name;
+        CheckAllButtonsClicked();
+    }
 
-        if (currentScene != "Fire_Step1_S4" && requiredVisitedIndices.TrueForAll(i => visitedIndices.Contains(i)))
+    private void CheckAllButtonsClicked()
+    {
+        if (new HashSet<int>(requiredVisitedIndices).IsSubsetOf(visitedIndices))
         {
             nextButton.SetActive(true);
         }
@@ -245,4 +296,35 @@ public class DialogueManager : MonoBehaviour
     {
         return currentLineIndex;
     }
+
+
+    // 1. 새로운 코루틴 함수 추가
+    private IEnumerator WaitForAudioToEnd()
+    {
+        yield return new WaitWhile(() => audioSource.isPlaying);
+        if (mong_animator != null && mong_default_img != null)
+        {
+            mong_animator.enabled = false;
+            mong_animator.GetComponent<Image>().sprite = mong_default_img; // 입 다문 이미지로 변경
+        }
+    }
+
+    private void Start()
+    {
+        if (mong_animator != null && mong_default_img != null)
+        {
+            if(SceneManager.GetActiveScene().name == "Fire_Step1_S2"  )
+                mong_animator.enabled = false; 
+                mong_animator.GetComponent<Image>().sprite = mong_default_img; // 입 다문 이미지로 변경
+        }
+
+        //if (mong_animator != null && mong_default_img != null && SceneManager.GetActiveScene().name == "Fire_Step1_S3")
+        //{
+        //    mong_animator.enabled = true;
+        //    StartCoroutine(WaitForAudioToEnd());
+        //}
+
+
+    }
+
 }
