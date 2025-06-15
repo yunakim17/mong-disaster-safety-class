@@ -6,7 +6,6 @@ public class Eq_step3_BGM : MonoBehaviour
 {
     [SerializeField] private AudioSource audioSource;
     [SerializeField] private AudioClip bgmClip;
-    [SerializeField] private float volume = 0.2f;
 
     private void Start()
     {
@@ -15,10 +14,10 @@ public class Eq_step3_BGM : MonoBehaviour
             audioSource = GetComponent<AudioSource>();
         }
 
-        if (bgmClip != null & audioSource != null)
+        if (bgmClip != null && audioSource != null)
         {
             audioSource.clip = bgmClip;
-            audioSource.volume = volume;
+            audioSource.volume = SettingsManager.GlobalVolume;
             audioSource.loop = true;
             audioSource.Play();
 
@@ -29,4 +28,13 @@ public class Eq_step3_BGM : MonoBehaviour
             Debug.LogWarning("BGM 클립이나 AudioSource가 없습니다.");
         }
     }
+
+    private void Update()
+    {
+        if (audioSource != null && audioSource.volume != SettingsManager.GlobalVolume)
+        {
+            audioSource.volume = SettingsManager.GlobalVolume;
+        }
+    }
 }
+
