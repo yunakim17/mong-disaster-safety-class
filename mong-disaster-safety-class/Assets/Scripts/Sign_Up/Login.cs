@@ -103,7 +103,10 @@ public class Login : MonoBehaviour
             yield break;
         }
 
-        string url = "http://3.35.180.225:8000/user/check-nickname?nickname=" + UnityWebRequest.EscapeURL(nickname);
+        string schoolName = NormalizeSchoolName();
+
+        string url = "http://3.35.180.225:8000/user/check-nickname?nickname=" + UnityWebRequest.EscapeURL(nickname)
+            + "&school_name=" + UnityWebRequest.EscapeURL(schoolName);
         UnityWebRequest request = UnityWebRequest.Get(url);
         request.certificateHandler = new BypassCertificate();
         yield return request.SendWebRequest();
@@ -253,6 +256,9 @@ public class Login : MonoBehaviour
         {
             schoolWarning.SetActive(false);
         }
+
+        isNicknameAvailable = false;
+        nicknameWarning.SetActive(false);
 
         UpdateStartButtonState();
     }
