@@ -401,4 +401,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/EqScenes/Eq_Step3/Eq_Step3_Badge.unity
     guid: 37c4a634b0e5c1a4cb7b883304908367
+  - enabled: 1
+    path: Assets/Scenes/Setting.unity
+    guid: 5894cd5991b4a64418c56eba7083501d
   m_configObjects: {}
