@@ -1105,15 +1105,15 @@ MonoBehaviour:
       m_Calls: []
   m_text: 
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: f76872322363f7241a3b09e83662ffad, type: 2}
-  m_sharedMaterial: {fileID: -1251774678217824519, guid: f76872322363f7241a3b09e83662ffad, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 159ac8a3a179e6942817ce8d1bf20f31, type: 2}
+  m_sharedMaterial: {fileID: 7858937968217129460, guid: 159ac8a3a179e6942817ce8d1bf20f31, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
     rgba: 4281479730
-  m_fontColor: {r: 0.6627451, g: 1, b: 0, a: 1}
+  m_fontColor: {r: 1, g: 1, b: 0.627451, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1130,8 +1130,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 70
-  m_fontSizeBase: 70
+  m_fontSize: 65
+  m_fontSizeBase: 65
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1239,15 +1239,15 @@ MonoBehaviour:
       m_Calls: []
   m_text: 
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: f76872322363f7241a3b09e83662ffad, type: 2}
-  m_sharedMaterial: {fileID: -1251774678217824519, guid: f76872322363f7241a3b09e83662ffad, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 159ac8a3a179e6942817ce8d1bf20f31, type: 2}
+  m_sharedMaterial: {fileID: 7858937968217129460, guid: 159ac8a3a179e6942817ce8d1bf20f31, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
     rgba: 4278255529
-  m_fontColor: {r: 0.6627451, g: 1, b: 0, a: 1}
+  m_fontColor: {r: 1, g: 1, b: 0.627451, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1264,8 +1264,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 70
-  m_fontSizeBase: 70
+  m_fontSize: 65
+  m_fontSizeBase: 65
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
