@@ -61,6 +61,19 @@ public class Login : MonoBehaviour
     // 중복 확인 버튼
     public void OnClickCheckButton()
     {
+        // 학교 입력 여부 체크
+        if (string.IsNullOrWhiteSpace(schoolInput.text))
+        {
+            schoolWarning.SetActive(true);
+            schoolWarningText.text = "학교 이름을 입력해주세요!";
+            schoolWarningText.color = Color.red;
+            return; // 입력이 없으면 중복 검사 실행 x
+        }
+        else
+        {
+            schoolWarning.SetActive(false);
+        }
+
         StartCoroutine(CheckNickname());
     }
 

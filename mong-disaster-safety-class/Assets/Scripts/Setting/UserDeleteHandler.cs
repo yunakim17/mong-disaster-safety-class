@@ -36,11 +36,14 @@ public class UserDeleteHandler : MonoBehaviour
 
         if (request.result == UnityWebRequest.Result.Success)
         {
+            // 로컬 uuid 삭제
+            PlayerPrefs.DeleteKey("uuid");
+            PlayerPrefs.Save();
+
             isDeleteSuccess = true;
             deleteCheckText.text = "정보가 지워졌습니다!";
             checkPanel.SetActive(false);
             deleteCheckPanel.SetActive(true);
-            checkPanel.SetActive(false);
         }
         else
         {
