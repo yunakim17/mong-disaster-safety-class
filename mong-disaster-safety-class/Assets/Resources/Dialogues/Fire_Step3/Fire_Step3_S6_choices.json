@@ -6,7 +6,7 @@
     "option1": "입과 코를 막고 빨리 뛰어서 다시 가지고 온다.",
     "option2": "가지 않고 선생님과 기다린다.",
     "correct_option": 2,
-    "feedback": "대피한 후에는 무슨 일이 있어도 불이 난 곳에 다시 들어가면 안돼! 아무리 소중한 물건이라도, 나의 안전이 가장 소중해! 그럼 다시 선택해볼까?",
+    "feedback": "대피한 후에는 불이 난 곳에 다시 들어가면 안돼!\n아무리 소중한 물건이라도, 나의 안전이 가장 소중해!",
     "voice_path": "Fire_Step3/15",
     "feedback_voice_path": "Fire_Step3/feedback/2"
   }
