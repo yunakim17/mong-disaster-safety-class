@@ -6,7 +6,7 @@
     "option1": "빨리 책상 아래로 들어간다.",
     "option2": "그냥 서 있는다.",
     "correct_option": 1,
-    "feedback": "지진이 나면 책상같이 튼튼한 물건 아래서 몸을 보호해야 해. 다시 선택해볼까?",
+    "feedback": "지진이 나면 책상같이 튼튼한 물건 아래서 몸을 보호해야 해!",
     "voice_path": "Eq_Step3/03",
     "feedback_voice_path": "Eq_Step3/feedback/1"
   }

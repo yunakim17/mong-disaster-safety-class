@@ -10,7 +10,7 @@ public class DialogueManager : MonoBehaviour
 {
     public TextMeshProUGUI dialogueText;
     public AudioSource audioSource;
-    public float typingSpeed = 1f;
+    private float typingSpeed = 0.07f;
     public GameObject nextButton;
 
     public Button btn1_2;

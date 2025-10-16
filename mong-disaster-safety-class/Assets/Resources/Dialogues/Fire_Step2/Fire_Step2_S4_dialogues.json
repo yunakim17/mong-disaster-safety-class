@@ -1,8 +1,8 @@
 [
- {
+  {
     "sequence": 5,
     "speaker": "몽대장",
-    "dialogue_text": "핸드폰이나 컴퓨터, 드라이기같은 전자 제품을 잘못 사용하면 불이 날 수도 있어.",
+    "dialogue_text": "핸드폰이나 컴퓨터, 드라이기같은 전자 제품을 잘못 사용하면\n불이 날 수도 있어.",
     "voice_path": "Fire_Step2/05"
   },
   {

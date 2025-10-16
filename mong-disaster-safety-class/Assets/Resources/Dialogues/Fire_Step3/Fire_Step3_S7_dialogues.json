@@ -2,19 +2,19 @@
   {
     "sequence": 16,
     "speaker": "선생님",
-    "dialogue_text": "얘들아, 방금 소방관님께서 실습실에서 난 불은 다 꺼졌고 모두가 무사히 대피했다고 하셨어!",
+    "dialogue_text": "얘들아, 방금 소방관님께서 실습실에서 난 불은 다 꺼졌고\n모두가 무사히 대피했다고 하셨어!",
     "voice_path": "Fire_Step3/16"
   },
   {
     "sequence": 17,
     "speaker": "선생님",
-    "dialogue_text": "우리 1학년 1반 친구들이 선생님이 말한대로 침착하게 행동해준 덕분에 우리 모두 안전을 지킬 수 있었어.",
+    "dialogue_text": "우리 1학년 1반 친구들이 선생님이 말한대로\n침착하게 행동해준 덕분에 우리 모두 안전을 지킬 수 있었어.",
     "voice_path": "Fire_Step3/17"
   },
   {
     "sequence": 18,
     "speaker": "선생님",
-    "dialogue_text": "정말 잘했어! 앞으로도 화재가 나면 오늘 했던 것처럼 질서 있게 행동해야해!",
+    "dialogue_text": "정말 잘했어! 앞으로도 화재가 나면 오늘 했던 것처럼\n질서 있게 행동해야해!",
     "voice_path": "Fire_Step3/18"
   }
 ]
