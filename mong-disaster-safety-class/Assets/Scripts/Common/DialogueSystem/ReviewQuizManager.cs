@@ -43,17 +43,22 @@ public class ReviewQuizManager : MonoBehaviour
         {
             characterImage.sprite = defaultSprite;
         }
+
+        oImageButton.transform.localScale = Vector3.one;
+        xImageButton.transform.localScale = Vector3.one;
     }
 
     public void SelectO()
     {
-        StartCoroutine(PressEffect(oImageButton));
+        StartCoroutine(PressEffect(oImageButton)); 
+        HighlightSelection(true); 
         CheckAnswer(userChoseO: true);
     }
 
     public void SelectX()
     {
-        StartCoroutine(PressEffect(xImageButton));
+        StartCoroutine(PressEffect(xImageButton)); 
+        HighlightSelection(false); 
         CheckAnswer(userChoseO: false);
     }
 
@@ -64,8 +69,7 @@ public class ReviewQuizManager : MonoBehaviour
 
         if (userChoseO == correctIsO)
         {
-            QuizSum.AddCorrect(); // 정답 개수 더하기
-
+            QuizSum.AddCorrect();
             feedbackText.color = Color.white;
             feedbackText.text = feedbackMessage;
 
@@ -91,7 +95,6 @@ public class ReviewQuizManager : MonoBehaviour
         {
             feedbackText.color = new Color32(255, 80, 80, 255);
             feedbackText.text = "아니야! " + feedbackMessage;
-
             feedbackText.gameObject.SetActive(true);
             nextButton.gameObject.SetActive(true);
         }
@@ -113,15 +116,29 @@ public class ReviewQuizManager : MonoBehaviour
         Vector3 originalScale = buttonObj.transform.localScale;
         buttonObj.transform.localScale = originalScale * 0.9f;
         yield return new WaitForSeconds(0.1f);
-        buttonObj.transform.localScale = originalScale;
     }
 
-    // 결과 씬으로 이동
+    private void HighlightSelection(bool selectedO)
+    {
+        float selectedScale = 1.1f;
+        float unselectedScale = 0.8f; 
+
+        if (selectedO)
+        {
+            oImageButton.transform.localScale = Vector3.one * selectedScale;
+            xImageButton.transform.localScale = Vector3.one * unselectedScale;
+        }
+        else
+        {
+            oImageButton.transform.localScale = Vector3.one * unselectedScale;
+            xImageButton.transform.localScale = Vector3.one * selectedScale;
+        }
+    }
+
     public void GoToResultScene()
     {
         PlayerPrefs.SetInt("stage_id_quiz", stageId);
         PlayerPrefs.SetInt("quiz_total", totalQuestions);
-
         SceneManager.LoadScene("QuizResult");
     }
 }
