@@ -3,10 +3,10 @@
         "sequence": 11,
         "speaker": "몽대장",
         "question": "그렇다면 어떻게 해야 할까?",
-        "option1": "넘어지기 전에 피한다. ",
-        "option2": "책장과 냉장고를 움직이지 않게 해둔다.",
+        "option1": "가구가 넘어지기 전에 피한다. ",
+        "option2": "가구를 움직이지 않게 해둔다.",
         "correct_option": 2,
-        "feedback": "그건 너무 위험하고 다칠 수 있어! 다시 생각해 볼까?",
+        "feedback": "그건 너무 위험하고 다칠 수 있어!\n책장이나 냉장고를 미리 움직이지 않게 고정해두면 좋겠지?",
         "voice_path": "Eq_Step2/11",
         "feedback_voice_path": "Eq_Step2/feedback/4"
     }

@@ -17,6 +17,8 @@ public class Player : MonoBehaviour
 
     public Animator PlayerAnimator;
 
+    public AudioSource jumpSound;
+
     void Start()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
@@ -43,6 +45,7 @@ public class Player : MonoBehaviour
             PlayerRigidBody.AddForce(new Vector2(0, jumpForce), ForceMode2D.Impulse);
             isGrounded = false;
             PlayerAnimator.SetInteger("state", 1);
+            jumpSound.Play();
         }
     }
 

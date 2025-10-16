@@ -2,13 +2,13 @@
  {
     "sequence": 12,
     "speaker": "몽대장",
-    "dialogue_text": "유리컵을 옮겨서 성냥불을 덮어보자~!",
+    "dialogue_text": "유리컵을 옮겨서 성냥불을 덮어보자~",
     "voice_path": "Fire_Step1/12"
   },
   {
     "sequence": 13,
     "speaker": "몽대장",
-    "dialogue_text": "짠! 불이 꺼졌지? 유리컵이 불이 숨 쉴 수 있는 산소를 막아버렸기 때문이야~",
+    "dialogue_text": "짠! 불이 꺼졌지? 유리컵이 불이 숨 쉴 수 있는 산소를\n막아버렸기 때문이야!",
     "voice_path": "Fire_Step1/13"
   },
   {

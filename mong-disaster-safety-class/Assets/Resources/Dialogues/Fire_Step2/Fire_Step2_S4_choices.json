@@ -6,7 +6,7 @@
     "option1": "물이 없는 곳에 놓는다.",
     "option2": "젖어 있거나 물이 있는 곳에 놓는다.",
     "correct_option": 1,
-    "feedback": "전자 제품은 젖어 있거나 물이 있는 곳에 두면 잘못해서 불이 날 수 있어!  조금 더 생각해 볼까?",
+    "feedback": "전자제품은 젖어 있거나 물이 있는 곳에 두면 잘못해서 불이 날 수 있어!\n전자제품은 물이 없는 곳에 두는게 안전해.",
     "voice_path": "Fire_Step2/06",
     "feedback_voice_path": "Fire_Step2/feedback/2"
   }
