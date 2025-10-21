@@ -68,7 +68,7 @@ public class UserSetting : MonoBehaviour
     // 기존 유저 데이터 불러오기
     IEnumerator LoadUserData(string userId)
     {
-        string url = "http://3.35.180.225:8000/user/" + UnityWebRequest.EscapeURL(userId);
+        string url = "https://3.35.180.225:8000/user/" + UnityWebRequest.EscapeURL(userId);
 
         UnityWebRequest request = UnityWebRequest.Get(url);
         request.certificateHandler = new BypassCertificate();
@@ -192,7 +192,7 @@ public class UserSetting : MonoBehaviour
 
         string schoolName = NormalizeSchoolName();
 
-        string url = "http://3.35.180.225:8000/user/check-nickname?nickname=" + UnityWebRequest.EscapeURL(nickname)
+        string url = "https://3.35.180.225:8000/user/check-nickname?nickname=" + UnityWebRequest.EscapeURL(nickname)
             + "&school_name=" + UnityWebRequest.EscapeURL(schoolName);
         
         UnityWebRequest request = UnityWebRequest.Get(url);
@@ -275,7 +275,7 @@ public class UserSetting : MonoBehaviour
         };
 
         string json = JsonUtility.ToJson(data);
-        string url = "http://3.35.180.225:8000/user/update";
+        string url = "https://3.35.180.225:8000/user/update";
 
         UnityWebRequest request = new UnityWebRequest(url, "PUT");
         byte[] bodyRaw = System.Text.Encoding.UTF8.GetBytes(json);
