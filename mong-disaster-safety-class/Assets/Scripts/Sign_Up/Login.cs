@@ -118,7 +118,7 @@ public class Login : MonoBehaviour
 
         string schoolName = NormalizeSchoolName();
 
-        string url = "https://3.35.180.225:8000/user/check-nickname?nickname=" + UnityWebRequest.EscapeURL(nickname)
+        string url = "http://3.35.180.225:8000/user/check-nickname?nickname=" + UnityWebRequest.EscapeURL(nickname)
             + "&school_name=" + UnityWebRequest.EscapeURL(schoolName);
         UnityWebRequest request = UnityWebRequest.Get(url);
         request.certificateHandler = new BypassCertificate();
@@ -165,7 +165,7 @@ public class Login : MonoBehaviour
         };
 
         string json = JsonUtility.ToJson(data);
-        string url = "https://3.35.180.225:8000/user/register";
+        string url = "http://3.35.180.225:8000/user/register";
         UnityWebRequest request = new UnityWebRequest(url, "POST");
         
         byte[] bodyRaw = System.Text.Encoding.UTF8.GetBytes(json);
@@ -294,7 +294,7 @@ public class Login : MonoBehaviour
     // 초기 랭킹 등록
     IEnumerator RegisterRanking(string userId)
     {
-        string url = "https://3.35.180.225:8000/ranking/register/" +
+        string url = "http://3.35.180.225:8000/ranking/register/" +
                         UnityWebRequest.EscapeURL(userId);
         UnityWebRequest request = UnityWebRequest.PostWwwForm(url, "");
         request.certificateHandler = new BypassCertificate();
