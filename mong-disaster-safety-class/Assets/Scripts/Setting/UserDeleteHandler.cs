@@ -28,7 +28,7 @@ public class UserDeleteHandler : MonoBehaviour
     // 유저 삭제 (Cascade)
     IEnumerator DeleteUser(string userId)
     {
-        string url = $"http://3.35.180.225:8000/user/users/{userId}";
+        string url = $"https://3.35.180.225:8000/user/users/{userId}";
         UnityWebRequest request = UnityWebRequest.Delete(url);
         request.certificateHandler = new BypassCertificate();
 

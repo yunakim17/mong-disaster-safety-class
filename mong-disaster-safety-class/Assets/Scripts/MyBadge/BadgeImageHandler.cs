@@ -26,7 +26,7 @@ public class BadgeImageHandler : MonoBehaviour
     // 배지 이미지 경로 받아와서 보여주기
     IEnumerator LoadBadgeImages(string userId)
     {
-        string url = "http://3.35.180.225:8000/stage_progress/badge_images?user_id=" + $"{userId}";
+        string url = "https://3.35.180.225:8000/stage_progress/badge_images?user_id=" + $"{userId}";
         
         UnityWebRequest request = UnityWebRequest.Get(url);
         request.certificateHandler = new BypassCertificate();
