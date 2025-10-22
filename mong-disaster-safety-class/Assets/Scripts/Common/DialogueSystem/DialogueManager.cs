@@ -139,7 +139,9 @@ public class DialogueManager : MonoBehaviour
         }
 
         if (typingCoroutine != null) StopCoroutine(typingCoroutine);
-        typingCoroutine = StartCoroutine(TypeSentence(currentText));
+        //typingCoroutine = StartCoroutine(TypeSentence(currentText));
+        dialogueText.text = currentText;
+        isTyping = false;
 
         if (line.sequence == 4 && shakeTarget != null)
         {
@@ -226,7 +228,10 @@ public class DialogueManager : MonoBehaviour
         }
 
         if (typingCoroutine != null) StopCoroutine(typingCoroutine);
-        typingCoroutine = StartCoroutine(TypeSentence(currentText));
+        //typingCoroutine = StartCoroutine(TypeSentence(currentText));
+        dialogueText.text = currentText;
+        isTyping = false;
+
 
         visitedIndices.Add(index);
 
