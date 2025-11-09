@@ -6,7 +6,7 @@
         "option1": "높은 건물 안",
         "option2": "정해진 안전한 지진 대피 장소",
         "correct_option": 2,
-        "feedback": "높은 건물은 무너질 수도 있어!\n흔들림이 멈추면 학교 운동장처럼 넓고 안전한 대피장소로 가야해.",
+        "feedback": "높은 건물은 무너질 수도 있어서 위험해.\n흔들림이 멈추면 학교 운동장처럼 넓고 안전한 대피장소로 가야해~ 다시 생각해볼까?",
         "voice_path": "Eq_Step2/14",
         "feedback_voice_path": "Eq_Step2/feedback/5"
     }
