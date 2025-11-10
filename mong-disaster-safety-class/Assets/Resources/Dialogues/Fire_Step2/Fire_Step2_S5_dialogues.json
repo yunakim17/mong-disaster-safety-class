@@ -2,13 +2,13 @@
   {
     "sequence": 7,
     "speaker": "몽대장",
-    "dialogue_text": "잘했어! 핸드폰이나 컴퓨터, 드라이기 같은 전자 제품은 젖어 있거나\n물이 있는 곳에 두면 안 돼.",
+    "dialogue_text": "잘했어! 핸드폰이나 컴퓨터, 드라이기 같은 전자 제품은 젖어 있거나\n물이 있는 곳에 두면 안돼.",
     "voice_path": "Fire_Step2/07"
   },
   {
     "sequence": 8,
     "speaker": "몽대장",
-    "dialogue_text": "예를 들면 화장실처럼 물이 있는 공간에 두고 사용하면 안 돼!\n반드시 물이 없는 곳에 둬야 해.",
+    "dialogue_text": "예를 들면 화장실처럼 물이 있는 곳에 두고 사용하면 안돼!\n반드시 물이 없는 곳에 놓아야 해~",
     "voice_path": "Fire_Step2/08"
   },
   {
