@@ -10,7 +10,7 @@ public class DialogueManager : MonoBehaviour
 {
     public TextMeshProUGUI dialogueText;
     public AudioSource audioSource;
-    public float typingSpeed = 1f;
+    private float typingSpeed = 0.07f;
     public GameObject nextButton;
 
     public Button btn1_2;
@@ -158,7 +158,9 @@ public class DialogueManager : MonoBehaviour
         }
 
         if (typingCoroutine != null) StopCoroutine(typingCoroutine);
-        typingCoroutine = StartCoroutine(TypeSentence(currentText));
+        //typingCoroutine = StartCoroutine(TypeSentence(currentText));
+        dialogueText.text = currentText;
+        isTyping = false;
 
         if (line.sequence == 4 && shakeTarget != null)
         {
@@ -251,7 +253,10 @@ public class DialogueManager : MonoBehaviour
         }
 
         if (typingCoroutine != null) StopCoroutine(typingCoroutine);
-        typingCoroutine = StartCoroutine(TypeSentence(currentText));
+        //typingCoroutine = StartCoroutine(TypeSentence(currentText));
+        dialogueText.text = currentText;
+        isTyping = false;
+
 
         visitedIndices.Add(index);
 

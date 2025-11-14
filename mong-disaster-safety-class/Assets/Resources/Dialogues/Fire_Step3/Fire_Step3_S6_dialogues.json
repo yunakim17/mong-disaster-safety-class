@@ -2,25 +2,25 @@
   {
     "sequence": 11,
     "speaker": "선생님",
-    "dialogue_text": "인원을 확인하니 1학년 1반 모두가 잘 대피했구나! 이제 소방차가 도착하니 우리는 여기서 침착하게 기다리자.",
+    "dialogue_text": "인원수를 세어보니 1학년 1반 모두가 안전하게 대피했네~!\n이제 소방차가 올거니 우리는 여기서 침착하게 기다리자",
     "voice_path": "Fire_Step3/11"
   },
   {
     "sequence": 12,
     "speaker": "선생님",
-    "dialogue_text": "떠들지 말고 선생님이 하는 말 잘 들어야 해! 다른 곳으로 가지 말고 여기 잘 모여있어야 해.",
+    "dialogue_text": "우리 친구들, 떠들지 말고 선생님이 하는 말 잘 들을 수 있지?\n어디 가지 말고 여기 잘 모여있자~",
     "voice_path": "Fire_Step3/12"
   },
   {
     "sequence": 13,
     "speaker": "선생님",
-    "dialogue_text": "그리고 조금이라도 다친 친구가 있으면 선생님에게 말해주렴!",
+    "dialogue_text": "그리고 조금이라도 다친 친구가 있으면 선생님에게 꼭 말해줘~ 알겠지?",
     "voice_path": "Fire_Step3/13"
   },
   {
     "sequence": 14,
     "speaker": "주인공",
-    "dialogue_text": "앗! 내 핸드폰! 어쩌지? 교실에 두고왔나봐! 엄마아빠가 생일선물로 사주신 건데.. 다시 가지러 가야하나?",
+    "dialogue_text": "앗! 내 가방! 어쩌지? 교실에 두고왔어!\n내가 제일로 좋아하는 캐릭터가 그려져 있는 건데.. 다시 가지러 가야하나?",
     "voice_path": "Fire_Step3/14"
   },
   {
