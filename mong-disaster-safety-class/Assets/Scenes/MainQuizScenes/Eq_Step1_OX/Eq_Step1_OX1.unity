@@ -471,7 +471,6 @@ MonoBehaviour:
   incorrectSounds:
   - {fileID: 8300000, guid: 63a0eb79c9802a54fa2b7fd382c74775, type: 3}
   - {fileID: 8300000, guid: b0ff23bf98b696f45a8574e08572b46f, type: 3}
-  - {fileID: 8300000, guid: cbc739748eb11cb44a1e02068bcb7999, type: 3}
   stageId: 0
   totalQuestions: 0
 --- !u!82 &712506087
@@ -1114,10 +1113,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\uBC14\uB85C \uC6B4\uB3D9\uC7A5\uC73C\uB85C \uB098\uAC00\uBA74 \uB2E4\uCE60
-    \uC218 \uC788\uC5B4. \uD754\uB4E4\uB9BC\uC774 \uBA48\uCD9C \uB54C\uAE4C\uC9C0
-    \uCC45\uC0C1\uACFC \uAC19\uC740 \uD2BC\uD2BC\uD55C \uBB3C\uAC74 \uC544\uB798\uC5D0\uC11C
-    \uBAB8\uC744 \uBCF4\uD638\uD574\uC57C \uD574. "
+  m_text: "\uB545 \uC18D \uAE4A\uC740 \uACF3\uC5D0\uC11C \uD070 \uD798\uC774 \uC0DD\uACA8\uC11C
+    \n\uB545\uC774 \uD754\uB4E4\uB9AC\uB294 \uC7AC\uB09C\uC744 \uC9C0\uC9C4\uC774\uB77C\uACE0
+    \uBD88\uB7EC!"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6ce05cfa288a0ba45b879d1da63a9542, type: 2}
   m_sharedMaterial: {fileID: -4492946549454870118, guid: 6ce05cfa288a0ba45b879d1da63a9542, type: 2}

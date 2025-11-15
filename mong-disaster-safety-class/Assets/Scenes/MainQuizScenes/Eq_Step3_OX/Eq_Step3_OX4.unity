@@ -472,7 +472,6 @@ MonoBehaviour:
   incorrectSounds:
   - {fileID: 8300000, guid: 63a0eb79c9802a54fa2b7fd382c74775, type: 3}
   - {fileID: 8300000, guid: b0ff23bf98b696f45a8574e08572b46f, type: 3}
-  - {fileID: 8300000, guid: cbc739748eb11cb44a1e02068bcb7999, type: 3}
   stageId: 0
   totalQuestions: 0
 --- !u!82 &712506087
