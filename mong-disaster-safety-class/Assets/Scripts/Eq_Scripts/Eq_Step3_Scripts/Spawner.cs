@@ -1,14 +1,18 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Spawner : MonoBehaviour
 {
-    public float minSpawnDelay;
-    public float maxSpawnDelay;
-    public GameObject[] gameObjects;
+    public float minSpawnDelay = 1f;
+    public float maxSpawnDelay = 3f;
 
+    public float speedUpFactor = 0.7f;
+    public float minDelayLimit = 0.2f;
+
+    public GameObject[] gameObjects;
     private bool isSpawning = true;
+
+    [SerializeField] private DistanceBar distanceBar;
 
     void Start()
     {
@@ -22,8 +26,25 @@ public class Spawner : MonoBehaviour
         if (!isSpawning) return;
 
         GameObject randomObject = gameObjects[Random.Range(0, gameObjects.Length)];
-        Instantiate(randomObject, transform.position, Quaternion.identity);
-        Invoke("Spawn", Random.Range(minSpawnDelay, maxSpawnDelay));
+        GameObject objInstance = Instantiate(randomObject, transform.position, Quaternion.identity);
+
+        // 의자 y축 조정
+        if (objInstance.name.ToLower().Contains("chair"))
+        {
+            Vector3 pos = objInstance.transform.position;
+            pos.y += 0.4f;
+            objInstance.transform.position = pos;
+        }
+
+        // 진행 바 기반 생성 속도 증가
+        float progressFactor = 1f;
+        if (distanceBar != null)
+            progressFactor = 1f - distanceBar.GetProgress();
+
+        float nextMinDelay = Mathf.Max(minSpawnDelay * Mathf.Pow(speedUpFactor, 1f - progressFactor), minDelayLimit);
+        float nextMaxDelay = Mathf.Max(maxSpawnDelay * Mathf.Pow(speedUpFactor, 1f - progressFactor), minDelayLimit);
+
+        Invoke("Spawn", Random.Range(nextMinDelay, nextMaxDelay));
     }
 
     public void StopSpawning()
