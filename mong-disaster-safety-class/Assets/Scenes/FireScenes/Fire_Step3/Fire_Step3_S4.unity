@@ -508,7 +508,7 @@ RectTransform:
   m_GameObject: {fileID: 412178009}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.2, y: 1.2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1101325154}
@@ -516,7 +516,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 178}
-  m_SizeDelta: {x: 1412, y: 378}
+  m_SizeDelta: {x: 1261, y: 378}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &412178011
 MonoBehaviour:
@@ -538,7 +538,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -1594755841, guid: 570b36fad06bc634d85061674c9c0b4f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: afa5dfe37c8ff304f8fd176852dc5168, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -755,15 +755,15 @@ RectTransform:
   m_GameObject: {fileID: 604523766}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.2, y: 1.2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1101325154}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0, y: -100}
-  m_SizeDelta: {x: 897, y: 134}
+  m_AnchoredPosition: {x: -0, y: -120}
+  m_SizeDelta: {x: 1260, y: 377}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &604523768
 MonoBehaviour:
@@ -785,7 +785,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 8ddf8ea2730f25946940ef27f8ace360, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 541fc139907b5634da31c0c35055c97d, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1352,7 +1352,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 6cfdbd637082aa9459ccd7234cb9bb73, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 209161a851d576044a583ad4a5a09437, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1981,7 +1981,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -939594572, guid: 570b36fad06bc634d85061674c9c0b4f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f17a6d18e6edc5e41ae53aeff7113492, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2777,11 +2777,19 @@ PrefabInstance:
       objectReference: {fileID: 1917930704}
     - target: {fileID: 5322492680835996651, guid: ce39cc96e8ebf114390bd087bd237ccf, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 1412
+      value: 1261
       objectReference: {fileID: 0}
     - target: {fileID: 5322492680835996651, guid: ce39cc96e8ebf114390bd087bd237ccf, type: 3}
       propertyPath: m_SizeDelta.y
       value: 378
+      objectReference: {fileID: 0}
+    - target: {fileID: 5322492680835996651, guid: ce39cc96e8ebf114390bd087bd237ccf, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5322492680835996651, guid: ce39cc96e8ebf114390bd087bd237ccf, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.2
       objectReference: {fileID: 0}
     - target: {fileID: 6473922857315476987, guid: ce39cc96e8ebf114390bd087bd237ccf, type: 3}
       propertyPath: m_Pivot.x
@@ -2873,11 +2881,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7802988076394038340, guid: ce39cc96e8ebf114390bd087bd237ccf, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 897
+      value: 1260
       objectReference: {fileID: 0}
     - target: {fileID: 7802988076394038340, guid: ce39cc96e8ebf114390bd087bd237ccf, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 134
+      value: 377
+      objectReference: {fileID: 0}
+    - target: {fileID: 7802988076394038340, guid: ce39cc96e8ebf114390bd087bd237ccf, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7802988076394038340, guid: ce39cc96e8ebf114390bd087bd237ccf, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7802988076394038340, guid: ce39cc96e8ebf114390bd087bd237ccf, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -120
       objectReference: {fileID: 0}
     - target: {fileID: 7928776341697435203, guid: ce39cc96e8ebf114390bd087bd237ccf, type: 3}
       propertyPath: m_Name
