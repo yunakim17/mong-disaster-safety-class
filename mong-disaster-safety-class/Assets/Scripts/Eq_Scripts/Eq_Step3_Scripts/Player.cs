@@ -4,18 +4,16 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    public float jumpForce;
-    public Rigidbody2D PlayerRigidBody;
-    private bool isGrounded = true;
-
-    private bool isInvincible = false;
     private SpriteRenderer spriteRenderer;
-
     public DistanceBar distanceBar;
 
+<<<<<<< Updated upstream
     private bool isGameEnded = false;
 
     public Animator PlayerAnimator;
+=======
+    private bool isInvincible = false;
+>>>>>>> Stashed changes
 
     public AudioSource jumpSound;
 
@@ -24,6 +22,7 @@ public class Player : MonoBehaviour
         spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
+<<<<<<< Updated upstream
     void Update()
     {
         // 게임 종료 시 점프 x
@@ -61,23 +60,26 @@ public class Player : MonoBehaviour
     }
 
     // 장애물 충돌 시
+=======
+    // 장애물 충돌 처리
+>>>>>>> Stashed changes
     void OnTriggerEnter2D(Collider2D collider)
     {
-        if (collider.gameObject.tag == "obstacle" && !isInvincible)
+        if (collider.CompareTag("obstacle") && !isInvincible)
         {
             // 진행 바 색 변경
             if (distanceBar != null)
                 distanceBar.ChangeFillColor(distanceBar.hitColor);
 
             // 속도 늦춤
-            if (distanceBar != null)
-                distanceBar.timeScale = 0.1f;
+            Time.timeScale = 0.8f;
+            Time.fixedDeltaTime = 0.02f * Time.timeScale;
 
             StartCoroutine(InvincibleRoutine());
         }
     }
 
-    // 장애물 충돌 시 깜빡임 + 무적 상태 설정
+    // 깜빡임 + 무적 상태 설정
     IEnumerator InvincibleRoutine()
     {
         isInvincible = true;
@@ -91,26 +93,21 @@ public class Player : MonoBehaviour
             Color c = spriteRenderer.color;
             c.a = 0.3f;
             spriteRenderer.color = c;
-            yield return new WaitForSeconds(blinkTime);
+            yield return new WaitForSecondsRealtime(blinkTime);
 
             // 투명도 다시 높임
             c.a = 1f;
             spriteRenderer.color = c;
-            yield return new WaitForSeconds(blinkTime);
+            yield return new WaitForSecondsRealtime(blinkTime);
         }
 
         isInvincible = false;
 
-        // 정상 속도&슬라이더 색상 복구
-        if (distanceBar != null)
-        {
-            distanceBar.timeScale = 1f;
-            distanceBar.ChangeFillColor(distanceBar.normalColor);
-        }
-    }
+        // 정상 속도 & 슬라이더 색상 복구
+        Time.timeScale = 1f;
+        Time.fixedDeltaTime = 0.02f;
 
-    public void StopPlayerControl()
-    {
-        isGameEnded = true;
+        if (distanceBar != null)
+            distanceBar.ChangeFillColor(distanceBar.normalColor);
     }
 }

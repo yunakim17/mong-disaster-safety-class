@@ -153,10 +153,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minSpawnDelay: 1.5
   maxSpawnDelay: 3
+  speedUpFactor: 0.7
+  minDelayLimit: 0.2
   gameObjects:
   - {fileID: 5741283513350303751, guid: aa915669b7ea57e489a62e823572b373, type: 3}
   - {fileID: 5390582273347920635, guid: b64b1eab32bbbce4ba588b968d6de3e3, type: 3}
   - {fileID: 1607780513651457893, guid: a4048927325c9de49a7d080e8461e0bd, type: 3}
+  distanceBar: {fileID: 0}
 --- !u!4 &24081086
 Transform:
   m_ObjectHideFlags: 0
@@ -166,7 +169,7 @@ Transform:
   m_GameObject: {fileID: 24081084}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 12.88, y: -3.3, z: -1.674817}
+  m_LocalPosition: {x: 12.88, y: -3.36, z: -1.674817}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -490,10 +493,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8534f44573b38a546a86242cb271008a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jumpForce: 18
-  PlayerRigidBody: {fileID: 317882417}
   distanceBar: {fileID: 948818624}
-  PlayerAnimator: {fileID: 317882414}
   jumpSound: {fileID: 317882420}
 --- !u!61 &317882416
 BoxCollider2D:
@@ -527,7 +527,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.06076112, y: -0.9863844}
+  m_Offset: {x: 0.060761094, y: -1.3137497}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -538,7 +538,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.567278, y: 2.30613}
+  m_Size: {x: 1.567278, y: 2.9608605}
   m_EdgeRadius: 0
 --- !u!50 &317882417
 Rigidbody2D:
@@ -628,7 +628,7 @@ Transform:
   m_GameObject: {fileID: 317882413}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.83, y: -2.48, z: -5}
+  m_LocalPosition: {x: -2.83, y: -1.93, z: -5}
   m_LocalScale: {x: 0.97956, y: 0.9775, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1480,7 +1480,6 @@ MonoBehaviour:
   playground: {fileID: 1115074245}
   obstacleSpawnerScript: {fileID: 24081085}
   backgroundScrollScript: {fileID: 2085366809}
-  playerScript: {fileID: 317882415}
 --- !u!1 &1115074245
 GameObject:
   m_ObjectHideFlags: 0
@@ -2161,7 +2160,7 @@ Transform:
   m_GameObject: {fileID: 1436825589}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.0015, y: -4.9319, z: 0}
+  m_LocalPosition: {x: -0.0015, y: -5.08, z: 0}
   m_LocalScale: {x: 18.537, y: 0.8363711, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2602,7 +2601,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b6d89dab522ccd1449d7df852ff9cdb3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scrollSpeed: 0.3
+  scrollSpeed: 0.2
   meshRenderer: {fileID: 2085366811}
 --- !u!64 &2085366810
 MeshCollider:
