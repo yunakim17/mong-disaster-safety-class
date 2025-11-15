@@ -172,6 +172,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hitSound: {fileID: 4130566773206391648}
+  fadeDuration: 0.7
 --- !u!82 &4130566773206391648
 AudioSource:
   m_ObjectHideFlags: 0
@@ -182,7 +183,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: f6bb590f5c066e145b9398ede0fd5111, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 4108748910bf7d140a40799b605a936c, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
