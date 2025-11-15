@@ -2,31 +2,31 @@
  {
     "sequence": 4,
     "speaker": "몽대장",
-    "dialogue_text": "이번엔 화재가 일어날 수 있는 위험한 상황들을 찾아보자!",
+    "dialogue_text": "이번엔 화재가 일어날 수 있는 위험한 상황들을 찾아보자! 글자 카드를 하나씩 눌러봐~",
     "voice_path": "Fire_Step1/04"
   },
   {
     "sequence": 5,
     "speaker": "몽대장",
-    "dialogue_text": "작은 불씨도 큰 불로 커지기 쉬워. 불장난을 하면 큰 불이 될 수 있어! 성냥과 라이터는 절대 함부로 만지면 안돼!",
+    "dialogue_text": "작은 불씨도 큰 불로 커지기 쉬워. 불은 아주 뜨거워서 불장난을 하면\n크게 다칠 수도 있어! 성냥과 라이터는 절대 함부로 만지면 안돼~",
     "voice_path": "Fire_Step1/05"
   },
   {
     "sequence": 6,
     "speaker": "몽대장",
-    "dialogue_text": "가스레인지 불을 켜놓고 한눈을 팔면 불이 커질 수 있어. 위험하니까 항상 지켜봐야 해!",
+    "dialogue_text": "가스레인지불을 켜놓고 한눈을 팔면 불이 커질 수 있어.\n위험하니까 잘 지켜봐야 해~",
     "voice_path": "Fire_Step1/06"
   },
   {
     "sequence": 7,
     "speaker": "몽대장",
-    "dialogue_text": "전선을 너무 많이 꽂으면 콘센트가 뜨거워져서 불이 날 수 있어. 전선은 꼭 필요한 것만 꽂아야 해!",
+    "dialogue_text": "전선을 너무 많이 꽂으면 콘센트에서 불이 날 수 있어.\n전선은 꼭 당장 필요한 것만 꽂아야 해~",
     "voice_path": "Fire_Step1/07"
   },
   {
     "sequence": 8,
     "speaker": "몽대장",
-    "dialogue_text": "잘 봤지? 이런 상황에서는 불이 나지 않게 항상 조심, 또 조심해야 해!",
+    "dialogue_text": "잘 봤지? 이런 상황에서는 불이 나지 않게 항상 조심, 또 조심하자!",
     "voice_path": "Fire_Step1/08"
   }
 ]

@@ -8,13 +8,13 @@
   {
     "sequence": 10,
     "speaker": "몽대장",
-    "dialogue_text": "바로 불에 탈 수 있는 물건과, 뜨거운 불꽃, 그리고 우리가 숨 쉴 때 필요한 산소! 이 세 가지가 만나면 불이 날 수 있어~",
+    "dialogue_text": "바로 불에 탈 수 있는 물건과, 뜨거운 불꽃, 그리고 우리가 숨 쉴 때\n필요한 산소! 이 세 가지가 만나면 불이 활활 타게 돼!",
     "voice_path": "Fire_Step1/10"
   },
   {
     "sequence": 11,
     "speaker": "몽대장",
-    "dialogue_text": "반대로 이 중 하나만 없어지면 불이 꺼지게 돼! 한번 직접 해볼까?",
+    "dialogue_text": "반대로 이 중 하나만 없어지면 불이 꺼지게 돼! 우리도 한번 해볼까?",
     "voice_path": "Fire_Step1/11"
   }
 ]

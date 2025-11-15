@@ -18,6 +18,22 @@ public class fire_step3_BGM : MonoBehaviour
         }
     }
 
+    private void Start()
+    {
+        if (bgmSource != null)
+        {
+            bgmSource.volume = SettingsManager.GlobalVolume;
+        }
+    }
+
+    private void Update()
+    {
+        if (bgmSource != null && bgmSource.volume != SettingsManager.GlobalVolume)
+        {
+            bgmSource.volume = SettingsManager.GlobalVolume;
+        }
+    }
+
     public void PlayBGM(AudioClip clip)
     {
         if (clip == null)
@@ -28,9 +44,9 @@ public class fire_step3_BGM : MonoBehaviour
 
         if (!bgmSource.isPlaying || bgmSource.clip != clip)
         {
-            bgmSource.Stop(); // 혹시 기존에 재생 중이면 정지
+            bgmSource.Stop(); // 기존 재생 중이면 정지
             bgmSource.clip = clip;
-            bgmSource.volume = 0.2f;
+            bgmSource.volume = SettingsManager.GlobalVolume; 
             bgmSource.loop = true;
             bgmSource.Play();
 
@@ -44,12 +60,10 @@ public class fire_step3_BGM : MonoBehaviour
 
     public void StopBGM()
     {
-        if (bgmSource.isPlaying)
+        if (bgmSource != null && bgmSource.isPlaying)
         {
             bgmSource.Stop();
             Debug.Log("🛑 BGM 정지됨");
         }
     }
 }
-
-
