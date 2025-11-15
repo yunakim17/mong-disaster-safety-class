@@ -1,18 +1,38 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Obstacle : MonoBehaviour
 {
-    // Start is called before the first frame update
+    private SpriteRenderer spriteRenderer;
+    public AudioSource hitSound;
+    public float fadeDuration = 0.5f;
+
     void Start()
     {
-        
+        spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
-    // Update is called once per frame
-    void Update()
+    void OnMouseDown()
     {
-        
+        if (hitSound != null)
+            hitSound.Play();
+
+        StartCoroutine(FadeAndDestroy());
+    }
+
+    private IEnumerator FadeAndDestroy()
+    {
+        float elapsed = 0f;
+        Color originalColor = spriteRenderer.color;
+
+        while (elapsed < fadeDuration)
+        {
+            elapsed += Time.deltaTime;
+            float alpha = Mathf.Lerp(1f, 0f, elapsed / fadeDuration);
+            spriteRenderer.color = new Color(originalColor.r, originalColor.g, originalColor.b, alpha);
+            yield return null;
+        }
+
+        Destroy(gameObject);
     }
 }

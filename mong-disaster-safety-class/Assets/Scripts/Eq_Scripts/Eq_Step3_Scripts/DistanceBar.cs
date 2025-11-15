@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
@@ -22,7 +21,6 @@ public class DistanceBar : MonoBehaviour
 
     [SerializeField] private Spawner obstacleSpawnerScript;
     [SerializeField] private BackgroundScroll backgroundScrollScript;
-    [SerializeField] private Player playerScript;
 
     void Start()
     {
@@ -54,6 +52,11 @@ public class DistanceBar : MonoBehaviour
         fillImage.color = newColor;
     }
 
+    public float GetProgress()
+    {
+        return Mathf.Clamp01(elapsedTime / totalDuration);
+    }
+
     // 슬라이더가 다 차면 엔딩 진행
     private void TriggerEndingSequence()
     {
@@ -81,17 +84,13 @@ public class DistanceBar : MonoBehaviour
             mover.RemoveSelf();
         }
 
-        // 플레이어 점프 x
-        if (playerScript != null)
-            playerScript.StopPlayerControl();
-
         // 클리어 UI 활성화
         FindObjectOfType<GameManager>().ShowClearText();
 
         StartCoroutine(GoToNextSceneAfterDelay(4f));
     }
 
-    private IEnumerator GoToNextSceneAfterDelay(float delay) //다음 씬 이동
+    private IEnumerator GoToNextSceneAfterDelay(float delay) // 다음 씬 이동
     {
         yield return new WaitForSeconds(delay);
         SceneManager.LoadScene("Eq_Step3_S4");  
