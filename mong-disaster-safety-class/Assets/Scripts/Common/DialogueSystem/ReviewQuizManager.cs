@@ -9,16 +9,16 @@ public class ReviewQuizManager : MonoBehaviour
     [Header("UI 요소")]
     public TextMeshProUGUI questionText;
     public TextMeshProUGUI feedbackText;
-    public GameObject oImageButton; // O 이미지 버튼 오브젝트 (Button 컴포넌트 포함)
-    public GameObject xImageButton; // X 이미지 버튼 오브젝트 (Button 컴포넌트 포함)
+    public GameObject oImageButton; 
+    public GameObject xImageButton; 
     public Button nextButton;
 
     [Header("퀴즈 설정")]
     [TextArea] public string quizQuestion;
     [TextArea] public string feedbackMessage;
     public bool correctIsO;
-    public AudioClip questionVoiceClip; // 문제 보이스 클립
-    public AudioClip feedbackVoiceClip; //  문제별 피드백 보이스 클립
+    public AudioClip questionVoiceClip; 
+    public AudioClip feedbackVoiceClip; 
 
     [Header("캐릭터 이미지")]
     public Image characterImage;
@@ -50,18 +50,13 @@ public class ReviewQuizManager : MonoBehaviour
         oImageButton.transform.localScale = Vector3.one;
         xImageButton.transform.localScale = Vector3.one;
 
-        // 1. O/X 버튼을 비활성화하여 입력 대기 상태로 시작
         SetOXButtonsInteractable(false);
 
-        // 2. 문제 보이스 재생 코루틴 시작
         StartCoroutine(PlayInitialQuestionAudio());
     }
 
-    // O/X 버튼의 상호작용 가능/불가능을 설정하는 헬퍼 함수
     private void SetOXButtonsInteractable(bool interactable)
     {
-        //  중요: OImageButton과 XImageButton에 오브젝트가 할당되었는지 확인해야 합니다.
-        // 그리고 그 오브젝트에 Button 컴포넌트가 붙어 있어야 합니다.
         if (oImageButton != null)
         {
             Button buttonO = oImageButton.GetComponent<Button>();
@@ -81,20 +76,16 @@ public class ReviewQuizManager : MonoBehaviour
         }
     }
 
-    // 문제 보이스를 재생하고 사용자 입력을 기다리는 코루틴
     IEnumerator PlayInitialQuestionAudio()
     {
-        // 문제 보이스 재생
         if (audioSource != null && questionVoiceClip != null)
         {
             audioSource.clip = questionVoiceClip;
             audioSource.Play();
 
-            // 보이스 재생이 끝날 때까지 대기
             yield return new WaitWhile(() => audioSource.isPlaying);
         }
 
-        // 재생이 끝나면 O/X 버튼 활성화 (사용자 입력 가능)
         SetOXButtonsInteractable(true);
     }
 
@@ -138,7 +129,6 @@ public class ReviewQuizManager : MonoBehaviour
         }
         else
         {
-            // 오답 처리
             feedbackText.color = new Color32(255, 80, 80, 255);
             feedbackText.gameObject.SetActive(true);
 
