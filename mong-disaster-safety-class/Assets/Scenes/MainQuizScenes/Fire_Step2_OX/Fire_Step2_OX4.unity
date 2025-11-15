@@ -413,11 +413,20 @@ MonoBehaviour:
     \uB3C4\uC6C0\uC744 \uBC1B\uB294 \uAC83\uC774 \n\uC81C\uC77C \uC911\uC694\uD558\uACE0
     \uC548\uC804\uD574!"
   correctIsO: 0
+  questionVoiceClip: {fileID: 8300000, guid: 65201980170e1554ea2630b17232e46c, type: 3}
+  feedbackVoiceClip: {fileID: 8300000, guid: 3d53f5c93585cc746bbbc273f16cd45b, type: 3}
   characterImage: {fileID: 913781760}
   defaultSprite: {fileID: -277781592, guid: bc15573dc5121b14b9d4805268072672, type: 3}
   correctAnswerSprite: {fileID: -1584791325, guid: 98d6f2f9bd423e34c8ff16c908b6b20e, type: 3}
   audioSource: {fileID: 712506087}
-  correctSound: {fileID: 8300000, guid: 65134f8fe53e88a40bf4bfca322123b6, type: 3}
+  correctSounds:
+  - {fileID: 8300000, guid: fe797b7fe15497c4d898072247e5059e, type: 3}
+  - {fileID: 8300000, guid: 4030334e3d9f3f64687a21df6fb88012, type: 3}
+  - {fileID: 8300000, guid: 6df2eb48f6c9f224094a6347f290368a, type: 3}
+  incorrectSounds:
+  - {fileID: 8300000, guid: 63a0eb79c9802a54fa2b7fd382c74775, type: 3}
+  - {fileID: 8300000, guid: b0ff23bf98b696f45a8574e08572b46f, type: 3}
+  - {fileID: 8300000, guid: cbc739748eb11cb44a1e02068bcb7999, type: 3}
   stageId: 0
   totalQuestions: 0
 --- !u!82 &712506087
@@ -1105,10 +1114,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\uC544\uB2C8\uC57C! \uBC14\uB85C \uC6B4\uB3D9\uC7A5\uC73C\uB85C \uB098\uAC00\uBA74
-    \uB2E4\uCE60 \uC218 \uC788\uC5B4. \uD754\uB4E4\uB9BC\uC774 \uBA48\uCD9C \uB54C\uAE4C\uC9C0
-    \uCC45\uC0C1\uACFC \uAC19\uC740 \uD2BC\uD2BC\uD55C \uBB3C\uAC74 \uC544\uB798\uC5D0\uC11C
-    \uBAB8\uC744 \uBCF4\uD638\uD574\uC57C \uD574. "
+  m_text: "\uC18C\uD654\uAE30\uB97C \uC4F8 \uB54C\uB294 \uC5B4\uB978\uC758 \uB3C4\uC6C0\uC744
+    \uBC1B\uB294 \uAC83\uC774 \n\uC81C\uC77C \uC911\uC694\uD558\uACE0 \uC548\uC804\uD574!"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6ce05cfa288a0ba45b879d1da63a9542, type: 2}
   m_sharedMaterial: {fileID: -4492946549454870118, guid: 6ce05cfa288a0ba45b879d1da63a9542, type: 2}
