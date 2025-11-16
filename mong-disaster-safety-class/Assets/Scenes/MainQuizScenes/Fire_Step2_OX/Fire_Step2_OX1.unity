@@ -507,7 +507,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 637022560e77bf94ea04b00180847c24, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.1
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -776,8 +776,8 @@ MonoBehaviour:
   quizQuestion: "1. \uCF58\uC13C\uD2B8\uB294 \uD55C \uBC88\uC5D0 \uC5EC\uB7EC \uAC1C\uB97C
     \uC0AC\uC6A9\uD574\uC694."
   feedbackMessage: "\uBD88\uC774 \uB0A0 \uC218 \uC788\uC73C\uB2C8 \uC0AC\uC6A9\uD558\uB294
-    \uAC83\uB9CC \uC368\uC57C \uD574!\n\uB69C\uAED1\uC744 \uC50C\uC6B0\uB294 \uAC83\uB3C4
-    \uBD88\uC744 \uB9C9\uC744 \uC218 \uC788\uB294 \uBC29\uBC95\uC774\uC57C!"
+    \uAC83\uB9CC \uC368\uC57C \uD574!\n\uC313\uC778 \uBA3C\uC9C0\uB97C \uC798 \uCCAD\uC18C\uD558\uB294
+    \uAC83\uB3C4 \uBD88\uC744 \uB9C9\uC744 \uC218 \uC788\uB294 \uBC29\uBC95\uC774\uC57C!"
   correctIsO: 0
   questionVoiceClip: {fileID: 8300000, guid: 29be2c5d999f22c45bdb165382276b70, type: 3}
   feedbackVoiceClip: {fileID: 8300000, guid: ae99d62f299342e44b279b732867a2c6, type: 3}
@@ -1394,8 +1394,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "\uBD88\uC774 \uB0A0 \uC218 \uC788\uC73C\uB2C8 \uC0AC\uC6A9\uD558\uB294
-    \uAC83\uB9CC \uC368\uC57C \uD574!\n\uB69C\uAED1\uC744 \uC50C\uC6B0\uB294 \uAC83\uB3C4
-    \uBD88\uC744 \uB9C9\uC744 \uC218 \uC788\uB294 \uBC29\uBC95\uC774\uC57C!"
+    \uAC83\uB9CC \uC368\uC57C \uD574!\n\uC313\uC778 \uBA3C\uC9C0\uB97C \uC798 \uCCAD\uC18C\uD558\uB294
+    \uAC83\uB3C4 \uBD88\uC744 \uB9C9\uC744 \uC218 \uC788\uB294 \uBC29\uBC95\uC774\uC57C!"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6ce05cfa288a0ba45b879d1da63a9542, type: 2}
   m_sharedMaterial: {fileID: -4492946549454870118, guid: 6ce05cfa288a0ba45b879d1da63a9542, type: 2}

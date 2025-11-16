@@ -22,11 +22,11 @@ public class OX_BGM_Manager : MonoBehaviour
         if (instance == null)
         {
             instance = this;
-            DontDestroyOnLoad(gameObject); // 씬 이동 시 파괴되지 않게 설정
+            DontDestroyOnLoad(gameObject);
         }
         else
         {
-            Destroy(gameObject); // 중복 방지
+            Destroy(gameObject);
         }
     }
 }
