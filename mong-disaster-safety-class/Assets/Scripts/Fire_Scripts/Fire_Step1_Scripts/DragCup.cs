@@ -11,6 +11,8 @@ public class DragCup : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragH
     public GameObject coveredMatch;
     public GameObject nextButton;
 
+    public DialogueManager dialogueManager; 
+
     private Vector3 originalPosition;
     private Vector3 dragOffset;
     private bool alreadyTriggered = false; // ���� �̹� �巡�� �Ǿ����� ���� (�ߺ� ����)
@@ -63,6 +65,11 @@ public class DragCup : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragH
             gameObject.SetActive(false);
             alreadyTriggered = true;
             nextButton.SetActive(true);
+
+            if (dialogueManager != null)
+            {
+                dialogueManager.OnDragCompleted();
+            }
         }
         else
         {
