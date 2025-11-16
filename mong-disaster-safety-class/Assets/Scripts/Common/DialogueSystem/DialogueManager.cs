@@ -35,6 +35,12 @@ public class DialogueManager : MonoBehaviour
 
     private Coroutine typingCoroutine;
 
+    [Header("Drag Gate Settings")]
+public bool useDragGate = false;   
+public int dragGateSequence = 13;  
+
+private bool isDragCompleted = false; 
+
     public void StartDialogue(string dialogueFile, string choiceFile, string nextScene = "")
     {
         currentLineIndex = 0;
@@ -200,6 +206,19 @@ public class DialogueManager : MonoBehaviour
         else
         {
             if (audioSource.isPlaying) audioSource.Stop();
+
+            int nextIndex = currentLineIndex + 1;
+
+            if (useDragGate && !isDragCompleted && nextIndex < dialogueLines.Count)
+            {
+                DialogueLine nextLine = dialogueLines[nextIndex];
+                if (nextLine.sequence == dragGateSequence)
+                {
+                    Debug.Log("[DialogueManager] 드래그가 아직 완료되지 않아 13번 대사로 진행을 막음");
+                    return; 
+                }
+            }
+
             currentLineIndex++;
             ShowDialogue();
         }
@@ -330,6 +349,28 @@ public class DialogueManager : MonoBehaviour
         //}
 
 
+    }
+
+    public void OnDragCompleted()
+    {
+        Debug.Log("[DialogueManager] 드래그 완료!");
+
+        isDragCompleted = true;
+
+        if (!useDragGate) return;
+
+        
+        int nextIndex = currentLineIndex + 1;
+
+        if (nextIndex < dialogueLines.Count)
+        {
+            DialogueLine nextLine = dialogueLines[nextIndex];
+            if (nextLine.sequence == dragGateSequence)
+            {
+                currentLineIndex = nextIndex;
+                ShowDialogue();
+            }
+        }
     }
 
 }
