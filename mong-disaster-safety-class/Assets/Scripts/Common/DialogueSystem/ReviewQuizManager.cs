@@ -20,18 +20,25 @@ public class ReviewQuizManager : MonoBehaviour
     public AudioClip questionVoiceClip; 
     public AudioClip feedbackVoiceClip; 
 
-    [Header("캐릭터 이미지")]
-    public Image characterImage;
-    public Sprite defaultSprite;
-    public Sprite correctAnswerSprite;
+    //[Header("캐릭터 이미지")]
+    //public Image characterImage;
+    //public Sprite defaultSprite;
+    //public Sprite correctAnswerSprite;
 
     [Header("정답 효과음")]
     public AudioSource audioSource;
     public AudioClip[] correctSounds;
     public AudioClip[] incorrectSounds;
 
+    public AudioSource correctBGM;
+    public AudioSource wrongBGM;
+
+
     public int stageId;
     public int totalQuestions = 0;
+
+    public Animator mong_animator; //몽대장 말하는 애니메이션-애니메이터
+    public Sprite mong_default_img; //말하기 끝나면 설정되는 입다문 이미지
 
     void Start()
     {
@@ -42,10 +49,18 @@ public class ReviewQuizManager : MonoBehaviour
         oImageButton.SetActive(true);
         xImageButton.SetActive(true);
 
-        if (characterImage != null && defaultSprite != null)
-        {
-            characterImage.sprite = defaultSprite;
-        }
+
+        mong_animator = GameObject.FindGameObjectWithTag("Mong_quiz").GetComponent<Animator>();
+        mong_default_img = GameObject.FindGameObjectWithTag("Mong_quiz").GetComponent<Image>().sprite;
+
+        correctBGM = GameObject.FindGameObjectWithTag("CorrectBGM").GetComponent<AudioSource>();
+        wrongBGM = GameObject.FindGameObjectWithTag("WrongBGM").GetComponent<AudioSource>();
+
+
+        //if (characterImage != null && defaultSprite != null)
+        //{
+        //    characterImage.sprite = defaultSprite;
+        //}
 
         oImageButton.transform.localScale = Vector3.one;
         xImageButton.transform.localScale = Vector3.one;
@@ -83,6 +98,16 @@ public class ReviewQuizManager : MonoBehaviour
             audioSource.clip = questionVoiceClip;
             audioSource.Play();
 
+
+            ////
+            if (mong_animator != null && mong_default_img != null)
+            {
+
+                mong_animator.enabled = true; //몽대장 애니메이션 재생
+                StartCoroutine(WaitForAudioToEnd()); // 애니메이션 끄기 예약
+            }
+
+
             yield return new WaitWhile(() => audioSource.isPlaying);
         }
 
@@ -115,27 +140,53 @@ public class ReviewQuizManager : MonoBehaviour
             feedbackText.color = Color.white;
             feedbackText.text = feedbackMessage;
 
-            if (characterImage != null && correctAnswerSprite != null)
-            {
-                characterImage.sprite = correctAnswerSprite;
-            }
+            //if (characterImage != null && correctAnswerSprite != null)
+            //{
+            //    characterImage.sprite = correctAnswerSprite;
+            //}
 
             feedbackText.gameObject.SetActive(true);
+
+            correctBGM.Play();
 
             if (correctSounds != null && correctSounds.Length > 0)
             {
                 selectedRandomClip = correctSounds[Random.Range(0, correctSounds.Length)];
             }
+
+            if (mong_animator != null && mong_default_img != null)
+            {
+
+                mong_animator.enabled = true; //몽대장 애니메이션 재생
+                mong_animator.SetTrigger("StartWink");
+                //StartCoroutine(WaitForAudioToEnd()); // 애니메이션 끄기 예약
+            }
+
+
         }
         else
         {
             feedbackText.color = new Color32(255, 80, 80, 255);
             feedbackText.gameObject.SetActive(true);
 
+            wrongBGM.Play();
+
             if (incorrectSounds != null && incorrectSounds.Length > 0)
             {
                 selectedRandomClip = incorrectSounds[Random.Range(0, incorrectSounds.Length)];
             }
+
+
+
+            if (mong_animator != null && mong_default_img != null)
+            {
+
+                mong_animator.enabled = true; //몽대장 애니메이션 재생
+
+                //StartCoroutine(WaitForAudioToEnd()); // 애니메이션 끄기 예약
+            }
+
+
         }
 
         if (audioSource != null && (selectedRandomClip != null || feedbackVoiceClip != null))
@@ -162,6 +213,16 @@ public class ReviewQuizManager : MonoBehaviour
         {
             audioSource.clip = feedbackVoiceClip;
             audioSource.Play();
+
+            if (mong_animator != null && mong_default_img != null)
+            {
+
+                //mong_animator.enabled = true; //몽대장 애니메이션 재생
+                // mong_animator.SetTrigger("StartWink");
+                StartCoroutine(WaitForAudioToEnd()); // 애니메이션 끄기 예약
+            }
+
+
             yield return new WaitWhile(() => audioSource.isPlaying);
         }
 
@@ -206,4 +267,16 @@ public class ReviewQuizManager : MonoBehaviour
         PlayerPrefs.SetInt("quiz_total", totalQuestions);
         SceneManager.LoadScene("QuizResult");
     }
+
+
+    private IEnumerator WaitForAudioToEnd()
+    {
+        yield return new WaitWhile(() => audioSource.isPlaying);
+        if (mong_animator != null && mong_default_img != null)
+        {
+            mong_animator.enabled = false;
+            mong_animator.GetComponent<Image>().sprite = mong_default_img; // 입 다문 이미지로 변경
+        }
+    }
+
 }

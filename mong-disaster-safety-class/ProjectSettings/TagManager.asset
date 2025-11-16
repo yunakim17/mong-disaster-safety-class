@@ -13,6 +13,9 @@ TagManager:
   - crt3
   - Fire
   - Wall
+  - Mong_quiz
+  - CorrectBGM
+  - WrongBGM
   layers:
   - Default
   - TransparentFX
