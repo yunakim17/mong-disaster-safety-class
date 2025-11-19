@@ -6,7 +6,7 @@
     "option1": "꼭 필요한 것만 꽂아서 쓴다.",
     "option2": "여러 개를 꽂아서 쓴다.",
     "correct_option": 1,
-    "feedback": "여러 개의 콘센트를 한번에 사용하면 불이 날 수 있어!\n꼭 필요한 것만 꽂는게 안전하겠지? 다시 선택해볼까?",
+    "feedback": "여러 개의 콘센트를 한번에 사용하면 불이 날 수 있어!\n꼭 필요한 것만 꽂는게 안전하겠지?",
     "voice_path": "Fire_Step2/02",
     "feedback_voice_path": "Fire_Step2/feedback/1"
   }
