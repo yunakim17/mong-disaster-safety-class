@@ -6,7 +6,7 @@
     "option1": "혼자 뛰어서 운동장으로 나간다.",
     "option2": "몸을 숙이고 줄을 잘 서서 나간다.",
     "correct_option": 2,
-    "feedback": "뛰면 넘어져서 다칠 수 있고, 친구들도 놀라서 위험해져!\n불이 났을 땐 선생님 말씀을 잘 듣고 질서있게 줄을 서서\n나가야 해. 다시 생각해보자~",
+    "feedback": "뛰면 넘어져서 다칠 수 있고, 친구들도 놀라서 위험해져!\n불이 났을 땐 선생님 말씀을 잘 듣고 질서있게 줄을 서서\n나가야 해~",
     "voice_path": "Fire_Step3/08",
     "feedback_voice_path": "Fire_Step3/feedback/1"
   }

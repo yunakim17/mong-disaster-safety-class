@@ -6,7 +6,7 @@
     "option1": "물건들을 낮은 곳으로 옮긴다.",
     "option2": "그대로 둔다.",
     "correct_option": 1,
-    "feedback": "지진 때문에 높은 곳에 있는 물건들이 떨어져서 다칠 수도 있어!\n떨어져도 다치지 않게 낮은 곳에 두는게 좋아. 다시 생각해볼까?",
+    "feedback": "지진 때문에 높은 곳에 있는 물건들이 떨어져서 다칠 수도 있어!\n떨어져도 다치지 않게 낮은 곳에 두는게 좋아~",
     "voice_path": "Eq_Step2/08",
     "feedback_voice_path": "Eq_Step2/feedback/3"
   }
