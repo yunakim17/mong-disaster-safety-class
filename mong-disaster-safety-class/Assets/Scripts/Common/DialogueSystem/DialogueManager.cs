@@ -41,6 +41,8 @@ public int dragGateSequence = 13;
 
 private bool isDragCompleted = false; 
 
+    
+
     public void StartDialogue(string dialogueFile, string choiceFile, string nextScene = "")
     {
         currentLineIndex = 0;
@@ -342,11 +344,10 @@ private bool isDragCompleted = false;
                 mong_animator.GetComponent<Image>().sprite = mong_default_img; // 입 다문 이미지로 변경
         }
 
-        //if (mong_animator != null && mong_default_img != null && SceneManager.GetActiveScene().name == "Fire_Step1_S3")
-        //{
-        //    mong_animator.enabled = true;
-        //    StartCoroutine(WaitForAudioToEnd());
-        //}
+      if(SubtitleManager.isSubtitleOn == false)
+        {
+            dialogueText.gameObject.SetActive(false);
+        }
 
 
     }
