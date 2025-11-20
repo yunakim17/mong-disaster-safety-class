@@ -4,6 +4,7 @@ public class Fire_Step2_S12_Starter : MonoBehaviour
 {
     public DialogueManager dialogueManager;
     public GameObject HowToUse_1, HowToUse_2, HowToUse_3, HowToUse_4;
+    public GameObject IMG;
 
     void Start()
     {
@@ -19,6 +20,7 @@ public class Fire_Step2_S12_Starter : MonoBehaviour
         {
             int currentIdx = dialogueManager.GetCurrentLineIndex();
 
+            IMG.SetActive(currentIdx == 0);
             HowToUse_1?.SetActive(currentIdx == 1);
             HowToUse_2?.SetActive(currentIdx == 2);
             HowToUse_3?.SetActive(currentIdx == 3);
