@@ -1,19 +1,11 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using System.Linq;
 
 public class BGMPlayer : MonoBehaviour
 {
-
-    void Start()
-    {
-        var audioSource = GetComponent<AudioSource>();
-        audioSource.volume = SettingsManager.GlobalVolume;
-    }
-
-    private static BGMPlayer instance;
-
     private readonly string[] allowedScenes = {
-        "Main", 
+        "Main",
         "Eq_Main",
         "Fire_Main",
         "oxQuiz_Main",
@@ -21,7 +13,9 @@ public class BGMPlayer : MonoBehaviour
         "Ranking"
     };
 
+    private static BGMPlayer instance;
     private AudioSource audioSource;
+    private bool isInitialized = false;
 
     void Awake()
     {
@@ -30,7 +24,15 @@ public class BGMPlayer : MonoBehaviour
             instance = this;
             DontDestroyOnLoad(gameObject);
             audioSource = GetComponent<AudioSource>();
+
+            if (audioSource == null)
+            {
+                Destroy(gameObject);
+                return;
+            }
+
             SceneManager.sceneLoaded += OnSceneLoaded;
+            isInitialized = true;
         }
         else
         {
@@ -38,34 +40,53 @@ public class BGMPlayer : MonoBehaviour
         }
     }
 
-    void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    void Start()
     {
-        bool isAllowed = false;
-
-        foreach (var name in allowedScenes)
+        if (audioSource != null)
         {
-            if (scene.name == name)
+            float volume = 1.0f;
+            audioSource.volume = volume;
+
+            if (!audioSource.isPlaying)
             {
-                isAllowed = true;
-                break;
+                audioSource.Play();
             }
         }
+    }
 
-        if (!isAllowed)
+    void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        if (audioSource == null) return;
+
+        bool isAllowed = allowedScenes.Contains(scene.name);
+
+        if (isAllowed)
         {
-            Destroy(gameObject);
+            if (!audioSource.isPlaying)
+            {
+                audioSource.Play();
+            }
+        }
+        else
+        {
+            if (audioSource.isPlaying)
+            {
+                audioSource.Stop();
+            }
         }
     }
 
     void OnDestroy()
     {
+        if (isInitialized)
+        {
+            SceneManager.sceneLoaded -= OnSceneLoaded;
+        }
+
         var sm = FindObjectOfType<SettingsManager>();
         if (sm != null && sm.volumeSlider != null)
         {
             sm.volumeSlider.onValueChanged.RemoveListener(sm.OnVolumeChanged);
         }
-
-        SceneManager.sceneLoaded -= OnSceneLoaded;
     }
-
 }
