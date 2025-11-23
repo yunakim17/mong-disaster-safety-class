@@ -83,7 +83,6 @@ public class QuizResult : MonoBehaviour
             RankingResponse data = JsonUtility.FromJson<RankingResponse>(json);
 
             UpdateUI(data.quiz_score);
-            QuizSum.Reset();
         }
         else
         {

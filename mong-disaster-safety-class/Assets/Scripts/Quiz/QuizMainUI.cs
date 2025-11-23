@@ -10,6 +10,8 @@ public class QuizMainUI : MonoBehaviour
 
     void Start()
     {
+        QuizSum.Reset();
+
         string userId = PlayerPrefs.GetString("uuid", "");
 
         if (string.IsNullOrEmpty(userId))
